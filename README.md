@@ -1,4 +1,4 @@
-# LVCC A.Y. 20160-2017 (1st Semester)
+# LVCC A.Y. 2016-2017 (1st Semester)
 
 ## ACT Students
 
