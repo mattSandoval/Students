@@ -8,11 +8,11 @@
 * @since   [last updated 28/09/2016]
 */
 
-public class Queue {
+public class ArrayQueue {
     public int capacity;
     public int last = 0;
     public int[] storage;
-    public Queue(int size){
+    public ArrayQueue(int size){
         capacity = size;
         storage = new int[capacity];
     }
@@ -86,7 +86,7 @@ public class Queue {
     
     
     public static void main(String[]args){
-        Queue call = new Queue(10);
+        ArrayQueue call = new ArrayQueue(10);
     System.out.println("STORAGE CAPACITY = " + call.capacity);
     System.out.println();
     
