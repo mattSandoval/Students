@@ -1,3 +1,12 @@
+/**
+* Find the minimum and maximum number in an array
+*
+* @author  [Michael John Isip]
+* @link    [https://github.com/mj-isip23]
+* @version [version number]
+* @since   [09-28-2016]
+*/
+
 public class FindMinMax {
 	public static void main(String[] args) {
 		int[] numbers = { 88, 33, 55, 23, 64, 123 };
