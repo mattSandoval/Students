@@ -8,12 +8,12 @@
 * @since   [last updated 28/09/2016]
 */
 
-public class Stack {
+public class ArrayStack {
   private int capacity;
   private int top = 0;
   private int[] storage;
   
-  public Stack(int size) {
+  public ArrayStack(int size) {
     capacity = size;
     storage = new int[capacity];
   }
@@ -77,7 +77,7 @@ public class Stack {
   }
   
   public static void main(String[] args) {
-    Stack call = new Stack(10);
+    ArrayStack call = new ArrayStack(10);
     System.out.println("STORAGE CAPACITY = " + call.capacity);
     System.out.println();
 
