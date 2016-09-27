@@ -42,7 +42,7 @@ Binary Search
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/binary-search/img/2.PNG)
 ----------
 
-- Search not foun
+- Search not found
 
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/binary-search/img/3.PNG)
 
