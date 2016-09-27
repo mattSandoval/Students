@@ -36,11 +36,17 @@ Binary Search
 ## Screenshots:
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/binary-search/img/1.PNG)
 
-- Search found
+- Accepts keyboard input to set size of array.
+- Generate random numbers to array accordingly.
+- Accepts keyboard input to search for a number.
+- Show search result if number is found and what index position.
 ----------
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/binary-search/img/2.PNG)
 
-- Search not found
+- Accepts keyboard input to set size of array.
+- Generate random numbers to array accordingly.
+- Accepts keyboard input to search for a number.
+- Show search result if number is found and what index position.
 ----------
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/binary-search/img/3.PNG)
 ----------
