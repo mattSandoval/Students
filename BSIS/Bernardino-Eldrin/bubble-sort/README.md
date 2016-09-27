@@ -24,4 +24,4 @@ Bubble Sort
     END PROGRAM 
 
 ## Screenshots:
-![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/1.PNG)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/bubble-sort/img/1.PNG)
