@@ -87,4 +87,4 @@ Queue
     END PROGRAM
     
 ## Screenshots:
-    (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/1.PNG)
+![theme settings](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/1.PNG)
