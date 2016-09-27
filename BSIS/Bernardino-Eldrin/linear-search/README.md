@@ -24,3 +24,16 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+
+## Screenshots:
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/linear-search/img/1.PNG)
+----------
+
+- Search found
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/linear-search/img/2.PNG)
+----------
+
+- Search not found
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/linear-search/img/3.PNG)
