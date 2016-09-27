@@ -88,9 +88,15 @@ Queue
     
 ## Screenshots:
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/1.PNG)
+----------
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/2.PNG)
+----------
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/3.PNG)
+----------
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/4.PNG)
+----------
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/5.PNG)
+----------
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/6.PNG)
+----------
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Bernardino-Eldrin/array-queue/img/7.PNG)
