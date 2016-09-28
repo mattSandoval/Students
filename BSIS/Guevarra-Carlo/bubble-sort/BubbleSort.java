@@ -20,7 +20,7 @@ public class BubbleSort {
 		Random rand = new Random();
 
 		System.out.print("Enter array size to sort: ");
-		// TODO: use nextInt() to assign keyboard input as array size
+		size = input.nextInt();
 		array = new int[size];
 
 		System.out.println();
@@ -28,6 +28,7 @@ public class BubbleSort {
 
 		for (x = 0; x < size; x++) {
 			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
+			int x = rand.nextInt(1000);
 			// TODO: print unsorted numbers separated by space
 		}
 
