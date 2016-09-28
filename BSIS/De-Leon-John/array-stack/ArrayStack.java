@@ -7,9 +7,10 @@
 * @since   [9-29-16]
 */
 
+import java.util.*;
 public class ArrayStack {
 
-  	Scanner input= new Scanner(System.in);
+	Scanner input= new Scanner(System.in);
 	int numofel;
 	int numtopop;
 	String [] stack=new String[1000];
@@ -50,7 +51,7 @@ public class ArrayStack {
 			}
 
 		
-		System.out.println("the top index is index "+(i-1));
+		System.out.println("the top index is index "+(i));
 	}
 	
 //-----------------------------------------------------
@@ -69,7 +70,7 @@ public class ArrayStack {
 //------------------------------------------------------
 	public void full(){
 		
-		if (stack[numofel-1]!=null){
+		if (stack[numofel-1]==null){
 			System.out.println("stack is not full");
 		}
 		else{
@@ -116,6 +117,17 @@ public class ArrayStack {
 	obj.pop();
 	obj.show();
 	obj.empty();
-	}  
-
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
