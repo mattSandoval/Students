@@ -3,7 +3,7 @@
 * Each step, the size of array is reduced to half until one single element remain and a match is found.
 *
 * @author  [Javee Nedia]
-* @link    [full github url]
+* @link    [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/binary-search/BinarySearch.java]
 * @version [v 1]
 * @since   [28/9/2016]
 */
