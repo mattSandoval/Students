@@ -6,37 +6,75 @@
 * @version 1.1
 * @since   22/09/2016
 */
-
 import java.util.Scanner;
 import java.util.Random;
-
 public class LinearSearch {
 
-	public static void main(String[] args) {
-
-		int i, size, search, array[];
-
-		Scanner input = new Scanner(System.in);
+	int array[];
+	private int arrSize;
+	private int searchValue;
+	
+	public LinearSearch(int Size){
+		arrSize= Size;
+		array = new int[arrSize];
+	}
+	
+	public void show(){
+		System.out.println();
+		System.out.println("\t\t==ARRAY VALUES==");
+		for(int i=0; i<arrSize;i++){
+			System.out.println("INDEX ["+(i+1)+"]: "+array[i]);
+			
+		}System.out.println();
+	}
+	
+	public void generateValues(){
 		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];		
-
-		System.out.print("Enter number to find: ");
-		search = input.nextInt();
-
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
-				break;
-			} 			
+		for(int i=0;i<arrSize;i++){
+			array[i]= rand.nextInt(10);
 		}
-
-		if (i == size) {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
+		
+	}
+	
+	public void search(int value){
+		searchValue = value;
+		int i;
+		for(i=0;i<arrSize;i++){
+		if(searchValue == array[i] ){
+			System.out.println("VALUE FOUND! at INDEX["+(i+1)+"].");
 		}
+		}
+		if (i==arrSize){
+			System.out.println("NO MORE VALUE(s) TO SHOW.");
+			
+		}
+	
+		
+	}
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int Size;
+		int value;
+		System.out.print("PLEASE ENTER THE ARRAY SIZE: ");
+		Size = input.nextInt();
+		
+		
+		LinearSearch search = new LinearSearch(Size);
+		
+		System.out.print("PLEASE ENTER THE VALUE YOU WANT TO FIND: ");
+		value = input.nextInt();
+		
+		search.generateValues();
+		search.show();
+		search.search(value);
+		
+		
+		
+		// TODO Auto-generated method stub
+		
+		
 
 	}
 
