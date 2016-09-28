@@ -75,3 +75,11 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+    
+## SCREENSHOTS:
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-stack/1.PNG)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-stack/2.PNG)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-stack/3.PNG)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-stack/4.PNG)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-stack/5.PNG)
