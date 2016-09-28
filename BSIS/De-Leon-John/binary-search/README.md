@@ -31,5 +31,7 @@ Binary Search
          EXIT: x found at location mid
       END WHILE
     
-    END PROGRAM 
+    END PROGRAM
+## Screenshots:
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/De-Leon-John/binary-search/bsearch1.png)
 
