@@ -26,14 +26,14 @@ public class BinarySearch {
 		System.out.println(size + " random numbers generated.");
 		
 		for (int i = 0; i < array.length; i++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
+			array[i] = rand.nextInt(1000);
 		}
 		
 		// TODO: call bubbleSort method to sort the generated random numbers
 		System.out.println();
 		
 		System.out.print("Enter number to find: ");
-		// TODO: use nextInt() to assign keyboard input as search item	
+		search = input.nextInt(); // TODO: use nextInt() to assign keyboard input as search item	
 		index = binarySearch(array, search); // note: assign the search result to array index where it was found	
 		
 		if (index != -1) {
