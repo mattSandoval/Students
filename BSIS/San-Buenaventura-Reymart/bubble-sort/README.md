@@ -22,3 +22,8 @@ Bubble Sort
          swap([i], array[i+1])
     
     END PROGRAM 
+output for Bubble-Sort
+
+![alt text][img16]
+
+[img16]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/bubble-sort/BubbleSort.PNG
