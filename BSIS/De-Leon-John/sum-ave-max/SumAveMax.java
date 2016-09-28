@@ -3,58 +3,77 @@
 * - Generate random numbers accordingly.
 * - Get the sum, average, and maximum value
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @author  [john deleon]
+* @link    [@Johndeleon]
+* @version [final build]
+* @since   [9-29-16]
 */
 
 import java.util.Scanner;
 import java.util.Random;
 
+
 public class SumAveMax {
-
-	private int sum, max, size, array[];
-	private float average;
-
-	public SumAveMax() {
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-		System.out.println();
-		System.out.println(size + " random numbers generated.");
-		for (int i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			System.out.print(array[i] + " ");
-			sum += array[i];
-			if (array[i] > max)
-				max = array[i];			
-		}
-		System.out.println();
-	}
-
-	public void getSum() {
-		System.out.println("SUM = " + sum);
-	}
-
-	public void getMax() {
-		System.out.println("MAX = " + max);
-	}
-
-	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
-		System.out.println("AVERAGE = " + average);
-	}
-
-	public static void main(String[] args) {
-		SumAveMax demo = new SumAveMax();
-		System.out.println();
-		demo.getSum();
-		demo.getMax();
-		demo.getAverage();
-	}
-
+    
+     int size=0;
+     int[] array;
+     int sum=0;
+     double ave=0;
+     int max=0;
+ 
+     Random r = new Random();
+     
+    public static void main (String[] args){
+       
+        
+        SumAveMax link = new SumAveMax();
+         
+         
+        Scanner input=new Scanner(System.in);
+        
+        System.out.print("enter size of array: ");
+       link.size=input.nextInt();
+        
+       link.array = new int [link.size];
+        
+      
+        
+        for (int i=0;i<link.size;i++){
+            link.array[i]=link.r.nextInt(); 
+        }
+        
+        
+        link.getTotal();
+        link.getAve();
+        link.getMax();
+        
+        
+                
+          for (int i=0;i<link.size;i++){
+            System.out.println("index "+i+": "+link.array[i]);
+        }
+          
+          System.out.println("\ntotal: "+link.sum);
+          System.out.println("average: "+link.ave);
+          System.out.println("max: "+link.max);
+          
+    }
+    
+    public void getTotal(){
+        for (int i=0;i<size;i++){
+        sum=sum+array[i];
+    }
+    }
+    
+    public void getAve(){
+     ave=sum/array.length;
+}
+    
+    public void getMax(){
+     for (int i=0;i<size;i++){
+        if (array[i]>max){
+            max=array[i];
+        }
+    }
+}
 }
