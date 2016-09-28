@@ -24,3 +24,11 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+    
+output for Linear Search
+
+![alt text][img13]
+![alt text][img14]
+
+[img13]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/linear-search/LinearSearch1.PNG
+[img14]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/linear-search/LinearSearch2.PNG
