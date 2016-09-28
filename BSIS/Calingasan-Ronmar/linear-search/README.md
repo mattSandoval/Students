@@ -24,3 +24,6 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+
+##SCREENSHOTS:
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/linear-search/1.PNG)
