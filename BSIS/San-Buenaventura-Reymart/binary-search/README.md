@@ -33,3 +33,11 @@ Binary Search
     
     END PROGRAM 
 
+
+output for BinarySearch
+
+![alt text][img17]
+![alt text][img18]
+
+[img17]: https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/binary-search/randombinarysearch1.PNG
+[img18]: https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/binary-search/randombinarysearch2.PNG
