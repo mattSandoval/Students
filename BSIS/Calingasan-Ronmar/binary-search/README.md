@@ -33,3 +33,8 @@ Binary Search
     
     END PROGRAM 
 
+##SCREENSHOTS:
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/binary-search/1.PNG)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/binary-search/1.PNG)
+
