@@ -85,3 +85,17 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+    
+## SCREENSHOTS :
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-queue/1.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-queue/2.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-queue/3.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-queue/4.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-queue/5.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Calingasan-Ronmar/array-queue/6.PNG)
