@@ -85,3 +85,7 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+    
+## Screenshot:
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Chrysanthemum.jpg)
