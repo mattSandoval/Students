@@ -1,43 +1,50 @@
-/**
-* LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+* SOURCE CODE: ArrayRandom.java
+* AUTHOR NAME: Aranas, Michaela M.
+* GITHUB URL: [github.com/michaela4]
+* LAST UPDATE: [09/07/2016]
 *
-* @author  Renaldo Valente
-* @link    https://github.com/arrowbrave
-* @version 1.1
-* @since   22/09/2016
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 */
 
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class LinearSearch {
-
-	public static void main(String[] args) {
-
-		int i, size, search, array[];
-
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];		
-
-		System.out.print("Enter number to find: ");
-		search = input.nextInt();
-
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
-				break;
-			} 			
-		}
-
-		if (i == size) {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
-	}
-
+  private int array [];
+  private int capacity;
+  
+  public LinearSearch(int size) {
+     capacity = size;
+     array = new int[capacity];
+   }
+  
+  public void toSearch(int search){
+    int i;
+    for (i = 0; i < capacity; i++){
+      if ( array [i] == search ){
+        System.out.println("FOUND: " + search + " is at array["+ i +"]");
+        break;
+      }
+    }
+    if (i == capacity){
+      System.out.println("NOT FOUND: " + search + " is not in the array.");    
+    }
+  }
+  
+  public static void main (String args[]){
+    Scanner input = new Scanner (System.in);
+    
+    System.out.print ("Enter array size: ");
+    int size =  input.nextInt();
+    LinearSearch implement = new LinearSearch(size);
+    for (int k = 0; k < size; k++){
+       Random rand = new Random();
+       implement.array[k] = rand.nextInt(1000);
+    }
+   
+    System.out.print ("Enter number to find: ");
+    int search = input.nextInt();
+    implement.toSearch(search); 
+  }
 }
