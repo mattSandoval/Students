@@ -83,10 +83,11 @@ Queue
      // dequeue all elements until queue is empty
      // show updated queue
      // try to dequeue again, return error message
-    
-    
-    
-    ## Screenshots
-    
-    
+
     END PROGRAM
+   
+## Screenshots:
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/De-Leon-John/array-queue/shot1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/De-Leon-John/array-queue/shot2.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/De-Leon-John/array-queue/shot3.png)
