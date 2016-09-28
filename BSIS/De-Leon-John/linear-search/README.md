@@ -23,4 +23,6 @@ Linear Search
       ELSE
          PRINT NOT FOUND
     
-    END PROGRAM 
+    END PROGRAM
+## Screenshots:
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/De-Leon-John/linear-search/lsearch.png)
