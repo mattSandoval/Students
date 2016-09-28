@@ -75,3 +75,20 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+    
+    output for array stack
+
+![alt text][img6]1
+![alt text][img7]2
+![alt text][img8]3
+![alt text][img9]4
+![alt text][img10]5
+![alt text][img11]6
+
+
+[img6]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/array-stack/stack1.PNG
+[img7]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/array-stack/stack2.PNG
+[img8]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/array-stack/stack3.PNG
+[img9]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/array-stack/stack4.PNG
+[img10]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/array-stack/stack5.PNG
+[img11]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/San-Buenaventura-Reymart/array-stack/stack6.PNG
