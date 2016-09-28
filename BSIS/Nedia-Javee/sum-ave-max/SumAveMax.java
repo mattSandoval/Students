@@ -3,10 +3,10 @@
 * - Generate random numbers accordingly.
 * - Get the sum, average, and maximum value
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @author  [Javee Nedia]
+* @link    [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/sum-ave-max/SumAveMax.java]
+* @version [1.1]
+* @since   [28/09/2016]
 */
 
 
