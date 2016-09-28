@@ -4,7 +4,7 @@
 *
 * @author  Cortez, Chyrine A.
 * @link    github.com/cortezchyrine
-* @version 1.1
+* @version 0.1
 * @since   [09/28/2016]
 */
 
