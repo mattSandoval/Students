@@ -4,8 +4,8 @@
 *
 * @author  [Javee Nedia]
 * @link    [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/bubble-sort/BubbleSort.java]
-* @version [v 1]
-* @since   [28/9/2016]
+* @version [1.1]
+* @since   [28/09/2016]
 */
 
 // TODO: import Scanner and Random from Java library
