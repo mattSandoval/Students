@@ -1,43 +1,57 @@
 /**
 * LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
 *
-* @author  Renaldo Valente
-* @link    https://github.com/arrowbrave
-* @version 1.1
-* @since   22/09/2016
+* @author  Ronnel Avila
+* @link    https://github.com/nelronel-avila19
+* @version 1.0
+* @since   28/09/2016
 */
 
 import java.util.Scanner;
 import java.util.Random;
 
-public class LinearSearch {
-
-	public static void main(String[] args) {
-
-		int i, size, search, array[];
-
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];		
-
-		System.out.print("Enter number to find: ");
-		search = input.nextInt();
-
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
-				break;
-			} 			
-		}
-
-		if (i == size) {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
-	}
-
-}
+public class LinearSearch{
+  public static void main (String [] args){
+    Scanner input= new Scanner(System.in);
+    Random rand= new Random();
+   
+    int arraySize;
+    int []array;
+    String name;
+    int search, set=0, b=0;
+    
+    System.out.print("What is your name? : ");
+    name =input.nextLine();
+    
+     System.out.print("So my dear "+name+", can you please indicate the array size you do want: ");
+     arraySize=input.nextInt();
+      System.out.println("...loading arrays\n");
+     array=new int[arraySize];
+     for(int i=0; i<arraySize; i++){
+     System.out.print((array[i]=rand.nextInt(100))+"\t");
+     set+=1;
+     
+     if(set==10){
+      System.out.print("\n");
+     }
+     }
+     System.out.print("\n\nWhat number do you want search?: ");
+     search=input.nextInt();
+     
+     for(int a=0; a<arraySize; a++){
+       
+       if(search==array[a]){
+        System.out.print(name+", the number "+search+" that you are searching is FOUND!");
+        System.out.print("      Location: index no."+a+" Program TERMINATED!");
+       }
+       
+     }
+     if( b>1){
+     System.out.println();}
+     else{
+      System.out.print(name+", the number "+search+" that you are searching is NOT FOUND!"+   "\nProgram TERMINATED!");
+     }
+   
+     
+     }
+  }
