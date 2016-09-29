@@ -90,5 +90,5 @@ Queue
 -----------------
 ![queue 2] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-queue/qu2.png)
 -----------------
-![queue 3] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-queue/qu3.png)
+![queue 3] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-queue/q3.png)
 -----------------
