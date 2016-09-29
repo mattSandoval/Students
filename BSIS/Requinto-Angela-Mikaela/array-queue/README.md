@@ -85,3 +85,10 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+## Output:
+![queue 1] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-queue/qu1.png)
+-----------------
+![queue 2] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-queue/qu2.png)
+-----------------
+![queue 3] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-queue/qu3.png)
+-----------------
