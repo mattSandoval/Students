@@ -26,4 +26,3 @@ Linear Search
     END PROGRAM 
 
 ## Screenshot
-![Linear Search](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Isip-Michael-John/linear-search/Screenshot.png)
