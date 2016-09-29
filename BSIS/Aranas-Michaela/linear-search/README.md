@@ -25,5 +25,5 @@ Linear Search
     
     END PROGRAM 
 
-# Screenshot
-![Screenshot](https://github.com/lvcc-dsa/Students/edit/master/BSIS/Aranas-Michaela/linear-search/LinearSearch.png)
+# Screenshot:
+![Screenshot](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Aranas-Michaela/linear-search/LinearSearch.png)
