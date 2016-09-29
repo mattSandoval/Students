@@ -80,3 +80,9 @@ Stack
 
 ![stack 1] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-stack/stack%201.png)
 ------------
+![stack 2] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-stack/stack%202.png)
+------------
+![stack 3] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-stack/stack%203.png)
+------------
+![stack 4] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/array-stack/stack%204.png)
+------------
