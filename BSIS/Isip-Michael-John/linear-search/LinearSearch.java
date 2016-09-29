@@ -7,38 +7,51 @@
 * @since   [09-28-2016]
 */
 
-
 import java.util.Scanner;
 import java.util.Random;
 
+
 public class LinearSearch {
+    
+    int array[];
+    
+    public void LinearSearch(int size){
+        array = new int[size];
+    }
+    
+    public void Random(int size){
+        Random randNum = new Random();
+        for(int i=0; i<array.length; i++){
+            array[i] = randNum.nextInt(500);
+        }
+    }
+    
+    public void Search(int search, int size){
+        for(int i=0; i<array.length; i++){
+            if(array[i] == search){
+                System.out.println("Element found on index [" + i + "].");
+                break;
+            } if(i==array.length-1)
+                System.out.println("Element not found.");
+        }
+    }
+    
+    public static void main(String[]args){
+        Scanner input = new Scanner(System.in);
+        LinearSearch obj = new LinearSearch();
+        
+        System.out.print("Enter array size: ");
+        int size = input.nextInt();
 
-	public static void main(String[] args) {
-
-		int i, size, search, array[];
-
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];		
-
-		System.out.print("Enter number to find: ");
-		search = input.nextInt();
-
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
-				break;
-			} 			
-		}
-
-		if (i == size) {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
-	}
+        //Show random numbers
+        obj.LinearSearch(size);
+        obj.Random(size);
+        
+        System.out.println();
+        System.out.print("Element to be searched: ");
+        int search = input.nextInt();
+        
+        obj.Search(search, size);
+    }
 
 }
