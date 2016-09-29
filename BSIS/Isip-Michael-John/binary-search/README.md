@@ -33,3 +33,5 @@ Binary Search
     
     END PROGRAM 
 
+## Screenshot
+![BinarySearch](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Isip-Michael-John/binary-search/Screenshot.png)
