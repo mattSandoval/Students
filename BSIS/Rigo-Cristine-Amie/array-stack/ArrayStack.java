@@ -2,10 +2,10 @@
 * Java implementation of a stack using array.
 * For demo purpose, should hold a maximum of 10 string values.
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @author  [Cristine Amie L. Rigo]
+* @link    [https://github.com/amierigo/DSA/blob/master/ArrayStack.java]
+* @version [26.1]
+* @since   [09-29-16]
 */
 
 public class ArrayStack {
