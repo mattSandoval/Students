@@ -26,4 +26,4 @@ Linear Search
     END PROGRAM 
 
 ## Screenshot
-![LinearSearch](https://github.com/lvcc-dsa/Students/edit/master/BSIS/Isip-Michael-John/linear-search/Screenshot.png)
+![LinearSearch](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Isip-Michael-John/linear-search/Screenshot.png)
