@@ -85,3 +85,7 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+
+##Screenshots
+![ArrayQueue](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Isip-Michael-John/array-queue/img/Screenshot1.png)
+![ArrayQueue](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Isip-Michael-John/array-queue/img/Screenshot2.png)
