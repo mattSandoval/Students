@@ -76,5 +76,8 @@ Stack
     
     END PROGRAM 
     
-## Screenshot
-![ArrayStack](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Isip-Michael-John/array-stack/img/Screenshot1.png)
+## Screenshots
+![ArrayStack]
+(https://github.com/lvcc-dsa/Students/blob/master/BSIS/Isip-Michael-John/array-stack/img/Screenshot1.png)
+(https://github.com/lvcc-dsa/Students/blob/master/BSIS/Isip-Michael-John/array-stack/img/Screenshot2.png)
+(https://github.com/lvcc-dsa/Students/blob/master/BSIS/Isip-Michael-John/array-stack/img/Screenshot3.png)
