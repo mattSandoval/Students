@@ -5,7 +5,7 @@
 *
 * @author  [Michael John Isip]
 * @link    [https://github.com/mj-isip23]
-* @version [version number]
+* @version [1.1]
 * @since   [09-28-2016]
 */
 
