@@ -4,7 +4,7 @@
 * @author  [Michael John Isip]
 * @link    [https://github.com/mj-isip23]
 * @version [1.1]
-* @since   [9-26-2016]
+* @since   [9-30-2016]
 */
 
 public class ArrayStack {
