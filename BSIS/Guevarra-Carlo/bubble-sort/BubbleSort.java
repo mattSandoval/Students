@@ -2,53 +2,80 @@
 * BUBBLE SORT is based on the idea of repeatedly comparing pairs of 
 * adjacent elements, then switching positions if they exist in the wrong order.
 *
-* @author  [your full name here]
+* @author  [Carlo S. Guevarra]
 * @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @version [1.00]
+* @since   [last updated 01/10/2016]
 */
 
 // TODO: import Scanner and Random from Java library
 
+package Java;
+
+import java.util.Random;
+import java.util.Scanner;
+
 public class BubbleSort {
+	private int [] array;
+	private int capacity;
+	
+	private BubbleSort (int size){
+		capacity = size;
+		array = new int [capacity];
 
-	public static void main(String[] args) {
-
-		int array[], size, x, y, swap;
-
-		Scanner input = new Scanner(System.in);
+		
+	}
+	public void getArray(){
 		Random rand = new Random();
-
-		System.out.print("Enter array size to sort: ");
-		size = input.nextInt();
-		array = new int[size];
-
+		
+		for (int i = 0; i < capacity; i++){
+			int x = rand.nextInt(100);
+			array[i] = x;
+			}
 		System.out.println();
-		System.out.println(size + " random numbers generated.");
-
-		for (x = 0; x < size; x++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
-			int x = rand.nextInt(1000);
-			// TODO: print unsorted numbers separated by space
-		}
-
-		System.out.println();
-		// note: compare each from the first index until largest number is moved to the last index.
-		for (x = 0; x < size-1; x++) { // note: loop until before the end of array
-			for (y = 0; y < size-x-1; y++) { // note: will not loop to numbers already sorted
-				if (array[y] > array[y+1]) { // note: compare adjacent numbers which is greater
-					swap = array[y]; // note: swap positions...
-					array[y] = array[y+1]; // note: smaller will be move to the left
-					array[y+1] = swap; // note: larger will move to the right
+	}
+	public void sort(){
+		int swap;
+		for(int x = 0;x < capacity-1;x++){
+			for(int y = 0;y < capacity-x-1;y++){
+				if(array[y] > array[y+1]){
+					swap = array[y];
+					array[y] = array[y+1];
+					array[y+1] = swap;
 				}
 			}
 		}
-
-		System.out.println();
-
-		System.out.println("Bubble Sorting... Done!");
-		
-		// TODO: print sorted numbers separated by space
+		System.out.println("\n\t ******** SORTED ARRAY *********\n");
 	}
-
+	public void show(){
+		int dulo = 0;
+		for (int i = 0; i < capacity; i++){		
+			System.out.print(array[i]+"\t");
+			dulo+=1;
+			if(dulo == 10){
+				System.out.println();
+				dulo = 0;
+			}
+		}	
+	}
+	
+	public static void main (String[] Args){
+		
+		int size;
+		Scanner input = new Scanner (System.in);
+		
+		System.out.print("Enter array size: " );
+		size = input.nextInt();
+		
+		
+		BubbleSort demo = new BubbleSort (size);
+		demo.getArray();
+		demo.show();
+		demo.sort();
+		demo.show();
+		
+		
+		
+	
+	}
 }
