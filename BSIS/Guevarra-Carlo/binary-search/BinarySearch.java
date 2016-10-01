@@ -2,72 +2,107 @@
 * BINARY SEARCH is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array. 
 * Each step, the size of array is reduced to half until one single element remain and a match is found.
 *
-* @author  [your full name here]
+* @author  [Carlo S. Guevarra]
 * @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @version [1.00]
+* @since   [last updated 01/10/2016]
 */
 
-import java.util.*; // note: imports all classes inside java.util
+package Java;
 
+	import java.util.Random;
+	import java.util.Scanner;
+	
 public class BinarySearch {
-
-	static int array[], index, size, search;
-
-	public static void main(String[] args) {
-
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-
-		System.out.println(size + " random numbers generated.");
+	
+		private int [] array;
+		private int capacity;
 		
-		for (int i = 0; i < array.length; i++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
+		private BinarySearch (int size){
+			capacity = size;
+			array = new int [capacity];
+
+			
+		}
+		public void getArray(){
+			Scanner input = new Scanner(System.in);
+			Random rand = new Random();
+			
+			for (int i = 0; i < capacity; i++){
+				int x = rand.nextInt(100);
+				array[i] = x;
+				}
+			System.out.println();
+		}
+		public void sort(){
+			int swap;
+			for(int x = 0;x < capacity-1;x++){
+				for(int y = 0;y < capacity-x-1;y++){
+					if(array[y] > array[y+1]){
+						swap = array[y];
+						array[y] = array[y+1];
+						array[y+1] = swap;
+					}
+				}
+			}
+			System.out.println("\n\t ******** SORTED ARRAY *********\n");
+		}
+		public void show(){
+			int dulo = 0;
+			for (int i = 0; i < capacity; i++){		
+				System.out.print(array[i]+"\t");
+				dulo+=1;
+				if(dulo == 10){
+					System.out.println();
+					dulo = 0;
+				}
+			}	
 		}
 		
-		// TODO: call bubbleSort method to sort the generated random numbers
-		System.out.println();
-		
-		System.out.print("Enter number to find: ");
-		// TODO: use nextInt() to assign keyboard input as search item	
-		index = binarySearch(array, search); // note: assign the search result to array index where it was found	
-		
-		if (index != -1) {
-			System.out.println("FOUND: " + search + " is at " + "array["+index+"]");
-		}
-		else {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
-	}
-
-	static int binarySearch(int[] numbers, int find) { // note: @param array[], search
-
-		int left, right, middle;
-		// TODO: initialize value for left and right
-		
-		while (left <= right) {
-			middle = left + (right - left) / 2;
-			if (numbers[middle] == find) {
-				return middle;
-			} else if (find < numbers[middle]) {
-				right = middle - 1;
-			} else { // if numbers[middle] < find
-				left = middle + 1;
+		public void search(){
+			Scanner input = new Scanner(System.in);
+			int left,right,middle,search;
+			middle = 0;
+			left = 0;
+			right = capacity-1;
+			System.out.println("\nPlese enter the number to search : ");
+			search = input.nextInt();
+			while(left <= right){
+				middle = (left+right)/2;
+				if(array[middle] == search){
+					System.out.print("the value found at array["+middle+"]");
+					break;
+				}
+				else if(array[middle] < search){
+					left = middle + 1;
+				}
+				else {
+					right = middle-1;
+				}
+			}
+			if(array[middle]!=search){
+				System.out.print("the value not found!!");
 			}
 		}
-		return -1; // note: exit loop if not found
-
+		
+		public static void main (String[] Args){
+			
+			int size;
+			Scanner input = new Scanner (System.in);
+			
+			System.out.print("Enter array size: " );
+			size = input.nextInt();
+			
+			
+			BinarySearch demo = new BinarySearch (size);
+			demo.getArray();
+			demo.show();
+			demo.sort();
+			demo.show();
+			demo.search();
+			
+			
+			
+		
+		}
 	}
-	
-	static int bubbleSort(int[] arr) {
-
-		// TODO: sort the random array first before searching
-
-	}
-
-}
