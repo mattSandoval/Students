@@ -34,5 +34,5 @@ Binary Search
     END PROGRAM 
 ## Screen Shots
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/binary-search/BinaryImages/Screen1.bmp)
-![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/binary-search/BinaryImages/Screen2.bmp)
-![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/binary-search/BinaryImages/Screen3.bmp)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/binary-search/BinaryImages/screen2.bmp)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/binary-search/BinaryImages/screen3.bmp)
