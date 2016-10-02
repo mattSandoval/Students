@@ -1,73 +1,85 @@
-/**
-* BINARY SEARCH is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array. 
-* Each step, the size of array is reduced to half until one single element remain and a match is found.
-*
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
-*/
-
-import java.util.*; // note: imports all classes inside java.util
+import java.util.Scanner;
+import java.util.*;
 
 public class BinarySearch {
-
-	static int array[], index, size, search;
-
-	public static void main(String[] args) {
-
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-
-		System.out.println(size + " random numbers generated.");
-		
-		for (int i = 0; i < array.length; i++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
+	public int [] array;
+	public int search;
+	public int middle;
+	
+	public void setter (int size) {
+		array = new int [size];
+		Random rand = new Random ();
+		System.out.println(size + " array was successfully GENERATED");
+		for (int i = 0; i < size; i++) {
+			array[i] = rand.nextInt(1000);
 		}
-		
-		// TODO: call bubbleSort method to sort the generated random numbers
-		System.out.println();
-		
-		System.out.print("Enter number to find: ");
-		// TODO: use nextInt() to assign keyboard input as search item	
-		index = binarySearch(array, search); // note: assign the search result to array index where it was found	
-		
-		if (index != -1) {
-			System.out.println("FOUND: " + search + " is at " + "array["+index+"]");
+		// sorting
+		int swap;
+		for (int s = 0; s < (size - 1); s++) 
+		{
+			for (int d = 0; d < size - s - 1; d++) 
+			{
+				if (array[d] > array [d+1]) 
+				{
+					swap = array[d];
+					array[d] = array[d+1];
+					array[d+1] = swap;
+				}
+			}
 		}
-		else {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
 	}
-
-	static int binarySearch(int[] numbers, int find) { // note: @param array[], search
-
-		int left, right, middle;
-		// TODO: initialize value for left and right
+	
+	public void show() {
+		int n = 0;
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + "\t");
+			n++;
+			
+			if (n == 10) {
+				System.out.println();
+				n = 0;
+			}
+		}
+		System.out.println();
+	}
+	
+	public void searcher() {
+		Scanner input = new Scanner (System.in);
+		int left, right;
+		left = 0;
+		right = array.length -1;
 		
-		while (left <= right) {
-			middle = left + (right - left) / 2;
-			if (numbers[middle] == find) {
-				return middle;
-			} else if (find < numbers[middle]) {
+		System.out.print("Enter a number that you want to search: ");
+		int search = input.nextInt();
+		
+		while (left <= right) 
+		{
+			middle = left + (right - left) /2;
+			if (array[middle] == search){
+				System.out.println("The number you entered found in Array[" + middle + "]");
+				break;
+			}
+			else if (search < array[middle]){
 				right = middle - 1;
-			} else { // if numbers[middle] < find
+			}
+			else{
 				left = middle + 1;
 			}
 		}
-		return -1; // note: exit loop if not found
-
+		if (search != array[middle]) {
+			System.out.println("The number you input is not found!");
+		}
 	}
 	
-	static int bubbleSort(int[] arr) {
-
-		// TODO: sort the random array first before searching
-
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		BinarySearch call = new BinarySearch();
+		
+		System.out.print("Enter an Array Size: ");
+		int ArraySize = input.nextInt();
+		System.out.println();
+		call.setter(ArraySize);
+		call.show();
+		call.searcher();
 	}
-
 }
