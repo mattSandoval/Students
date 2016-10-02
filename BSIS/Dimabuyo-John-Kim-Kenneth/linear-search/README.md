@@ -24,3 +24,8 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+
+# Need to update  para sa redundunt tulad ng Binary Search
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/linear-search/1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/linear-search/2.png)
