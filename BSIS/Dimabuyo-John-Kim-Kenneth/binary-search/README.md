@@ -32,4 +32,7 @@ Binary Search
       END WHILE
     
     END PROGRAM 
+# Update para sa masearch lahat ng 11 sa iisang program kung sakaling maraming redundunt
 
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/binary-search/1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/binary-search/2.png)
