@@ -85,3 +85,10 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+    
+    
+## Screenshots:
+
+*Screenshots*
+![Screenshots](https://github.com/lvcc-dsa/Students/edit/master/BSIS/Aranas-Michaela/array-queue/ArrayQueue.png)
+
