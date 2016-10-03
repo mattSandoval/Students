@@ -39,27 +39,29 @@
 *    PRINT stack is full
 *    return TRUE
 * 
-*  PROCEDURE push
+*  PROCEDURE push(element)
 *   IF isFull
-*    PRINT add failed. element did not push.
+*    PRINT add failed. 
 *   ELSE
-*    Stack temp = new Stack(element)
-*     temp.next = top
-*     top = temp
-* 
+*     PRINT trying to push on stack[top]
+*     storage[top] = element
+*     top++
+*     PRINT element was successfully added
+*
 *  PROCEDURE pop
 *   IF isEmpty
-*    PRINT remove failed. no element to pop.
+*    PRINT remove failed.
 *   ELSE
-*    temp = top
-*    top = top.next
-*    remove temp
+*    PRINT trying to push on stack[top]
+*    storage[top] = null
+*    top--
+*    PRINT storage[top] was successfully removed
 *   
 *  PROCEDURE peek
 *   IF isEmpty
-*    PRINT 0
+*    PRINT NULL
 *   ELSE 
-*    PRINT top
+*    PRINT storage[top]
 * 
 *  PROCEDURE main
 *  show that stack is empty
@@ -75,10 +77,11 @@
 * END PROGRAM 
 * 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-* SOURCE CODE: ArrayStack.java
-* AUTHOR NAME: Michaela M. Aranas
-* GITHUB URL: github.com/michaela4
-* LAST UPDATE: 07/28/2016
+* 
+* @author [Aranas, Michaela M.]
+* @link [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Aranas-Michaela/array-stack/ArrayStack.java]
+* @version [1.0]
+* @since [10/08/2016]
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 */
@@ -88,14 +91,12 @@ public class ArrayStack {
  private int top = 0;
  private String[] storage;
  
-  // constructor = initialize an object instance of the class
   public ArrayStack(int size) {
-    capacity = size;  // assign the value of size to capacity
+    capacity = size; 
      storage = new String[capacity];
    }
 
     public void show() {
-     // the top of the stack starts from array[0] then newer item gets added on top of another until it reaches its capacity limit
       for (int i = capacity-1; i >= 0; i--) {
          System.out.println("stack [" + i + "] =    " + storage [i]);
       }
@@ -104,7 +105,7 @@ public class ArrayStack {
    
     private boolean isEmpty() {
       if (storage[0] == null) {
-       System.out.println("STACK IS EMPTY."); // print error message
+       System.out.println("STACK IS EMPTY.");
        return true;
       } 
       return false;
@@ -112,7 +113,7 @@ public class ArrayStack {
 
    private boolean isFull() {
      if (top == capacity) {
-       System.out.println("STACK IS FULL.");  // print error message
+       System.out.println("STACK IS FULL.");
        return true;
      } 
      return false;
@@ -120,12 +121,12 @@ public class ArrayStack {
 
    public void push(String value) {
      if (isFull()) {
-       System.out.println("ADD FAILED."); // print error message
+       System.out.println("ADD FAILED.");
        System.out.println();
      } else {
        System.out.println("... trying to push on stack[" + top + "] ...");
        storage[top] = value;
-       top ++;  /* increment or decrement top*/;
+       top ++;
        System.out.println(value + " was successfully added.");
        System.out.println();
      }
@@ -133,11 +134,11 @@ public class ArrayStack {
 
    public void pop() {
      if (isEmpty()) {
-       System.out.println("REMOVE FAILED.");  // print error message
+       System.out.println("REMOVE FAILED.");
      } else {
        System.out.println("... trying to pop stack[" + (top-1) + "] ...");
        storage[top] = null;
-       top--;  /* increment or decrement top*/
+       top--;
        System.out.println(storage[top] + " was successfully removed.");
        System.out.println();
      }
@@ -155,35 +156,34 @@ public class ArrayStack {
    
    public static void main(String[] args) {
      ArrayStack storage = new ArrayStack(10);
-     // construct a new array queue and assign 10 as the integer value for the size limit of the stack
      System.out.println("STORAGE CAPACITY = " + storage.capacity );
      System.out.println();
-     storage.show(); // show empty stack
-     storage.pop(); // try removing on an empty stack
-     storage.peek(); // peek top element of an empty stack
+     storage.show(); 
+     storage.pop();
+     storage.peek();
      storage.push("one");
-     storage.show(); // show the updated stack
-     storage.peek(); // peek if top element is "one"
+     storage.show(); 
+     storage.peek(); 
      storage.push("two");
-     storage.show(); // show the updated stack
-     storage.peek(); // peek if top element is "two"
+     storage.show(); 
+     storage.peek();
      storage.push("three");
-     storage.show(); // show the updated stack
-     storage.peek(); // peek if top element is "three"
+     storage.show(); 
+     storage.peek(); 
      storage.push("four");
-     storage.show(); // show the updated stack
+     storage.show(); 
      storage.push("five"); 
-     storage.show(); // show the updated stack
-     storage.pop(); // try removing "five"
+     storage.show(); 
+     storage.pop(); 
      storage.push("six"); 
      storage.push("seven"); 
      storage.push("eight"); 
      storage.push("nine");    
      storage.push("ten"); 
-     storage.show();  // show the updated stack
-     storage.peek(); // peek if top element is "ten"
-     storage.push("eleven");    // try adding "eleven"
-     storage.push("twelve");    // try adding "twelve"
-     storage.show(); // show the updated stack
+     storage.show();  
+     storage.peek(); 
+     storage.push("eleven");   
+     storage.push("twelve");    
+     storage.show(); 
    }  
  }
