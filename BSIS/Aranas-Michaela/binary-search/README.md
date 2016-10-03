@@ -32,4 +32,8 @@ Binary Search
       END WHILE
     
     END PROGRAM 
+    
+# Screenshot
+![Screenshot](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Aranas-Michaela/binary-search/BinarySearch.png)
+
 
