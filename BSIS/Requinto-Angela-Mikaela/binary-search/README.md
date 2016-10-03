@@ -32,4 +32,7 @@ Binary Search
       END WHILE
     
     END PROGRAM 
-
+## Output:
+![bubblesort](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/binary-search/bubble1.png)
+-------------------------
+![bubblesort](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/binary-search/bubble2.png)
