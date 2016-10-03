@@ -2,10 +2,11 @@
 * TO DO: 
 * Find the sum, average, and maximum number in array
 *
-* SOURCE CODE: ArrayRandom.java
-* AUTHOR NAME: Aranas, Michaela M.
-* GITHUB URL: [github.com/michaela4]
-* LAST UPDATE: [09/07/2016]
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+* @author [Aranas, Michaela M.]
+* @link [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Aranas-Michaela/sum-ave-max/SumAveMax.java]
+* @version [1.0]
+* @since [22/09/2016]
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 */
