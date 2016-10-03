@@ -1,9 +1,32 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
  * 
- * BUBBLE SORT is based on the idea of repeatedly compairing pairs of adjacent elements, then switching positions if they exist in the wrong order. 
+ * DESCRIPTION:
  * 
- * @author [Michaela M. Aranas]
- * @link [http://username.github.com/bubble-sort]
+ * BUBBLE SORT is based on the idea of repeatedly comparing pairs of adjacent elements, then switching positions if they exist in the wrong order.
+ * It's worse case algorithmic time complexity is QUADRATIC or O(n^2).
+ * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * TO DO:
+ * 
+ * Accepts keyboard input to set size of array.
+ * Generate random numbers to array accordingly.
+ * Show unsorted random numbers.
+ * Show sorted numbers after.
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * 
+ * PSEUDOCODE:
+ * 
+ * START PROGRAM
+ * 
+ *  FOR each number IN array
+ *   IF array[i] > array[i+1]
+ *     swap([i], array[i+1])
+ * 
+ * END PROGRAM 
+ * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
+ * @author [Aranas, Michaela M.]
+ * @link [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Aranas-Michaela/bubble-sort/BubbleSort.java]
  * @version [1.0]
  * @since [21/09/2016]
  *
