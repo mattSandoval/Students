@@ -23,5 +23,5 @@ Bubble Sort
     
     END PROGRAM 
 ## Output:
-[bubblesort 1](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/bubble-sort/bubblesort%201.png)
+![bubblesort 1](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Requinto-Angela-Mikaela/bubble-sort/bubblesort%201.png)
 -------------------
