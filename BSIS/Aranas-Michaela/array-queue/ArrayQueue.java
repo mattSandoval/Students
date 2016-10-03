@@ -75,7 +75,7 @@
 * 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 * @author [Aranas, Michaela M.]  
-* @link [https://github.com/lvcc-dsa/Students/edit/master/BSIS/Aranas-Michaela/array-queue/ArrayQueue.java]
+* @link [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Aranas-Michaela/array-queue/ArrayQueue.java]
 * @version [1.0]
 * @since [28/07/2016]
 *
