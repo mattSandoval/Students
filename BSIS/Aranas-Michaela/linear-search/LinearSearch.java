@@ -1,8 +1,36 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-* SOURCE CODE: ArrayRandom.java
-* AUTHOR NAME: Aranas, Michaela M.
-* GITHUB URL: [github.com/michaela4]
-* LAST UPDATE: [09/07/2016]
+* DESCRIPTION:
+*
+* LINEAR SEARCH checks each item in a collection from the start to end until a match is found.
+* It's worse case algorithmic time complexity is LINEAR or O(n).
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+* TO DO:
+*
+* Accepts keyboard input to set size of array.
+* Generate random numbers to array accordingly.
+* Accepts keyboard input to search for a number.
+* Show search result if number is found and what index position.
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+* PSEUDOCODE:
+* 
+* START PROGRAM
+* 
+*  FOR each number IN array
+*   IF array[i] == search
+*      PRINT FOUND at array[i]
+*   ELSE
+*      PRINT NOT FOUND
+* 
+* END PROGRAM  
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
+* 
+* @author [Aranas, Michaela M.]
+* @link [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Aranas-Michaela/linear-search/LinearSearch.java]
+* @version [1.0]
+* @since [28/09/2016]
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 */
