@@ -1,4 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+* TO DO: 
+* Find the sum, average, and maximum number in array
+*
 * SOURCE CODE: ArrayRandom.java
 * AUTHOR NAME: Aranas, Michaela M.
 * GITHUB URL: [github.com/michaela4]
