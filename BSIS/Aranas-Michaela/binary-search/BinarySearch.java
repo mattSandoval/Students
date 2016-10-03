@@ -1,9 +1,41 @@
- /**
-  * BINARY SEARCH is a divide and conquer algorithm. It compares the item with the middle element of a sorted (ascending)array.
-  * Each step the size of array is reduced to half until one single remain if a match is found.
+ /** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  * DESCRIPTION:
   * 
-  * @author [Michaela M. Aranas]
-  * @link [http://username.github.com/bubble-sort]
+  * BINARY SEARCH is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array.
+  * Each step, the size of array is reduced to half until one single element remain and a match is found.
+  * It's worse case algorithmic time complexity is LOGARITHMIC or Ο(log n).
+  *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  * TO DO:
+  * 
+  * Accepts keyboard input to set size of array.
+  * Generate random numbers to array accordingly.
+  * Accepts keyboard input to search for a number.
+  * Show search result if number is found and what index position.
+  *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  * PSEUDOCODE:
+  * 
+  * START PROGRAM
+  * 
+  * SET array[], size, x, left = 1, right = size
+  * WHILE x not found    
+  *  IF left < right 
+  *     EXIT: x does not exists.   
+  *  SET mid = left + (right - left ) / 2
+  *  IF array[mid] < x
+  *     SET left = mid + 1
+  *  IF array[mid] > x
+  *     SET right = mid - 1 
+  *  IF array[mid] = x 
+  *     EXIT: x found at location mid
+  *  END WHILE
+  *
+  * END PROGRAM 
+  *  
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
+  * @author [Aranas, Michaela M.]
+  * @link [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Aranas-Michaela/binary-search/BinarySearch.java]
   * @version [1.0]
   * @since [21/09/2016]
  */
