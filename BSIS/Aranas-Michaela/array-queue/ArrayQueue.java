@@ -74,10 +74,10 @@
 * END PROGRAM 
 * 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-* SOURCE CODE: ArrayQueue.java
-* AUTHOR NAME: Aranas, Michaela M.
-* GITHUB URL: [github.com/michaela4]
-* LAST UPDATE: [07/28/2016]
+* @author [Aranas, Michaela M.]  
+* @link [https://github.com/lvcc-dsa/Students/edit/master/BSIS/Aranas-Michaela/array-queue/ArrayQueue.java]
+* @version [1.0]
+* @since [28/07/2016]
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 */
@@ -87,25 +87,21 @@ public class ArrayQueue {
  private int rear, front = 0;
  private String[] storage;
  
-  // constructor = initialize an object instance of the class
   public ArrayQueue(int size) {
-     // assign the value of size to capacity
      capacity = size;
      storage = new String[capacity];
    }
 
   public void show() {
-      // the top of the stack starts from array[0] then newer item gets added on top of another until it reaches its capacity limit
      for (int i = 0; i <= capacity - 1; i++) {
          System.out.println("queue [" + i + "] =    " + storage [i]);
      }
-    
      System.out.println();
     }
    
    private boolean isEmpty() {
      if (storage[0] == null) {
-       System.out.println("Queue is Empty.");         // print error message
+       System.out.println("Queue is Empty.");         
        return true;
      } 
      return false;
@@ -113,7 +109,7 @@ public class ArrayQueue {
 
    private boolean isFull() {
      if ((rear-front) == capacity) {
-       System.out.println("Queue is Full.");          // print error message
+       System.out.println("Queue is Full.");          
        return true;
      } 
      return false;
@@ -121,12 +117,11 @@ public class ArrayQueue {
 
    public void enqueue(String value) {
      if (isFull()) {
-       System.out.println("Failed to add "+ value );        // print error message
+       System.out.println("Failed to add "+ value );       
        System.out.println();
      } else {
         System.out.println("... trying to enqueue on Queue[" + (rear-front) + "] ...");
         storage[rear-front] = value;
-        /* increment or decrement top*/;
         rear++;
         System.out.println(value + " was successfully added.");
         System.out.println();
@@ -135,7 +130,7 @@ public class ArrayQueue {
 
    public void dequeue() {
      if (isEmpty()) {
-       System.out.println("Remove failed."); // print error message
+       System.out.println("Remove failed.");
      } else {
        System.out.println("... trying to dequeue[" + 0 + "] ...");
        /* increment or decrement top*/;
@@ -160,36 +155,34 @@ public class ArrayQueue {
    
    public static void main(String[] args) {
      ArrayQueue storage = new ArrayQueue(10);
-     // construct a new array queue and assign 10 as the integer value for the size limit of the stack
      System.out.println("STORAGE CAPACITY = " + storage.capacity );
      System.out.println();
-     storage.show(); // show empty stack
-     storage.dequeue(); // try removing on an empty stack
-     storage.peek(); // peek top element of an empty stack
+     storage.show(); 
+     storage.dequeue(); 
+     storage.peek(); 
      storage.enqueue("one");
-     storage.show(); // show the updated stack
-     storage.peek(); // peek if top element is "one"
+     storage.show(); 
+     storage.peek(); 
      storage.enqueue("two");
-     storage.show(); // show the updated stack
-     storage.peek(); // peek if top element is "two"
+     storage.show(); 
+     storage.peek(); 
      storage.enqueue("three");
-     storage.show(); // show the updated stack
-     storage.peek(); // peek if top element is "three"
+     storage.show(); 
+     storage.peek(); 
      storage.enqueue("four");
-     storage.show(); // show the updated stack
+     storage.show(); 
      storage.enqueue("five"); 
-     storage.show(); // show the updated stack
-     storage.dequeue(); // try removing "one"
-     storage.show(); // FOR CHECKING PURPOSES, REMOVE ME LATER.......
+     storage.show(); 
+     storage.dequeue(); 
      storage.enqueue("six"); 
      storage.enqueue("seven"); 
      storage.enqueue("eight"); 
      storage.enqueue("nine");    
      storage.enqueue("ten"); 
-     storage.show();  // show the updated stack
-     storage.peek(); // peek if top element is "ten"
-     storage.enqueue("eleven");    // try adding "eleven"
-     storage.enqueue("twelve");    // try adding "twelve"
-     storage.show(); // show the updated stack
+     storage.show();  
+     storage.peek(); 
+     storage.enqueue("eleven");   
+     storage.enqueue("twelve");  
+     storage.show(); 
    }  
 }
