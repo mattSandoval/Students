@@ -1,8 +1,13 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-* SOURCE CODE: FindMinMax.java
-* AUTHOR NAME: Aranas, Michaela M.
-* GITHUB URL: [github.com/michaela4]
-* LAST UPDATE: [09/21/2016]
+* TO DO:
+* Find minimum and maximum number in array
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
+* 
+* @author [Aranas, Michaela M.]
+* @link [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Aranas-Michaela/find-min-max/FindMinMax.java]
+* @version [1.0]
+* @since [22/09/2016]
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 */
