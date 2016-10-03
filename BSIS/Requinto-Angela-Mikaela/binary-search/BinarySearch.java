@@ -2,72 +2,105 @@
 * BINARY SEARCH is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array. 
 * Each step, the size of array is reduced to half until one single element remain and a match is found.
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
-*/
+/*
+ BubbleSort.java
+ Angela Mikaela R. Requinto
+ Bsis-2
+ Github.com/AngelaRequinto
+ September 21'16
+ */
 
-import java.util.*; // note: imports all classes inside java.util
+import java.util.Scanner;
+import java.util.Random;
 
 public class BinarySearch {
 
-	static int array[], index, size, search;
+    public static void main(String[] args) {
+     
+     Scanner input = new Scanner(System.in);
+         Random  rand = new Random();
 
-	public static void main(String[] args) {
+    int c, left, right, middle, n = 0, search, size, array[], table =0;
 
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
+        
+    System.out.print("Enter number of ELEMENTS:");
+  
+      size = input.nextInt();
+        array = new int [size];
+        System.out.println();
+         System.out.print( size + " Random number to be generated  ");
+         
+         System.out.println();
+         for ( int x = 0; x< size; x++){
+             array[x] = rand.nextInt(1000);
+             
+             System.out.print(array[x] + "\t");
+             table+=1;
+             
+             
+             if(table==10){
+             System.out.println("");
+             table=0;
+             }
+         }
+         System.out.println();
+      
+         for ( int x = 0; x <size-1; x++){
+             for  (int y= 0 ; y< size-x-1; y++){
+              if (array[y] > array [y+1])
+              {
+                  int swap = array [y];
+                  array[y] = array [y+1];
+                  array [y+1] = swap;
+                  
+              }
+         }
+         }
+         System.out.println();
+         
+        System.out.println (" Bubble Sorting .... DONE! ");
+ 
+  for ( int x = 0 ; x< size ; x++){
+            System.out.print(array[x] + "\t");
+            table+=1;
+            if(table==10){
+             System.out.println("");
+             table=0;
+             }
+        }
+System.out.println();
+ 
+    System.out.print("Enter value to FIND: ");
+    search = input.nextInt();
+ 
+    left  = 0;
+    right = array.length -1;
+    middle = (left+ right)/2;
+ 
+    while( left <= right )
+    {
+        middle = (left + right)/2;
+      
+        if ( array[middle] == search ) 
+        {
+            System.out.println();
+            System.out.println(search + " FOUND at location " + (middle) + ".");
+            break;
+        }
+     
+        else if ( array[middle] < search )
+        left = middle + 1; 
+        else if(array[middle]>search)
+         right = middle - 1;
+   }
+    System.out.println();
+    if(left>=right){
+    	System.out.println(search + " \" is NOT FOUND in the list.\n");
+    }
+     if(search==n)
+       {   
+        System.out.println(search + " FOUND at location " + (middle) + ".");
+       }
 
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-
-		System.out.println(size + " random numbers generated.");
-		
-		for (int i = 0; i < array.length; i++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
-		}
-		
-		// TODO: call bubbleSort method to sort the generated random numbers
-		System.out.println();
-		
-		System.out.print("Enter number to find: ");
-		// TODO: use nextInt() to assign keyboard input as search item	
-		index = binarySearch(array, search); // note: assign the search result to array index where it was found	
-		
-		if (index != -1) {
-			System.out.println("FOUND: " + search + " is at " + "array["+index+"]");
-		}
-		else {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
-	}
-
-	static int binarySearch(int[] numbers, int find) { // note: @param array[], search
-
-		int left, right, middle;
-		// TODO: initialize value for left and right
-		
-		while (left <= right) {
-			middle = left + (right - left) / 2;
-			if (numbers[middle] == find) {
-				return middle;
-			} else if (find < numbers[middle]) {
-				right = middle - 1;
-			} else { // if numbers[middle] < find
-				left = middle + 1;
-			}
-		}
-		return -1; // note: exit loop if not found
-
-	}
-	
-	static int bubbleSort(int[] arr) {
-
-		// TODO: sort the random array first before searching
-
-	}
-
+    }
 }
