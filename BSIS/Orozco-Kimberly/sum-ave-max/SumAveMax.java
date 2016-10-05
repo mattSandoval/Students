@@ -1,60 +1,75 @@
-/** 
-* - Accepts keyboard input to set array size.
-* - Generate random numbers accordingly.
-* - Get the sum, average, and maximum value
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+* @author:[ Kimberly Orozco ]
+* @link:[ https://github.com/kimOrozco ]
+* @version:
+* @since: [ 10/05/16 ]
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
-*/
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+package SumAveMax;
 
 import java.util.Scanner;
 import java.util.Random;
 
 public class SumAveMax {
+	static int[] array;
+	static int ArraySize;
+	static int sum;
 
-	private int sum, max, size, array[];
-	private float average;
-
-	public SumAveMax() {
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-		System.out.println();
-		System.out.println(size + " random numbers generated.");
-		for (int i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			System.out.print(array[i] + " ");
-			sum += array[i];
-			if (array[i] > max)
-				max = array[i];			
+        
+	public static void main(String [] args){
+            
+            Scanner Input = new Scanner(System.in);
+		Random KimsRand = new Random();
+		System.out.println("How many numbers you want: ");
+		ArraySize = Input.nextInt();
+		array = new int[ArraySize]; 
+                System.out.println();
+                for(int a=0; a<ArraySize;a++){
+                    array[a] = KimsRand.nextInt(1000);
+                }
+		input();
+		getSum();
+		getAve();
+		getMax();	
+	}
+	
+	static public void input(){	
+                int x=0;
+                        
+		for(int a = 0; a < ArraySize; a++){
+			System.out.print(array[a]+"\t");
+                        x+=1;
+                        if(x==10){
+                            System.out.println();
+                            x=0;
+                        }
+                        
+		}System.out.println();
+	}
+	
+	static public void getSum(){	
+		for(int a = 0; a < ArraySize; a++){
+			sum = sum + array[a];
 		}
-		System.out.println();
+		
+		System.out.println("Sum = " + sum);
 	}
-
-	public void getSum() {
-		System.out.println("SUM = " + sum);
+	
+	static public void getAve(){
+		int ave = sum / ArraySize;
+		System.out.println("Average = " + ave);
 	}
-
-	public void getMax() {
-		System.out.println("MAX = " + max);
+	
+	static public void getMax(){
+		int max = 0;
+		for(int a = 0; a < ArraySize; a++){
+			if(array[a] > max)
+				max = array[a];
+		}
+		System.out.println("Max = " + max);
 	}
-
-	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
-		System.out.println("AVERAGE = " + average);
-	}
-
-	public static void main(String[] args) {
-		SumAveMax demo = new SumAveMax();
-		System.out.println();
-		demo.getSum();
-		demo.getMax();
-		demo.getAverage();
-	}
+	
 
 }
