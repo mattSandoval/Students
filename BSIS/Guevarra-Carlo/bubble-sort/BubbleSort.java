@@ -3,7 +3,7 @@
 * adjacent elements, then switching positions if they exist in the wrong order.
 *
 * @author  [Carlo S. Guevarra]
-* @link    [full github url]
+* @link    [https://github.com/trunks07]
 * @version [1.00]
 * @since   [last updated 01/10/2016]
 */
