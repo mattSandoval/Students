@@ -24,3 +24,5 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+## Screen Shots :
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/linear-search/LinearScreen/screen1.PNG)
