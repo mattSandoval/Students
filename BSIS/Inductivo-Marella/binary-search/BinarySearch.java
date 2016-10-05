@@ -3,7 +3,7 @@
 * Each step, the size of array is reduced to half until one single element remain and a match is found.
 *
 * @author  [Marell Inductivo]
-* @link    [full github url]
+* @link    [https://github.com/xxxMaIn]
 * @version [version number]
 * @since   [10/05/16]
 */
