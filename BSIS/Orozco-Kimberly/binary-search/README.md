@@ -33,3 +33,4 @@ Binary Search
     
     END PROGRAM 
 
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Orozco-Kimberly/binary-search/BinarySearch.png)
