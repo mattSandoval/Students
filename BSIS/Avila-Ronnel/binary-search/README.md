@@ -32,4 +32,10 @@ Binary Search
       END WHILE
     
     END PROGRAM 
+    
+    
+   ![alt text][img1]
+   ![alt text][img2]
 
+[img1]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/binary-search/BinarySearchFalse.JPG
+[img2]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/binary-search/BinarySearchTrue.JPG
