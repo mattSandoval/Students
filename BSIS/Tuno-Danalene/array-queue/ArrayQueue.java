@@ -1,3 +1,9 @@
+/* @author [Danalene Laxamana Tuno]
+* @link    [https://github.com/dandanalene]
+* @version [10.7]
+* @since   [last updated 10/5/2016]
+*/
+
 public class ArrayQueue
         {
             int QSIZE;
