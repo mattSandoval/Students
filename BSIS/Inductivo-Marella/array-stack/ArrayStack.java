@@ -3,7 +3,7 @@
 * For demo purpose, should hold a maximum of 10 string values.
 *
 * @author  [Marella Inductivo]
-* @link    [full github url]
+* @link    [https://github.com/xxxMaIn]
 * @version [version number]
 * @since   [10/05/16]
 */
