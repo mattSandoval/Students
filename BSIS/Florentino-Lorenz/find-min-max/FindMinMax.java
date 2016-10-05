@@ -1,15 +1,58 @@
+
+/* @author  [Lorenz C. Florentino]
+* @link    [github.com/lorenzhahaha]
+* @version [1.1]
+* @since   [5 October 2016]
+*/
+
+package findminmax;
+import java.util.Scanner;
+
 public class FindMinMax {
-	public static void main(String[] args) {
-		int[] numbers = { 88, 33, 55, 23, 64, 123 };
+	private int capacity;
+   	private int begin=0;
+    	private static int[] numbers;
+    
+	public FindMinMax(int size){
+        capacity = size;
+        numbers = new int[capacity];
+    }
+	
+	public void push(int value){
+        System.out.print("'" + value + "' was succesfully added.\n\n");
+        numbers[begin] = value;
+        begin++;
+    }
+	
+	public static void main(String [] args){
+		int limit=0;
 		int min = Integer.MAX_VALUE;
 		int max = Integer.MIN_VALUE;
-		for (int i = 0; i < numbers.length; i++) {
-			if (numbers[i] < min)
-				min = numbers[i];
-			if (numbers[i] > max)
-				max = numbers[i];
-		}
-		System.out.println("Smallest number is " + min);
-		System.out.println("Lagest number is " + max);
+        Scanner input = new Scanner (System.in);
+        
+        System.out.print("\t*--------* FINDING MINIMUM AND MAXIMUM *--------*\n\n");
+        System.out.print("What is the capacity of storage: ");
+        limit = input.nextInt();
+        FindMinMax numbers = new FindMinMax(limit);
+       
+        System.out.print("STORAGE CAPACITY: " + limit + "\n\n");
+        
+        for (int i=0 ; i<limit ; i++){
+        System.out.print("Input number[" + i + "]: ");
+        int user = input.nextInt();
+        numbers.push(user);
+        }
+        
+        
+        for (int x=0 ; x<limit ; x++){
+        	if (FindMinMax.numbers[x] < min)
+        		min = FindMinMax.numbers[x];
+        	if (FindMinMax.numbers[x] > max)
+        		max = FindMinMax.numbers[x];
+        }
+        
+        System.out.println("Smallest number is " + min);
+        System.out.println("Largest number is " + max);
 	}
+	
 }
