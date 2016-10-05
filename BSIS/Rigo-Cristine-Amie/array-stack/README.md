@@ -75,3 +75,7 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Rigo-Cristine-Amie/array-stack/Stack1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Rigo-Cristine-Amie/array-stack/Stack2.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Rigo-Cristine-Amie/array-stack/Stack3.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Rigo-Cristine-Amie/array-stack/Stack4.png)
