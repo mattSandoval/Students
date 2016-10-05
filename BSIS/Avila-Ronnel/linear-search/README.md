@@ -24,3 +24,8 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+![alt text][img1]
+![alt text][img2]
+
+[img1]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/linear-search/LinearSearchFalse.JPG
+[img2]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/linear-search/LinearSearchTrue.JPG
