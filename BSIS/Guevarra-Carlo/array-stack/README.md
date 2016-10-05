@@ -75,3 +75,13 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+## Screen Shot : 
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-stack/StackScreen/screen1.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-stack/StackScreen/screen2.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-stack/StackScreen/screen3.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-stack/StackScreen/screen4.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-stack/StackScreen/screen5.PNG)
