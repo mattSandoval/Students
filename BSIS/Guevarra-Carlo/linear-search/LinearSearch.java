@@ -1,43 +1,82 @@
 /**
 * LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
 *
-* @author  Renaldo Valente
-* @link    https://github.com/arrowbrave
-* @version 1.1
-* @since   22/09/2016
+* @author  Carlo S. Guevarra
+* @link   https://github.com/trunks07
+* @version 1.00
+* @since   05/10/2016
 */
 
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class LinearSearch {
 
-	public static void main(String[] args) {
+	private int [] array;
+	private int capacity;
+	private int toSearch;
+	private int range;
+	
+	private LinearSearch (int size){
+		capacity = size;
+		array = new int [capacity];
 
-		int i, size, search, array[];
-
+		
+	}
+	public void getArray(){
 		Scanner input = new Scanner(System.in);
 		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];		
-
-		System.out.print("Enter number to find: ");
-		search = input.nextInt();
-
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
-				break;
-			} 			
-		}
-
-		if (i == size) {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
+		
+		System.out.print("Please enter the range of random : ");
+		range = input.nextInt();
+		
+		for (int i = 0; i < capacity; i++){
+			int x = rand.nextInt(range);
+			array[i] = x;
+			}
+		System.out.println();
 	}
-
+	public void show(){
+		for (int i = 0; i < capacity; i++){
+			
+			System.out.println("Array [" +(i+1)+ "] = " + array[i]);
+		}	
+	}
+	
+	public void search(){
+		Scanner input = new Scanner(System.in);
+		int i;
+		System.out.print("Plese enter the number to be search : ");
+		toSearch = input.nextInt();
+		
+		for(i = 0; i<capacity;i++){
+			if(toSearch == array[i]){
+				System.out.print("The number been found in array["+(i+1)+"] = "+array[i]);
+				break;
+			}
+			
+		}
+		if(i == array.length){
+			System.out.print("The value not found!");		
+			}
+	}
+	
+	public static void main (String[] Args){
+		
+		int size;
+		Scanner input = new Scanner (System.in);
+		
+		System.out.print("Enter array size: " );
+		size = input.nextInt();
+		
+		
+		LinearSearch demo = new BinarySearch (size);
+		demo.getArray();
+		demo.show();
+		demo.search();
+		
+		
+		
+	
+	}
 }
