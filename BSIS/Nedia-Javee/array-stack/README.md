@@ -79,7 +79,11 @@ Stack
 ## Sample
 
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-stack/Capture3.PNG)
-![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-stack/Capture3.PNG)
-![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-stack/Capture3.PNG)
-![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-stack/Capture3.PNG)
-![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-stack/Capture3.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-stack/Capture4.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-stack/Capture5.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-stack/Capture6.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-stack/Capture7.PNG)
