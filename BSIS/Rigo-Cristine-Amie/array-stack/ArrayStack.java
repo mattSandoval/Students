@@ -7,7 +7,6 @@
 * @version [26.1]
 * @since   [09-29-16]
 */
-
 public class ArrayStack {
 
   int capacity;
@@ -114,3 +113,4 @@ public class ArrayStack {
     stackobject.show();
   }
 }
+    
