@@ -24,3 +24,8 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+    
+## Samples
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/linear-search/Capture15.PNG)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/linear-search/Capture16.PNG)
