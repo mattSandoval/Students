@@ -74,4 +74,8 @@ Stack
      // show updated stack
      // try to pop again, expect pop error message
     
+    
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/array-stack/1.png)
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/array-stack/2.png)
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/array-stack/3.png)
     END PROGRAM 
