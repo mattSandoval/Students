@@ -1,5 +1,5 @@
 /*
-* @author: [Marells Inductivo]
+* @author: [Marella Inductivo]
 * @link:[]
 * @version: []
 * @since: [10/5/16]
