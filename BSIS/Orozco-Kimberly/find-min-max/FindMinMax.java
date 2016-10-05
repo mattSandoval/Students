@@ -19,6 +19,6 @@ public class FindMinMax {
 				max = numbers[i];
 		}
 		System.out.println("Smallest number is " + min);
-		System.out.println("Lagest number is " + max);
+		System.out.println("Largest number is " + max);
 	}
 }
