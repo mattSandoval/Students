@@ -74,4 +74,16 @@ Stack
      // show updated stack
      // try to pop again, expect pop error message
     
-    END PROGRAM 
+    END PROGRAM
+    
+    
+    ##Screenshots
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Charlie/array-stack/StackScreenshots/Stack.PNG)
+    
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Charlie/array-stack/StackScreenshots/Stack2.PNG)
+    
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Charlie/array-stack/StackScreenshots/Stack3.PNG)
+    
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Charlie/array-stack/StackScreenshots/Stack4.PNG)
+    
+    
