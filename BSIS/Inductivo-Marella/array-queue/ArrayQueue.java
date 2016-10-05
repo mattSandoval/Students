@@ -2,8 +2,8 @@
 * Java implementation of a queue using array.
 * For demo purpose, should hold a maximum of 10 integers.
 *
-* @author  [your full name here]
-* @link    [full github url]
+* @author  [Marella Inductivo]
+* @link    [https://github.com/xxxMaIn]
 * @version [version number]
 * @since   [last updated dd/mm/yyyy]
 */
@@ -27,7 +27,7 @@ public class ArrayQueue {
   public void show() {
     // note: the top of the queue starts from array[0] then newer item gets added on the tail and removes in the front
     for (int i = 0; i < capacity; i++) {
-      System.out.println("queue["+ i +"] = " + storage[]); // todo: use adjust(head+i) to adjust each item's position
+      System.out.println("queue["+ i +"] = " + storage[i]); // todo: use adjust(head+i) to adjust each item's position
     }
       System.out.println(); // note: prints optional new line for readability
   }
@@ -35,7 +35,7 @@ public class ArrayQueue {
   // note: will check if it's true that the array is empty
   private boolean isEmpty() {
     if (tail == 0) { // note: checks if numbers tail has reached 0 or empty
-      System.out.println(" "); // todo: print error message here
+      System.out.println("Error. Tail is empty."); // todo: print error message here
       System.out.println(); // note: this prints optional new line for readability
       return true;
     } 
@@ -44,7 +44,7 @@ public class ArrayQueue {
 
   private boolean isFull() {
     if (tail == capacity) { // note: compares if number of tail has reached capacity limit
-      System.out.println(" "); // todo: print error message here
+      System.out.println("Error. Queue is full. "); // todo: print error message here
       System.out.println(); // note: this prints optional new line for readability
       return true;
     } 
@@ -55,13 +55,13 @@ public class ArrayQueue {
   public void enqueue(int value) {
     if (isFull()) {
       System.out.println("... trying to enqueue on queue[" + (tail-1) + "] ...");
-      System.out.println(" "); // todo: print error message here
+      System.out.println("Can't add. No space in queue."); // todo: print error message here
       System.out.println(); // note: prints optional new line for readability
     } else {
       System.out.println("... trying to enqueue on queue[" + tail + "] ...");
       storage[adjust(head + tail)]; // todo: assign the value to the adjusted position of head
-      tail; // todo: should increment or decrement?
-      System.out.println(value + " was successfully _________."); // todo: what does enqueue do?
+      tail += 1; // todo: should increment or decrement?
+      System.out.println(value + " was successfully added."); // todo: what does enqueue do?
       System.out.println(); // note: prints optional new line for readability
     }
   }
