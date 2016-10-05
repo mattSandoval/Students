@@ -20,14 +20,6 @@ Queue
  - Allow PEEK to see the topmost topmost element.
  - Show the updated ARRAY QUEUE for every successful ENQUEUE and DEQUEUE.
  
-## Screen shots:
-    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-queue/QueueScreen/screen1.PNG)
-    
-    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-queue/QueueScreen/screen2.PNG)
-    
-    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-queue/QueueScreen/screen3.PNG)
-
-
 ## Pseudocode:
 
     START PROGRAM
@@ -93,3 +85,9 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+## Screen Shot : 
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-queue/QueueScreen/screen1.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-queue/QueueScreen/screen2.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-queue/QueueScreen/screen3.PNG)
