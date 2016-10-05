@@ -85,3 +85,14 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+
+![alt text][img1]1
+![alt text][img2]2
+![alt text][img3]3
+![alt text][img4]4
+
+
+[img1]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/array-queue/q1.JPG
+[img2]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/array-queue/q2.JPG
+[img3]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/array-queue/q3.JPG
+[img4]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/array-queue/q4.JPG
