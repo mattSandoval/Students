@@ -10,7 +10,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class BubbleSorting {
+public class BubbleSort {
 
     public static void main(String[] args) {
        int size, x, y, swap, array[];
