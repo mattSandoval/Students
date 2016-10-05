@@ -35,7 +35,6 @@ Binary Search
     
 ## Samples
 
-https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/binary-search/Capture1.PNG
+![] (https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/binary-search/Capture1.PNG)
 
-src="Students/BSIS/Nedia-Javee/binary-search/Capture2.PNG"
 
