@@ -24,3 +24,10 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+    
+    
+   ![alt text][img1]1
+   ![alt text][img1]1
+   
+   [img1]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/linear-search/LSearch%201.PNG
+   [img2]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/linear-search/LSearch%202.PNG
