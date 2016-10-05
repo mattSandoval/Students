@@ -89,4 +89,3 @@ Queue
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/array-queue/1.png)
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/array-queue/2.png)
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/array-queue/3.png)
-![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Dimabuyo-John-Kim-Kenneth/array-queue/4.png)
