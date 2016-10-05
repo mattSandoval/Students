@@ -1,5 +1,5 @@
 
-* @author  [Lenny Llamado]
+/* @author  [Lenny Llamado]
 * @link    [https://github.com/lvcc-dsa/Students/edit/master/BSIS/Llamado-Lenny/array-stack/ArrayStack.java]
 * @version [version number]
 * @since   [05/10/2016]
