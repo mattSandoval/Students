@@ -2,129 +2,107 @@
 * Java implementation of a queue using array.
 * For demo purpose, should hold a maximum of 10 integers.
 *
-* @author  [your full name here]
+* @author  [Carlo S. Guevarra]
 * @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @version [1.00]
+* @since   [last updated 05/10/2016]
 */
 
-public class ArrayQueue {
-  
-  // note: variable declarations
-  private int capacity; // note: optional, you may also use array.length
-  private int head; // note: value of front item
-  private int tail; // note: counter number of tail
-  private int[] storage; // note: array is of integer values
-  
-  // note: constructor = initialize an object instance of the class
-  public ArrayQueue(int size) {
-    capacity = size; // note: optional, can directly pass a new int[size]
-    storage = new int[capacity];
-    // todo: initialize values for tail, head, and tail
-  } 
+public class Queue {
+	
+		private int QSIZE;
+		private int[]queue;
+		private int nItems = 0;
 
-  // note: will display the array
-  public void show() {
-    // note: the top of the queue starts from array[0] then newer item gets added on the tail and removes in the front
-    for (int i = 0; i < capacity; i++) {
-      System.out.println("queue["+ i +"] = " + storage[]); // todo: use adjust(head+i) to adjust each item's position
-    }
-      System.out.println(); // note: prints optional new line for readability
-  }
-  
-  // note: will check if it's true that the array is empty
-  private boolean isEmpty() {
-    if (tail == 0) { // note: checks if numbers tail has reached 0 or empty
-      System.out.println(" "); // todo: print error message here
-      System.out.println(); // note: this prints optional new line for readability
-      return true;
-    } 
-    return false; // note: defaults to false
-  }
+		public Queue(int size){
+			this.QSIZE= size;
+			this.queue = new int[this.QSIZE];
+		}
 
-  private boolean isFull() {
-    if (tail == capacity) { // note: compares if number of tail has reached capacity limit
-      System.out.println(" "); // todo: print error message here
-      System.out.println(); // note: this prints optional new line for readability
-      return true;
-    } 
-    return false; // note: defaults to false
-  }
+		public void showQueue(){
+				for (int i=0; i< this.QSIZE;i++){
+				System.out.println("QUEUE["+i+"] = " + this.queue[i]);
+				
+			}
+				System.out.println();
+		}
 
-  // note: will add value to the tail of array
-  public void enqueue(int value) {
-    if (isFull()) {
-      System.out.println("... trying to enqueue on queue[" + (tail-1) + "] ...");
-      System.out.println(" "); // todo: print error message here
-      System.out.println(); // note: prints optional new line for readability
-    } else {
-      System.out.println("... trying to enqueue on queue[" + tail + "] ...");
-      storage[adjust(head + tail)]; // todo: assign the value to the adjusted position of head
-      tail; // todo: should increment or decrement?
-      System.out.println(value + " was successfully _________."); // todo: what does enqueue do?
-      System.out.println(); // note: prints optional new line for readability
-    }
-  }
+		public boolean isFull() {
+				if (this.nItems == this.QSIZE) {
+					System.out.println ("The Queue is already full");
+					return true;
+				} else{
+					return false;
+				}}
+				
+		public boolean isEmpty() {
+				if (this.QSIZE == 0){
+					System.out.println("The Queue is Empty");
+					return true;
+				}	else{
+					return false;
+				}}
 
-  // note: will remove value to the head of array
-  public int dequeue() {    
-    if (isEmpty()) { // note: checks if empty, then stop
-      System.out.println("... trying to dequeue head ...");
-      System.out.println(" "); // print error message here
-      System.out.println(); // prints optional new line for readability
-    } else {  
-      System.out.println("... trying to dequeue head ...");
-      int temp; // todo: pass the value of head to a temporary variable
-      storage[head]; // todo: now, empty the value of current head
-      adjust(head + 1); // todo: pass the next value as new head
-      tail; // todo: should increment or decrement?
-      System.out.println(head + " was successfully _________."); // todo: what does dequeue do?
-      System.out.println(); // note: prints optional new line for readability
-      return temp; // note: returns the temp as head
-    }
-    return 0; // note: returns the temp as head
-  }
+		public boolean enqueue (int num) {
+				System.out.println("Trying to enqueue " + num + "...");
+				if (!this.isFull()){
+					this.queue[nItems] = num;
+					System.out.println("\t" + "Added " + num);
+					this.nItems+=1;
+						return true;
+				}	else{
+					return false;
+				}}
 
-  // note: will wrap the array so we can adjust the position of each value towards the head of array
-  private final int adjust(int i) {
-    return (i + capacity) % capacity; 
-  }
+		public void dequeue() {
+			 if (isEmpty()) {
+			    	System.out.println("REMOVE FAILED, Storage is empty.");
+			      System.out.println();
+			    } else {
+			      nItems = 0;
+			      System.out.println("... trying to dequeue [" + (nItems) + "] ...");
+			      System.out.println(queue[nItems] + " was successfully removed.");
+			      System.out.println();
+			      queue[nItems++] = 0;
+			      nItems-=1;
+			      for(int i=0;i<QSIZE-1;i++){
+			    	  queue[i] =  queue[i+1];
+			      }
+			    }
+			 }
 
-  // note: will show the front value or head of the array
-  public int peekHead() {
-    System.out.println("Head : " + storage[head]);
-    if (isEmpty()) {
-      return -1;
-    }    
-    System.out.println();
-    return 0;
-  }
+		public int peekFront() {
+				System.out.println("The front number is : "+queue[0]);
+				return this.queue[0];
+		}
+		public int peekRear() {
+			System.out.println("The rear number is : "+queue[this.nItems-1]);
+				return this.queue[this.nItems-1];
+		}
 
-  // note: will show the front value or head of the array
-  public int peekTail() {
-    System.out.println("Tail : " + storage[tail-1]);
-    if (isEmpty()) {      
-      return -1;
-    }
-    System.out.println();
-    return 0;
-  }
+		public static void main(String[]args){
+			
+			Queue Demo = new Queue(10);
+			  Demo.showQueue();
+			  Demo.enqueue(23);
+			  Demo.dequeue();
+			  Demo.dequeue();
+			  Demo.showQueue();
+			  Demo.enqueue (21);
+			  Demo.enqueue (12);
+			  Demo.enqueue (3);
+			  Demo.enqueue (1);
+			  Demo.enqueue (2);
+			  Demo.enqueue (9);
+			  Demo.enqueue (10);
+			  Demo.peekFront();
+			  Demo.peekRear();
+			  Demo.showQueue();
+			  Demo.dequeue();
+			  Demo.dequeue();
+			  Demo.showQueue();
+			  
 
-  public static void main(String[] args) {
-    // note: construct a new array queue and assign 10 as the integer value for the size limit of the stack
-    storage.enqueue(10);   
-    storage.enqueue(20);    
-    storage.enqueue(30);    
-    storage.enqueue(40);    
-    storage.enqueue(50);
-    storage.enqueue(60); 
-    storage.enqueue(70); 
-    storage.enqueue(80); 
-    storage.enqueue(90);    
-    storage.enqueue(100); 
-    storage.dequeue(); 
-    storage.dequeue();
-    storage.show();
-  }  
-
+		}
 }
+
