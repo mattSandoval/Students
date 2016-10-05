@@ -6,9 +6,9 @@
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
-package queueexample;
+package arrayqueue;
 
-public class QueueExample {
+public class ArrayQueue {
     
     private String[] storage;
     private int tail = 0;
@@ -21,7 +21,7 @@ public class QueueExample {
 
     public static void main(String[] args) {
         
-        QueueExample queue = new QueueExample(10);
+        ArrayQueue queue = new ArrayQueue(10);
         System.out.println("STORAGE CAPACITY = " + "10" );
         System.out.println();
         
