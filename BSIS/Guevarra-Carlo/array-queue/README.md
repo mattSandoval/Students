@@ -85,3 +85,10 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+    
+    ##Screen shots:
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-queue/QueueScreen/screen1.PNG)
+    
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-queue/QueueScreen/screen2.PNG)
+    
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Guevarra-Carlo/array-queue/QueueScreen/screen3.PNG)
