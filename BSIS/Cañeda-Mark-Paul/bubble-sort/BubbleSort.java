@@ -1,53 +1,109 @@
-/**
-* BUBBLE SORT is based on the idea of repeatedly comparing pairs of 
-* adjacent elements, then switching positions if they exist in the wrong order.
-*
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+/******************************************************************************
+ * SORTING is the process of arranging items in ascending or descending order.
+ *         This process can be implemented via many different algorithm's. 
+ *****************************************************************************/
+/*
+SOURCE CODE: BubbleSort
+AUTHOR NAME: Mark Paul A. Caneda
+GIHUB URL:   Markpaulcan/github.com
+LAST UPDATE: September 22, 2016
 */
 
-// TODO: import Scanner and Random from Java library
-
+package bubblesort;
+import java.util.Scanner;
+import java.util.Random;
 public class BubbleSort {
-
-	public static void main(String[] args) {
-
-		int array[], size, x, y, swap;
-
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		System.out.print("Enter array size to sort: ");
-		// TODO: use nextInt() to assign keyboard input as array size
-		array = new int[size];
-
-		System.out.println();
-		System.out.println(size + " random numbers generated.");
-
-		for (x = 0; x < size; x++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
-			// TODO: print unsorted numbers separated by space
-		}
-
-		System.out.println();
-		// note: compare each from the first index until largest number is moved to the last index.
-		for (x = 0; x < size-1; x++) { // note: loop until before the end of array
-			for (y = 0; y < size-x-1; y++) { // note: will not loop to numbers already sorted
-				if (array[y] > array[y+1]) { // note: compare adjacent numbers which is greater
-					swap = array[y]; // note: swap positions...
-					array[y] = array[y+1]; // note: smaller will be move to the left
-					array[y+1] = swap; // note: larger will move to the right
-				}
-			}
-		}
-
-		System.out.println();
-
-		System.out.println("Bubble Sorting... Done!");
-		
-		// TODO: print sorted numbers separated by space
-	}
-
+    
+    public int array[];
+    public int capacity;
+    
+    public BubbleSort(int size){
+        capacity = size;
+        array = new int[capacity];
+    }
+    private void getArray(){
+        Scanner in = new Scanner(System.in);
+        Random rand = new Random();
+        
+        for(int x = 0; x < capacity; x++){
+            int y = rand.nextInt(100);
+            array[x] = y;
+        }
+        System.out.println();
+    }
+    private void Sorting(){
+        int swap;
+        for(int y = 0; y < capacity-1; y++){
+            for(int b = 0; b < capacity-b-1; b++){
+                if(array[b] > array[b+1]){
+                    swap = array[b];
+                    array[b] = array[b+1];
+                    array[b+1] = swap;
+                }
+            }
+        }
+        System.out.println("\n\nSorted Arrays\n");
+    }
+    private void show(){
+        int last = 0;
+        for(int x = 0; x < capacity; x++){
+            System.out.print(array[x] + " ");
+            last += 1;
+            if(last == 10){
+                System.out.println();
+                last = 0;
+            }
+         
+        }
+        
+    }
+    private void Search(){
+        
+        int left,
+            right,
+            middle,
+            search;
+        
+        middle = 0;
+        left = 0;
+        right = capacity - 1;
+        
+        Scanner in = new Scanner(System.in);
+        System.out.println("\n\nPlease enter a number to find:");
+        search = in.nextInt();
+        
+        while(left <= right){
+            middle = (left + right)/2;
+            if(array[middle] == search){
+                System.out.println("The value found at Array["+middle+"]");
+                break;           
+            }
+            else if (array[middle] < search){
+                left = middle + 1;
+            }
+            else{
+                right = middle - 1;
+            }
+        }
+        if(array[middle]!= search){
+        System.out.println("The value not found!");
+    }
+ }
+    public static void main(String[] args) {
+        
+        int size; 
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Enter array size:");
+        size = in.nextInt();
+        
+        BubbleSort paul = new BubbleSort(size);
+        
+        paul.getArray();
+        paul.show();
+        paul.Sorting();
+        paul.show();
+        paul.Search();
+    }
+    
 }
