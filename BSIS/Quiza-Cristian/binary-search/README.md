@@ -32,4 +32,12 @@ Binary Search
       END WHILE
     
     END PROGRAM 
+    
+    
+  ![alt text][img1]1
+  ![alt text][img1]2
+  
+  [img1]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/binary-search/BSearch%201.PNG
+  [img2]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/binary-search/Bsearch%202.PNG
+  
 
