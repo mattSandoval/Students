@@ -1,6 +1,3 @@
-package arrayqueue;
-
-
 public class ArrayQueue {
     
     private int capacity;
