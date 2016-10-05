@@ -86,4 +86,5 @@ Queue
     
     END PROGRAM
     
+#Output 
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/De-Guzman-Gerald/array-queue/ArrayQueue.png)
