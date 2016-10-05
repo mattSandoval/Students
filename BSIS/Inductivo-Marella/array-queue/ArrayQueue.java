@@ -5,7 +5,7 @@
 * @author  [Marella Inductivo]
 * @link    [https://github.com/xxxMaIn]
 * @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @since   [10/5/16]
 */
 
 package arrayqueue;
