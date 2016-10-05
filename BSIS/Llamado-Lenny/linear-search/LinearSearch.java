@@ -1,10 +1,7 @@
-/**
-* LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
-*
-* @author  Renaldo Valente
-* @link    https://github.com/arrowbrave
-* @version 1.1
-* @since   22/09/2016
+/* @author  [Lenny Llamado]
+* @link    [https://github.com/Lengg]
+* @version [version number]
+* @since   [05/10/2016]
 */
 
 import java.util.Scanner;
