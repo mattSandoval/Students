@@ -1,5 +1,5 @@
 /* @author  [Lenny Llamado]
-* @link    [https://github.com/lvcc-dsa/Students/edit/master/BSIS/Llamado-Lenny/find-min-max/FindMinMax.java]
+* @link    [https://github.com/Lengg]
 * @version [version number]
 * @since   [05/10/16]
 */
