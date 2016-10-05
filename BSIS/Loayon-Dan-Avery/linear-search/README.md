@@ -24,3 +24,10 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+    
+## ScreenShots
+    
+   ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Loayon-Dan-Avery/linear-search/LinearSearch1.png)
+   ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Loayon-Dan-Avery/linear-search/LinearSearch2.png)
+   ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Loayon-Dan-Avery/linear-search/LinearSearch3.1_Found.png)
+   ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Loayon-Dan-Avery/linear-search/LinearSearch3.2_notFound.png)
