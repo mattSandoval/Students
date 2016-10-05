@@ -22,4 +22,4 @@ Bubble Sort
          swap([i], array[i+1])
     
     END PROGRAM 
-![](https://github.com/lvcc-dsa/Students/edit/master/BSIS/Rigo-Cristine-Amie/bubble-sort)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Rigo-Cristine-Amie/bubble-sort/bubbleSort.png)
