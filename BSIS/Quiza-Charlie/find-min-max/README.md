@@ -1,2 +1,7 @@
 # find-min-max
 Find minimum and maximum number in array
+
+
+##Screenshot
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Charlie/find-min-max/FindMinMax/FindMinMax.PNG)
