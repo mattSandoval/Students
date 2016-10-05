@@ -1,8 +1,8 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-* @author: Kimberly Orozco
-* @link:https://github.com/kimOrozco/DSA/blob/master/QueueExample.java
-* @version: n/a
-* @since: [10/05/16]
+* @author:[ Kimberly Orozco ]
+* @link:[ https://github.com/kimOrozco ]
+* @version: 
+* @since: [ 10/05/16 ]
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
