@@ -3,7 +3,7 @@
 * For demo purpose, should hold a maximum of 10 integers.
 *
 * @author  [Carlo S. Guevarra]
-* @link    [full github url]
+* @link    [https://github.com/trunks07]
 * @version [1.00]
 * @since   [last updated 05/10/2016]
 */
