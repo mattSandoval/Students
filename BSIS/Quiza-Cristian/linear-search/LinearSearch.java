@@ -1,43 +1,51 @@
 /**
 * LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
 *
-* @author  Renaldo Valente
-* @link    https://github.com/arrowbrave
+* @author  Crisrian E. Quiza
+* @link    https://github.com/kirisaite
 * @version 1.1
 * @since   22/09/2016
 */
 
-import java.util.Scanner;
-import java.util.Random;
-
+import java.util.*;
 public class LinearSearch {
-
-	public static void main(String[] args) {
-
-		int i, size, search, array[];
-
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];		
-
-		System.out.print("Enter number to find: ");
-		search = input.nextInt();
-
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
-				break;
-			} 			
-		}
-
-		if (i == size) {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
-	}
-
+   int size, search;
+   int[] array;
+   
+   Scanner in = new Scanner(System.in);
+   public void aSize(){
+    System.out.print("Enter the size of an Array: ");
+    size = in.nextInt();
+    array = new int[size];
+   }
+   public void aRandom(){
+    Random rand = new Random();
+    System.out.print("\n");
+    for(int i=0; i<array.length; i++){
+     array[i] = rand.nextInt(100);
+     System.out.print(array[i] + " ");
+    }
+   }
+   public void aSearch(){
+    int i;
+    System.out.print("\n");
+    System.out.print("Enter the number you want to search: ");
+    search = in.nextInt();
+    for (i = 0; i < array.length; i++){
+     if(search == array[i]){
+      System.out.println("The number has been found in Array["+i+"]");
+      break;
+     }
+    }
+    if (i == array.length){
+     System.out.print("Value not found.");
+    }
+   }
+   public static void main (String[] args){
+    LinearSearch yonde = new LinearSearch();
+    
+    yonde.aSize();
+    yonde.aRandom();
+    yonde.aSearch();
+   }
 }
