@@ -1,5 +1,3 @@
-package arrayqueue;
-
 public class ArrayQueue
         {
             int QSIZE;
