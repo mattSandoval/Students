@@ -4,7 +4,7 @@
 *
 * @author  [Javee Nedia]
 * @link    [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/binary-search/BinarySearch.java]
-* @version [1.1]
+* @version [1.2]
 * @since   [28/09/2016]
 */
 
@@ -25,7 +25,7 @@ public class BinarySearch{
     }
   }
   for(int a =0; a < capacity;a++){
-    if(x%10 == 0){
+    if(a%10 == 0){
       System.out.println();
     }
     System.out.print(array[a]+ "\t");
@@ -42,7 +42,7 @@ public class BinarySearch{
   public void searching(int num){
     int left = 0, middle, right = array.length-1;
     while(left <= right){
-      middle=(left+right)/2;
+      middle=left+(right-left)/2;
       if(array[middle] == num){
         System.out.println("FOUND: " + num + " is at array[" + middle + "].");
         break;
@@ -51,9 +51,9 @@ public class BinarySearch{
         left = middle+1;
       else if(array[middle] > num)
         right = middle-1;
-    }
-    if(left >= right){
-      System.out.println("NOT FOUND: " + num + " is not in the array.");
+      if(left > right){
+          System.out.println("NOT FOUND: " + num + " is not in the array.");
+        }
     }
   }
   public static void main(String[]args){
@@ -67,8 +67,7 @@ public class BinarySearch{
     }
    Scanner in = new Scanner(System.in); 
    BinarySearch.sorting();
-   System.out.println();
-    System.out.print("Please enter the number to find: ");
+    System.out.print("\n\nPlease enter the number to find: ");
     number = in.nextInt();
    System.out.println();
    BinarySearch.searching(number);
