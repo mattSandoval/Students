@@ -1,3 +1,13 @@
+/**
+* Java implementation of a queue using array.
+* For demo purpose, should hold a maximum of 10 integers.
+*
+* @author  Cortez, Chyrine A.
+* @link    github.com/cortezchyrine
+* @version 0.1
+* @since   [10/05/2016]
+*/
+
 package cortez;
 import java.util.*;
 public class arrayStack {
