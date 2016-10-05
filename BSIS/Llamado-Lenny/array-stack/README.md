@@ -18,6 +18,15 @@ Stack
  - Allow POP only if the stack is not yet empty.
  - Allow PEEK to see the topmost topmost element.
  - Show the updated ARRAY STACK everytime you PUSH or POP.
+ 
+## Screenshot
+    
+    ![Image1](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-stack/Screenshots/Stack1.jpg)
+    ![Image2](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-stack/Screenshots/Stack2.jpg)
+    ![Image3](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-stack/Screenshots/Stack3.jpg)
+    ![Image4](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-stack/Screenshots/Stack4.jpg)
+    ![Image5](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-stack/Screenshots/Stack5.jpg)
+
 
 ## Pseudocode:
 
@@ -76,6 +85,4 @@ Stack
     
     END PROGRAM 
     
-    ##Screenshot
-    
-    ![Image1](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-stack/Screenshots/Stack1.jpg)
+   
