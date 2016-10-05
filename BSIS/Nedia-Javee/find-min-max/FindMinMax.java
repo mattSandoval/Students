@@ -1,6 +1,6 @@
 /**
 * @author  [Javee Nedia]
-* @link    [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/bubble-sort/BubbleSort.java]
+* @link    [https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/find-min-max/FindMinMax.java]
 * @version [1.2]
 * @since   [28/09/2016]
 */
