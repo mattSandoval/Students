@@ -1,7 +1,7 @@
 /**
 * @author: Kimberly Orozco
-* @link    https://github.com/kimOrozco
-* @version 1.1
+* @link: https://github.com/kimOrozco
+* @version:
 * @since : [10/05/16]
 */
 
