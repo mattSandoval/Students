@@ -85,3 +85,17 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+
+
+ output for array queue
+ 
+![alt text][img1]1
+![alt text][img2]2
+![alt text][img3]3
+![alt text][img4]4
+
+ 
+ [img1]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/array-queue/Queue%201.PNG
+ [img2]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/array-queue/Queue2.png
+ [img3]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/array-queue/Queue%203.PNG
+ [img4]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/array-queue/Queue%204.PNG
