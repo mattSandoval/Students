@@ -18,7 +18,7 @@ public class LinearSearch {
 	Scanner input = new Scanner (System.in);
     Random rand = new Random();
     
-    System.out.print("*-------------- Linear Search --------------*\n\n");
+    System.out.print("*-------------- LINEAR SEARCH --------------*\n\n");
     System.out.print("Enter array size: ");
     size = input.nextInt();
     array = new int [size];
