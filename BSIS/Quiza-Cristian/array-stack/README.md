@@ -75,3 +75,17 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+    
+    
+ ![alt text][img1]1
+ ![alt text][img1]2
+ ![alt text][img1]3
+ ![alt text][img1]4
+ ![alt text][img1]5
+    
+ [img1]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/array-stack/Stack%201.PNG
+ [img2]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/array-stack/Stack%202.PNG
+ [img3]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/array-stack/Stack%203.PNG
+ [img4]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/array-stack/Stack%204.PNG
+ [img5]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/array-stack/Stack%205.PNG
+    
