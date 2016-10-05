@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-* @author: Kimberly Orozco
-* @link:https://github.com/kimOrozco/DSA/blob/master/Stack.java
-* @version: n/a
+* @author:[ Kimberly Orozco ]
+* @link:[ https://github.com/kimOrozco ]
+* @version: 
 * @since: [10/05/16]
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
