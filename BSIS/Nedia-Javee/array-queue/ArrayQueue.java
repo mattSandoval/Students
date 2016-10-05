@@ -115,7 +115,6 @@ public class ArrayQueue {
 	    ArrayQueue.enQueue("eight"); 
 	    ArrayQueue.enQueue("nine");    
 	    ArrayQueue.enQueue("ten"); 
-	    // show the updated stack
 	    ArrayQueue.show();
 	    ArrayQueue.peekFront();
 	    ArrayQueue.peekRear();
