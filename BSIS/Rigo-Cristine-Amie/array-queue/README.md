@@ -85,3 +85,7 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+    
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Rigo-Cristine-Amie/array-queue/queue1.png)
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Rigo-Cristine-Amie/array-queue/queue2.png)
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Rigo-Cristine-Amie/array-queue/queue3.png)
