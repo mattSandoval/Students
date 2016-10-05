@@ -22,3 +22,8 @@ Bubble Sort
          swap([i], array[i+1])
     
     END PROGRAM 
+
+
+![alt text][img1]1
+
+[img1]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Cristian/bubble-sort/BSort.PNG
