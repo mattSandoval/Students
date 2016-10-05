@@ -85,3 +85,5 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+    
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/De-Guzman-Gerald/array-queue/ArrayQueue.png)
