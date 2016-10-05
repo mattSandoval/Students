@@ -24,3 +24,9 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+
+##Screenshots
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Charlie/linear-search/LinearSearch/LinearSearch.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Charlie/linear-search/LinearSearch/LinearSearch2.PNG)
