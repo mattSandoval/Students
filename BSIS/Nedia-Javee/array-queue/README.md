@@ -85,3 +85,15 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+
+## Sample
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-queue/Capture8.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-queue/Capture9.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-queue/Capture10.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-queue/Capture11.PNG)
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Nedia-Javee/array-queue/Capture12.PNG)
