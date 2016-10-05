@@ -1,6 +1,6 @@
 /**
 * @author  [Cristine Amie Rigo]
-* @link    [https://github.com/amierigo/DSA/blob/master/BubbleSorting.java]
+* @link    [https://github.com/amierigo/DSA/blob/master/FindMinMax.java]
 * @version [1.0]
 * @since   [10-05-16]
 */
