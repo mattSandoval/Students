@@ -75,3 +75,14 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+    
+  ![alt text][img1]
+  ![alt text][img2]
+  ![alt text][img3]
+  ![alt text][img4]
+  
+  
+  [img1]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/array-stack/1.JPG
+  [img2]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/array-stack/2.JPG
+  [img3]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/array-stack/3.JPG
+  [img4]:https://github.com/lvcc-dsa/Students/blob/master/BSIS/Avila-Ronnel/array-stack/4.JPG
