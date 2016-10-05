@@ -1,3 +1,9 @@
+/* @author  [Lenny Llamado]
+* @link    [https://github.com/lvcc-dsa/Students/edit/master/BSIS/Llamado-Lenny/find-min-max/FindMinMax.java]
+* @version [version number]
+* @since   [05/10/16]
+*/
+
 public class FindMinMax {
 	public static void main(String[] args) {
 		int[] numbers = { 88, 33, 55, 23, 64, 123 };
