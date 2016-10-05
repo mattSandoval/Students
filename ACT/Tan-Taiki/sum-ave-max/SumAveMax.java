@@ -11,7 +11,7 @@
 
 import java.util.Scanner;
 import java.util.Random;
-public class TotalMax1 {
+public class SumAveMax {
 
     /**
      * @param args the command line arguments
