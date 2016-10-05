@@ -20,8 +20,8 @@ public class BubbleSort {
 		Random rand = new Random();
 
 		System.out.print("Enter array size to sort: ");
-		// TODO: use nextInt() to assign keyboard input as array size
-		array = new int[size];
+		   size=input.nextInt();// TODO: use nextInt() to assign keyboard input as array size
+		   array = new int[size];
 
 		System.out.println();
 		System.out.println(size + " random numbers generated.");
