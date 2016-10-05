@@ -22,3 +22,7 @@ Bubble Sort
          swap([i], array[i+1])
     
     END PROGRAM 
+    
+##Screenshots
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Charlie/bubble-sort/Bubblesort_Screenshot/Bubble.PNG)
