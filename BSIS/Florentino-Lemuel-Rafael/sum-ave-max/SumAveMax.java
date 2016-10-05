@@ -3,30 +3,31 @@
 * - Generate random numbers accordingly.
 * - Get the sum, average, and maximum value
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @author  [@lemlemz22]
+* @link    [www.github.com/lemlemz22]
+* @version [1.0]
+* @updated   [last updated 05/10/2016]
 */
 
-import java.util.Scanner;
+package SumAveMax;
+import java.util.*;
 import java.util.Random;
 
 public class SumAveMax {
-
-	private int sum, max, size, array[];
+	private int sum, max, arraySize;
+	private int array[];
 	private float average;
 
 	public SumAveMax() {
-		Scanner input = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 		Random rand = new Random();
 		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
+		arraySize = in.nextInt();
+		array = new int[arraySize];
 		System.out.println();
-		System.out.println(size + " random numbers generated.");
-		for (int i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
+		System.out.println(arraySize + " random numbers generated.");
+		for (int i=0; i<arraySize; i++) {
+			array[i] = rand.nextInt(100);
 			System.out.print(array[i] + " ");
 			sum += array[i];
 			if (array[i] > max)
@@ -36,25 +37,23 @@ public class SumAveMax {
 	}
 
 	public void getSum() {
-		System.out.println("SUM = " + sum);
+		System.out.println("SUM: " + sum);
 	}
 
 	public void getMax() {
-		System.out.println("MAX = " + max);
+		System.out.println("MAX: " + max);
 	}
 
 	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
-		System.out.println("AVERAGE = " + average);
+		average = (float) sum / arraySize; 
+		System.out.println("AVERAGE: " + average);
 	}
 
 	public static void main(String[] args) {
-		SumAveMax demo = new SumAveMax();
+		SumAveMax find = new SumAveMax();
 		System.out.println();
-		demo.getSum();
-		demo.getMax();
-		demo.getAverage();
+		find.getSum();
+		find.getMax();
+		find.getAverage();
 	}
-
 }
