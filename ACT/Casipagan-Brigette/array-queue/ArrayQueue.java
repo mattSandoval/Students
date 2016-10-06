@@ -2,8 +2,8 @@
 * Java implementation of a queue using array.
 * For demo purpose, should hold a maximum of 10 integers.
 *
-* @author  [your full name here]
-* @link    [full github url]
+* @author  Brigette Casipagan
+* @link    https://github.com/xxbrigettexx
 * @version [version number]
 * @since   [last updated dd/mm/yyyy]
 */
