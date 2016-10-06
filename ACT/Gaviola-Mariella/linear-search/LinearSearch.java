@@ -1,10 +1,10 @@
 /**
 * LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
 *
-* @author  Renaldo Valente
-* @link    https://github.com/arrowbrave
-* @version 1.1
-* @since   22/09/2016
+** @author  Gaviola, Mariella R.
+* @link    https://github.com/Mariella18
+* @version 1.5
+* @since   06/10/2016
 */
 
 import java.util.Scanner;
@@ -14,7 +14,7 @@ public class LinearSearch {
 
 	public static void main(String[] args) {
 
-		int i, size, search, array[];
+		int j, size, search, array[];
 
 		Scanner input = new Scanner(System.in);
 		Random rand = new Random();
@@ -26,15 +26,15 @@ public class LinearSearch {
 		System.out.print("Enter number to find: ");
 		search = input.nextInt();
 
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
+		for (i = 0; j < size; j++) {
+			array[j] = rand.nextInt(1000);
+			if (array[j] == search) {
+				System.out.println("FOUND: " + search + " is at " + "array["+j+"]");
 				break;
 			} 			
 		}
 
-		if (i == size) {
+		if (j == size) {
 			System.out.println("NOT FOUND: " + search + " is not in the array.");
 		}
 
