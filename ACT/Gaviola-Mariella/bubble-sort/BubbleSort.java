@@ -2,43 +2,45 @@
 * BUBBLE SORT is based on the idea of repeatedly comparing pairs of 
 * adjacent elements, then switching positions if they exist in the wrong order.
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @author  Gaviola, Mariella R.
+* @link    https://github.com/Mariella18
+* @version 1.5
+* @since   06/10/2016
 */
 
-// TODO: import Scanner and Random from Java library
+
+import java.util.Scanner;
+import java.util.Random;
 
 public class BubbleSort {
 
 	public static void main(String[] args) {
 
-		int array[], size, x, y, swap;
+		int array[], size, a, b, swap;
 
 		Scanner input = new Scanner(System.in);
 		Random rand = new Random();
 
 		System.out.print("Enter array size to sort: ");
-		// TODO: use nextInt() to assign keyboard input as array size
+		size = input.nextInt();
 		array = new int[size];
 
 		System.out.println();
 		System.out.println(size + " random numbers generated.");
 
-		for (x = 0; x < size; x++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
-			// TODO: print unsorted numbers separated by space
+		for (a = 0; a < size; a++) {
+			array[a] = rand.nextInt(1000);
+			System.out.print(array[a] + " ");
 		}
 
 		System.out.println();
-		// note: compare each from the first index until largest number is moved to the last index.
-		for (x = 0; x < size-1; x++) { // note: loop until before the end of array
-			for (y = 0; y < size-x-1; y++) { // note: will not loop to numbers already sorted
-				if (array[y] > array[y+1]) { // note: compare adjacent numbers which is greater
-					swap = array[y]; // note: swap positions...
-					array[y] = array[y+1]; // note: smaller will be move to the left
-					array[y+1] = swap; // note: larger will move to the right
+
+		for (a = 0; a < size-1; a++) {
+			for (b = 0; b < size-a-1; b++) {
+				if (array[b] > array[b+1]) {
+					swap = array[b];
+					array[b] = array[b+1];
+					array[b+1] = swap;
 				}
 			}
 		}
@@ -47,7 +49,10 @@ public class BubbleSort {
 
 		System.out.println("Bubble Sorting... Done!");
 		
-		// TODO: print sorted numbers separated by space
+		for (a = 0; a < size; a++) {
+			System.out.print(array[a] + " ");
+		}
+
 	}
 
 }
