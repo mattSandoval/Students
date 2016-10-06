@@ -32,29 +32,29 @@ public class BinarySearch {
 		// TODO: call bubbleSort method to sort the generated random numbers
 		System.out.println();
 		
-		System.out.print("Enter number to find: ");
+		System.out.print("Ente element to search: ");
 		// TODO: use nextInt() to assign keyboard input as search item	
 		index = binarySearch(array, search); // note: assign the search result to array index where it was found	
 		
 		if (index != -1) {
-			System.out.println("FOUND: " + search + " is at " + "array["+index+"]");
+			System.out.println("ELEMENT FOUND: " + search + " is at " + "array["+index+"]");
 		}
 		else {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
+			System.out.println("ELEMENT NOT FOUND: " + search + " is not in the array.");
 		}
 
 	}
 
 	static int binarySearch(int[] numbers, int find) { // note: @param array[], search
 
-		int left, right, middle;
+		int start = 0, end = data.length -1, mid;
 		// TODO: initialize value for left and right
 		
-		while (left <= right) {
-			middle = left + (right - left) / 2;
-			if (numbers[middle] == find) {
-				return middle;
-			} else if (find < numbers[middle]) {
+		while (start <= end) {
+			mid = (start + left) / 2;
+			if (numbers[mid] == find) {
+				return mid;
+			} else if (find < numbers[mid]) {
 				right = middle - 1;
 			} else { // if numbers[middle] < find
 				left = middle + 1;
