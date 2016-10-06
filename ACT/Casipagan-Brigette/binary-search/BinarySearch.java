@@ -2,8 +2,8 @@
 * BINARY SEARCH is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array. 
 * Each step, the size of array is reduced to half until one single element remain and a match is found.
 *
-* @author  [your full name here]
-* @link    [full github url]
+* @author  Brigette Casipagan
+* @link    https://github.com/xxbrigettexx
 * @version [version number]
 * @since   [last updated dd/mm/yyyy]
 */
