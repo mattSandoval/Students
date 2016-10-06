@@ -1,6 +1,12 @@
-/*Rangel Angelo C. Macapagal
-  ACT-2
-  DSA    */
+/*
+ Java Implementation of stack using array.
+ For demo, purposes,shoul hold a maximum of 10 string value.
+ 
+ @Author: Rangel Angelo C. Macapagal
+ @Link: https://github.com/Rangel-Cruz-Macapagal
+ @Version: 1.0
+ @Since: 06/10/2016
+ */
 
 
 import java.util.*;
