@@ -1,43 +1,51 @@
 /**
 * LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
 *
-* @author  Renaldo Valente
-* @link    https://github.com/arrowbrave
-* @version 1.1
-* @since   22/09/2016
+* @author Adrian Villafuerte
+* @since   6/10/2016
 */
 
-import java.util.Scanner;
-import java.util.Random;
+import java.util.*;
 
 public class LinearSearch {
 
-	public static void main(String[] args) {
+	int [] upe;
+	int capacity;
 
-		int i, size, search, array[];
-
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];		
-
-		System.out.print("Enter number to find: ");
-		search = input.nextInt();
-
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
-				break;
-			} 			
-		}
-
-		if (i == size) {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
+	public LinearSearch (int size) {
+		capacity = size;
+		upe = new int [capacity];
 	}
 
+	public static void main (String [] args) {
+
+		Scanner in = new Scanner(System.in);
+		Random rand = new Random();
+		int found = 0;
+		System.out.print("Please enter the size of array: ");
+		int Size = in.nextInt();
+		System.out.print("Please enter number to find (1-100): ");
+		int Find = in.nextInt();
+		System.out.println();
+
+		LinearSearch Eydrian = new LinearSearch(Size);
+		for (int i = 0; i < Size; i++) {
+			Eydrian.upe[i] = 1+(rand.nextInt(100));
+
+			System.out.print("[" + Eydrian.upe[i] + "] ");			
+		}
+		System.out.println();
+		System.out.println();
+			
+		for (int x = 0; x < Size; x++) {
+			if (Find == Eydrian.upe[x]) {
+				System.out.println("The number " + Find + " is at element " + (x+1) + ".");
+				found++;
+			}
+		}
+
+		if (found == 0) {
+			System.out.println("The number " + Find + " is not FOUND!");
+		}
+	}
 }
