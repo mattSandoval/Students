@@ -6,17 +6,18 @@
 * @since   [last updated 06/10/2016]
 */
 
-// TODO: import Scanner and Random from Java library
+import java.util.*;
 
-public class BubbleSort {
+class BubbleSort {
 
 	public static void main(String[] args) {
 
-		int array[], size, y, swap;
+		int array[], size, x, y, swap;
 
 		Scanner input = new Scanner(System.in);
 		Random rand = new Random();
 
+		System.out.println();
 		System.out.print("How many numbers are to be sorted: ");
 		size = input.nextInt();
 		array = new int[size];
@@ -24,15 +25,15 @@ public class BubbleSort {
 		System.out.println();
 		System.out.println(size + " random numbers generated.");
 
-		for (int i = 0; i < size; i++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
-			// TODO: print unsorted numbers separated by space
+		for (x = 0; x < size; x++) {
+			array[x] = rand.nextInt(1000);
+			System.out.print(array[x] + " ");
 		}
 
 		System.out.println();
 		// note: compare each from the first index until largest number is moved to the last index.
-		for (int i = 0; i < size-1; i++) { // note: loop until before the end of array
-			for (y = 0; y < size-i-1; y++) { // note: will not loop to numbers already sorted
+		for (x = 0; x < size-1; x++) { // note: loop until before the end of array
+			for (y = 0; y < size-x-1; y++) { // note: will not loop to numbers already sorted
 				if (array[y] > array[y+1]) { // note: compare adjacent numbers which is greater
 					swap = array[y]; // note: swap positions...
 					array[y] = array[y+1]; // note: smaller will be move to the left
@@ -43,9 +44,11 @@ public class BubbleSort {
 
 		System.out.println();
 
-		System.out.println("After Sorting... Done!");
+		System.out.println("After Sorting.");
 		
-		// TODO: print sorted numbers separated by space
+		for (x = 0; x < size; x++) {
+			System.out.print(array[x] + " ");
+		}
+		System.out.println();
 	}
-
 }
