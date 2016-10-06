@@ -1,12 +1,11 @@
-/** 
-* - Accepts keyboard input to set array size.
-* - Generate random numbers accordingly.
-* - Get the sum, average, and maximum value
+/**
+* Java implementation of a stack using array.
+* For demo purpose, should hold a maximum of 10 string values.
 *
-* @author  [your full name here]
-* @link    [full github url]
+* @author  [Nicko Fernandez Reyes]
+* @link    [https://github.com/samcoii22/]
 * @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @since   [10/6/2016]
 */
 
 import java.util.Scanner;
@@ -44,8 +43,7 @@ public class SumAveMax {
 	}
 
 	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
+		average = sum / size; 
 		System.out.println("AVERAGE = " + average);
 	}
 
