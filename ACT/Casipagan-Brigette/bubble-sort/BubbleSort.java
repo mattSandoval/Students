@@ -2,8 +2,8 @@
 * BUBBLE SORT is based on the idea of repeatedly comparing pairs of 
 * adjacent elements, then switching positions if they exist in the wrong order.
 *
-* @author  [your full name here]
-* @link    [full github url]
+* @author  Brigette Casipagan
+* @link    https://github.com/xxbrigettexx
 * @version [version number]
 * @since   [last updated dd/mm/yyyy]
 */
