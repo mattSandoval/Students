@@ -1,43 +1,45 @@
 /**
-* LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
+* Java implementation of a stack using array.
+* For demo purpose, should hold a maximum of 10 string values.
 *
-* @author  Renaldo Valente
-* @link    https://github.com/arrowbrave
-* @version 1.1
-* @since   22/09/2016
+* @author  [Nicko Fernandez Reyes]
+* @link    [https://github.com/samcoii22/]
+* @version [version number]
+* @since   [10/6/2016]
 */
 
 import java.util.Scanner;
 import java.util.Random;
+public class Linear_Search {
 
-public class LinearSearch {
-
-	public static void main(String[] args) {
-
-		int i, size, search, array[];
-
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];		
-
-		System.out.print("Enter number to find: ");
-		search = input.nextInt();
-
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
-				break;
-			} 			
-		}
-
-		if (i == size) {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
-	}
-
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int i, size, search, array[];
+        
+        Scanner input = new Scanner(System.in);
+        Random rand = new Random();
+        
+        System.out.print("Enter array size: ");
+        size = input.nextInt();
+        array = new int[size];
+        
+        System.out.print("Enter number to find: ");
+        search = input.nextInt();
+        
+        for (i = 0; i<size; i++){
+            array[i] = rand.nextInt(1000);
+            if (array[i] == search){
+                System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
+                break;
+            }
+        }
+        
+        if (i == size){
+            System.out.println("NOT FOUND: " + search + " is not in the array. ");
+        }
+    }
+    
 }
