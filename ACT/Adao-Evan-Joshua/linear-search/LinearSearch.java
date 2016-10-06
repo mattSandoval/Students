@@ -1,8 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+ */*[Adao Evan Joshua A.]
+    [@Joshua-Adao]
+    [2.0]
+    [10/06/2016]*/
+      
 package linearsearch;
 import java.util.*;
 import java.util.Random;
