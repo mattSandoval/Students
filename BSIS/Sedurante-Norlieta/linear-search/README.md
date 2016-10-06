@@ -24,3 +24,5 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+    
+   ! [](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/linear-search/lin.png)
