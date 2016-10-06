@@ -1,6 +1,6 @@
 public class FindMinMax {
 	public static void main(String[] args) {
-		int[] numbers = { 88, 33, 55, 23, 64, 123 };
+		int[] numbers = { 95, 45, 22, 15, 70, 160 };
 		int min = Integer.MAX_VALUE;
 		int max = Integer.MIN_VALUE;
 		for (int i = 0; i < numbers.length; i++) {
