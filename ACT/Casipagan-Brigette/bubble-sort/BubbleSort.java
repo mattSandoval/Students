@@ -10,6 +10,8 @@
 
 // TODO: import Scanner and Random from Java library
 
+import java.util.*;
+import java.util.Random;
 public class BubbleSort {
 
 	public static void main(String[] args) {
@@ -20,15 +22,15 @@ public class BubbleSort {
 		Random rand = new Random();
 
 		System.out.print("Enter array size to sort: ");
-		// TODO: use nextInt() to assign keyboard input as array size
+    size = input.nextInt();
 		array = new int[size];
 
 		System.out.println();
 		System.out.println(size + " random numbers generated.");
 
 		for (x = 0; x < size; x++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
-			// TODO: print unsorted numbers separated by space
+    array[x] = rand.nextInt(1000);
+    System.out.print(array[x] + " ");
 		}
 
 		System.out.println();
@@ -46,8 +48,9 @@ public class BubbleSort {
 		System.out.println();
 
 		System.out.println("Bubble Sorting... Done!");
+		for(int i= 0; i<size; i++)
+    System.out.print(array[i] + " ");
 		
-		// TODO: print sorted numbers separated by space
 	}
 
 }
