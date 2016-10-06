@@ -1,6 +1,12 @@
-/*Rangel Angelo C. Macapagal
-  ACT-2
-  DSA    */
+/*
+ Java implementation of a queue using array.
+ For demo purpose,should hold a maximum of 10 integers
+ 
+ @Author: Rangel Angelo C. Macapagal
+ @Link: https://github.com/Rangel-Cruz-Macapagal
+ @Version: 1.0
+ @Since: 06/10/2016
+ */
 
 
 
