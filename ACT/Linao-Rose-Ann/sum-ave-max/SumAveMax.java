@@ -1,60 +1,29 @@
-/** 
-* - Accepts keyboard input to set array size.
-* - Generate random numbers accordingly.
-* - Get the sum, average, and maximum value
-*
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+/**
+* @author  Rose Ann D. Linao
+* @link    https://github.com/RoseAnnLinao
+* @version 1.2
+* @since   06/10/2016
 */
 
-import java.util.Scanner;
-import java.util.Random;
+import java.util.*;
 
-public class SumAveMax {
+public class Sum_Ave_Max {
 
-	private int sum, max, size, array[];
-	private float average;
-
-	public SumAveMax() {
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-		System.out.println();
-		System.out.println(size + " random numbers generated.");
-		for (int i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			System.out.print(array[i] + " ");
-			sum += array[i];
-			if (array[i] > max)
-				max = array[i];			
-		}
-		System.out.println();
-	}
-
-	public void getSum() {
-		System.out.println("SUM = " + sum);
-	}
-
-	public void getMax() {
-		System.out.println("MAX = " + max);
-	}
-
-	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
-		System.out.println("AVERAGE = " + average);
-	}
-
-	public static void main(String[] args) {
-		SumAveMax demo = new SumAveMax();
-		System.out.println();
-		demo.getSum();
-		demo.getMax();
-		demo.getAverage();
-	}
-
+    public static void main(String[] args) {
+        int[] array = { 10, 100, 50, 33, 5 };
+        int sum = 0; int max = 0;
+        for (int i = 0; i < array.length; i++){
+            if (array[i] > max) {
+                max = array[i];
+            }
+            System.out.println("array["+i+"]= " + array[i]);
+            sum += array[i];
+        }
+        double average = (double) sum / array.length;
+        System.out.println();
+        System.out.println("Sum = " + sum);
+        System.out.println("Average = " + average);
+        System.out.println("Max = " + max);
+    }
+    
 }
