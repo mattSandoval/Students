@@ -25,4 +25,4 @@ Linear Search
     
     END PROGRAM 
     
-   ! [](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/linear-search/lin.png)
+   ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/linear-search/lin.png)
