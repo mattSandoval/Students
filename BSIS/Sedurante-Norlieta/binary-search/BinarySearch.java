@@ -3,10 +3,10 @@
 * Each step, the size of array is reduced to half until one single element remain and a match is found.
 *
 *
-* SOURCE CODE: ArrayStack.java
+* SOURCE CODE: BInarySearch.java
 * AUTHOR NAME: Sedurante, Norlieta  I.
-* GITHUB URL: [https://github.com/norlietasedurante/DSA-ArrayStack]
-* LAST UPDATE: [07/31/2016]
+* GITHUB URL: [https://github.com/lvcc-dsa/Students/BSIS/Sedurante-Norlieta/binary-search/BinarySearch.java]
+* LAST UPDATE: [10/06/2016]
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 */
