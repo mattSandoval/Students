@@ -5,7 +5,7 @@
 * @author  [Stephanie Alviar]
 * @link    [full github url]
 * @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @since   [last updated 6/10/2016]
 */
 
 package arrayqueue;
