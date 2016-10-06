@@ -83,4 +83,5 @@ Stack
    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/array-stack/stack2.png)
    ------------
    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/array-stack/stack3.png)
+   ------------
    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/array-stack/stack4.png)
