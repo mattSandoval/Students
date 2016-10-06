@@ -1,3 +1,9 @@
+/** @author  Gaviola, Mariella R.
+* @link    https://github.com/Mariella18
+* @version 1.5
+* @since   06/10/2016
+*/
+
 public class FindMinMax {
 	public static void main(String[] args) {
 		int[] numbers = { 88, 33, 55, 23, 64, 123 };
