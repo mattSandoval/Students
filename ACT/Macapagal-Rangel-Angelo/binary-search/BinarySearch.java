@@ -1,3 +1,13 @@
+/*
+Binary Search is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array.
+Each step, the size of array is reducted to half until one single element remain and a match is found.
+ 
+ @Author: Rangel Angelo C. Macapagal
+ @Link: https://github.com/Rangel-Cruz-Macapagal
+ @Version: 1.0
+ @Since: 06/10/2016
+ */
+
 package binarysearch;
 import java.util.*;
 	public class binarysearch {
