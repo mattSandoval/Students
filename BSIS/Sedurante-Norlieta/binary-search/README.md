@@ -32,4 +32,6 @@ Binary Search
       END WHILE
     
     END PROGRAM 
-
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/binary-search/binary.png)
+--------------
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/binary-search/binary2.png)
