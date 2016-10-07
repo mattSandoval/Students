@@ -1,6 +1,12 @@
-
-
-
+/**
+* BUBBLE SORT is based on the idea of repeatedly comparing pairs of 
+* adjacent elements, then switching positions if they exist in the wrong order.
+*
+* @author  Karl Cabangon
+* @link    https://github.com/cabangonkulass
+* @version [version number]
+* @since   [last updated dd/mm/yyyy]
+*/
 
 import java.util.Scanner;
 import java.util.Random;
