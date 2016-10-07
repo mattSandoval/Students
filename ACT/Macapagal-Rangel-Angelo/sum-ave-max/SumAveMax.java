@@ -3,58 +3,62 @@
 * - Generate random numbers accordingly.
 * - Get the sum, average, and maximum value
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @author  Rangel Angelo C. Macapagal
+* @link   https://github.com/Rangel-Cruz-Macapagal
+* @version 1.0
+* @since  07/10/2016
 */
 
-import java.util.Scanner;
+/*Rangel Angelo C. Macapagal
+  ACT-2
+  DSA
+ */
+
+import java.util.*;
 import java.util.Random;
+public class RandomTotalMax {
+ public static void main(String[]args){
+	 Scanner in=new Scanner(System.in);
+	 Random t= new Random();
+		int  size=0;
+		int array[];
+		int sum=0;
 
-public class SumAveMax {
-
-	private int sum, max, size, array[];
-	private float average;
-
-	public SumAveMax() {
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-		System.out.println();
-		System.out.println(size + " random numbers generated.");
-		for (int i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			System.out.print(array[i] + " ");
-			sum += array[i];
-			if (array[i] > max)
-				max = array[i];			
+		int max=Integer.MIN_VALUE;
+		int min=Integer.MAX_VALUE;
+		
+		
+		System.out.print("Enter the number that you want:");
+		size=in.nextInt();
+		array =new int[size];
+		System.out.println("Random "+size+" numbers:");
+		
+		
+		
+		for(int i=0;i<array.length;i++){
+			System.out.println(array[i]=t.nextInt(100));
 		}
-		System.out.println();
-	}
-
-	public void getSum() {
-		System.out.println("SUM = " + sum);
-	}
-
-	public void getMax() {
-		System.out.println("MAX = " + max);
-	}
-
-	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
-		System.out.println("AVERAGE = " + average);
-	}
-
-	public static void main(String[] args) {
-		SumAveMax demo = new SumAveMax();
-		System.out.println();
-		demo.getSum();
-		demo.getMax();
-		demo.getAverage();
-	}
-
+		sum=0;
+		for(int i=0;i<array.length;i++){
+			sum = sum +array[i];
+		    }
+		    double ave =(double) sum /array.length;
+		    System.out.println("Sum ="+sum);
+		    System.out.println("Average ="+ave);
+		    max =array[0];
+		    for (int i=0;i<array.length;i++){
+		        if(min>array[i]){
+					 min= array[i];
+				 }
+		    	if(array[i]>max){
+					 max= array[i];
+				 }
+		    }
+		    System.out.println("Max ="+max);
+		    System.out.println("Min ="+min);
+		    
+		
+ }
 }
+
+
