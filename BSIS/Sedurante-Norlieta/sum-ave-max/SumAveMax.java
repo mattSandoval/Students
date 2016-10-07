@@ -30,7 +30,7 @@ public class SumAveMax {
             
             Scanner Input = new Scanner(System.in);
 		Random Rand = new Random();
-		System.out.println("Enter number you want : "); 
+		System.out.print("Enter number you want : "); 
 		ArraySize = Input.nextInt();
 		array = new int[ArraySize]; 
                 System.out.println();
