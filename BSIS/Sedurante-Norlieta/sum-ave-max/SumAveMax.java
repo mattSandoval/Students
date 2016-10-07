@@ -38,6 +38,7 @@ public class SumAveMax {
                     array[a] = Rand.nextInt(1000);
                 }
 		input();
+	     System.out.println();
 		getSum();
 		getAve();
 		getMax();	
@@ -67,7 +68,7 @@ public class SumAveMax {
 	
 	static public void getAve(){
 		int ave = sum / ArraySize;
-		System.out.println("Average = " + ave);
+		System.out.println("Ave = " + ave);
 	}
 	
 	static public void getMax(){
