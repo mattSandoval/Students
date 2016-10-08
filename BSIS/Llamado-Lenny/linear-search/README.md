@@ -24,3 +24,8 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+
+##Screenshot
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/linear-search/LS/1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/linear-search/LS/2.png)
