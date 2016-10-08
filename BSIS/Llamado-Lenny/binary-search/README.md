@@ -33,3 +33,7 @@ Binary Search
     
     END PROGRAM 
 
+##Screenshots
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/binary-search/BSScreeenShot/1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/binary-search/BSScreeenShot/2.png)
