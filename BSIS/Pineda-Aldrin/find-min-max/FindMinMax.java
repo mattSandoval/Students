@@ -1,15 +1,28 @@
+package min;
+
 public class FindMinMax {
-	public static void main(String[] args) {
-		int[] numbers = { 88, 33, 55, 23, 64, 123 };
-		int min = Integer.MAX_VALUE;
-		int max = Integer.MIN_VALUE;
-		for (int i = 0; i < numbers.length; i++) {
-			if (numbers[i] < min)
-				min = numbers[i];
-			if (numbers[i] > max)
-				max = numbers[i];
-		}
-		System.out.println("Smallest number is " + min);
-		System.out.println("Lagest number is " + max);
-	}
+public static void main(String[]args) {
+        
+        int [] numbers = {12 , 53 , 13 , 45 , 19 , 88 } ;
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+            
+            for(int x = 0 ; x<numbers.length ; x++){
+                
+                if(numbers[x] < min ){
+                       min = numbers[x] ;
+                }
+                if(numbers[x] > max ){
+                        max = numbers[x];
+                }    
+                
+            }
+            System.out.println("Smallest Number is : " +min);
+            System.out.println("Largest Number is : " +max);
+            
+        
+        
+    }
+    
+
 }
