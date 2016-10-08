@@ -85,3 +85,12 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+    
+##Screenshots
+
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-queue/AQScreenShots/1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-queue/AQScreenShots/2.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-queue/AQScreenShots/3.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-queue/AQScreenShots/4.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-queue/AQScreenShots/5.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Llamado-Lenny/array-queue/AQScreenShots/6.png)
