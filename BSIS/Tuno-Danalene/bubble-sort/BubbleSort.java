@@ -1,3 +1,8 @@
+/* @author [Danalene Laxamana Tuno]
+* @link    [https://github.com/dandanalene]
+* @version [10.7]
+* @since   [last updated 10/9/2016]
+*/
 import java.util.Scanner;
 import java.util.Random;
 
