@@ -37,7 +37,7 @@ public class BinarySearch {
 		index = binarySearch(array, search); // note: assign the search result to array index where it was found	
 		
 		if (index != -1) {
-			System.out.println("FOUND: " + search + " is at " + "array["+index+"]");
+			System.out.println("FOUND: " + search + " at " + "array["+index+"]");
 		}
 		else {
 			System.out.println("NOT FOUND: " + search + " is not in the array.");
