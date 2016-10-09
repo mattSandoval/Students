@@ -20,6 +20,8 @@ public class ArrayQueue {
   public ArrayQueue(int size) {
     capacity = size; // note: optional, can directly pass a new int[size]
     storage = new int[capacity];
+    head=0;
+    tail=0;
     // todo: initialize values for tail, head, and tail
   } 
 
