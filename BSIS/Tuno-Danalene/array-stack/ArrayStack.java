@@ -1,86 +1,117 @@
-public class ArrayQueue 
+public class ArrayStack {
+    
+  private String[] arrayStack;
+  private int arraySize;
+  private int top=0;
+    
+    
+  public ArrayStack(int size)
+   {
+      arraySize = size;
+      arrayStack = new String[arraySize];
+  }
+  
+  public void Show()
   {
-	int QSIZE;
-	private int[]queue;
-	private int nItems;
-
-	public ArrayQueue (int size){
-		this.QSIZE = size;
-		this.queue = new int [this.QSIZE];
-	}
-
-public void ShowQueue()
-  {
-		for (int i=0 ; i<this.QSIZE ; i++)
-    {
-			System.out.printf("QUEUE[" + i + "]=" + this.queue[i] + "\n");
-		}	
-	}
-
-public boolean isFull() 
-  {
-		if (this.nItems == this.QSIZE)
+      for(int i=arraySize-1; i>=0; i--)
       {
-			System.out.println("QUEUE IS FULL.");
-			return true;
-		  }	
-    else 
-    {
-			return false;
-		}
-	}
-
-public boolean isEmpty()
-  `{
-		if (this.nItems==0)
-    {
-			System.out.println("QUEUE IS NOT YET FULL.");
-			return true;
-		}
-    else 
-    {
-			return false;
-		}
-	}
-
-	public boolean enqueue (int num)
+          System.out.println("Stack [" + i + "] = " + arrayStack[i]);
+      }
+      System.out.println();      
+  }
+  
+  public void Peek()
   {
-		System.println("Trying to enqueue " + num + "...");
-			if (!this.isFull())
+      if(IsEmpty())
       {
-				this.enqueue[nItems] = num;
-				Systen.out.println("\t" + "Added " + num);
-				this.nItems++;
-				return true;
-			} 
-      else
+          System.out.println("Peek is null. Stack is EMPTY!");
+          System.out.println();
+      } else 
       {
-				System.out.println("Failed to enqueue " + num);
-				return	false;
-			}
-	}
-
-	public int dequeue()
+          System.out.println("TOP: Stack [" + (top-1) + "] = " + arrayStack[top-1]);          
+          System.out.println();
+      }
+  }
+  
+  public void Push(String input)
   {
-		 System.println("Trying to dequeue " + num + "...");
-		 if (!this.isEmpty())
-     {
-		 	this.dequeue[nItems] = num;
-		 	System.out.println("\t" + "Removed " + num);
-		 	this.nItems--;
-		 } 
-      else
-     {
-		 	System.out.println("Failed to dequeue " + num); 
-		 }
-	}
-}
+      if (IsFull())
+      {
+          System.out.println("Cannot PUSH anymore. Stack is FULL!");
+          System.out.println();
+      } else 
+      {
+          arrayStack[top] = input;
+          top++;
+          System.out.println("Stack [" + (top-1) + "] = " + arrayStack[top-1]);
+          System.out.println("--- Successful PUSH.");          
+          System.out.println();
+      }
+  }
+  
+  public void Pop()
+  {
+      if(IsEmpty())
+      {
+          System.out.println("Cannot POP an element. Stack is EMPTY!");
+          System.out.println();
+      } else 
+      {
+          System.out.println("Stack [" + (top-1) + "] = " + arrayStack[top-1]);
+          arrayStack[top-1] = null;
+          top--;
+          System.out.println("--- Successful POP.");
+          System.out.println();
+      }
+  }
+  
+  public boolean IsEmpty()
+  {
+      if (top == 0)
+      {
+          return true;
+      } else 
+      {
+          return false;
+      }
+  }
+  
+  public boolean IsFull()
+  {
+      if(top == arraySize)
+      {
+          return true;
+      } else
+      {
+          return false;
+      }
+  }
 
-public static void main(String[] args) 
-{
-	ShowQueue();
-	isFull();
-	isEmpty();
-	enqueue(int i);
-	dequeue();
+public static void main(String[] args) {
+      ArrayStack dan = new ArrayStack(10);
+      
+      System.out.println("SIZE = " + obj.arraySize);
+      System.out.println();
+
+      dan.Show();
+      dan.Push("D");
+      dan.Peek();
+      dan.Pop();
+      dan.Show();
+      dan.Peek();
+      dan.Pop();
+      dan.Push("one");
+      dan.Push("two");
+      dan.Push("three");
+      dan.Push("four");
+      dan.Push("five");
+      dan.Push("six");
+      dan.Push("seven");
+      dan.Push("eight");
+      dan.Push("nine");
+      dan.Push("ten");
+      dan.Push("eleven");
+      
+      dan.Show();
+  }  
 }
