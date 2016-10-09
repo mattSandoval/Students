@@ -8,7 +8,8 @@
 * @since   [10/10/2016]
 */
 
-// TODO: import Scanner and Random from Java library
+import java.util.Scanner;
+import java.util.Random;
 
 public class BubbleSort {
 
