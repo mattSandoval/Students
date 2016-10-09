@@ -2,10 +2,10 @@
 * BINARY SEARCH is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array. 
 * Each step, the size of array is reduced to half until one single element remain and a match is found.
 *
-* @author  [your full name here]
+* @author  [Elsie Espinosa]
 * @link    [full github url]
 * @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @since   [10/10/2016]
 */
 
 import java.util.*; // note: imports all classes inside java.util
@@ -26,14 +26,14 @@ public class BinarySearch {
 		System.out.println(size + " random numbers generated.");
 		
 		for (int i = 0; i < array.length; i++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
+			array[i]=rand.nextInt(1000);
 		}
 		
-		// TODO: call bubbleSort method to sort the generated random numbers
+		bubbleSort(array);
 		System.out.println();
 		
 		System.out.print("Enter number to find: ");
-		// TODO: use nextInt() to assign keyboard input as search item	
+		search=input.nextInt();
 		index = binarySearch(array, search); // note: assign the search result to array index where it was found	
 		
 		if (index != -1) {
@@ -48,7 +48,8 @@ public class BinarySearch {
 	static int binarySearch(int[] numbers, int find) { // note: @param array[], search
 
 		int left, right, middle;
-		// TODO: initialize value for left and right
+		left=0;
+		right= numbers.length-1;
 		
 		while (left <= right) {
 			middle = left + (right - left) / 2;
@@ -65,8 +66,21 @@ public class BinarySearch {
 	}
 	
 	static int bubbleSort(int[] arr) {
+		int x, y, swap;
 
-		// TODO: sort the random array first before searching
+		for(x=0; x<size -1; x++){
+			for(y=0; y<size-x-1; y++){
+				if(array[y] > array[y+1]){
+					swap = array[y];
+					array[y] = array[y+1];
+					array[y+1] = swap;
+				}
+			}
+		}
+		for(x=0; x<size; x++){
+			System.out.print(array[x] + " ");
+		}
+		return 0;
 
 	}
 
