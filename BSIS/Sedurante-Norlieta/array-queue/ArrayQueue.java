@@ -6,17 +6,24 @@
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 */
-package arraystack;
-
-public class ArrayStack {
 
   
+package arrayqueue;
+
+
+public class ArrayQueue {
+
       private int capacity;
       private int top = 0;
       private String[] storage;
+ 
+      
+
+
+
   
 
-  public ArrayStack(int size) {
+  public ArrayQueue(int size) {
 
     capacity = size;
     storage = new String[capacity];
@@ -24,7 +31,7 @@ public class ArrayStack {
 
   public void show() {
    
-    for (int i = capacity-1; i >= 0; i--) {
+    for (int i = 0; i<= capacity-1; i++) {
          System.out.println("stack[" + i +"] = " + storage[i] );
      
     }
@@ -92,7 +99,7 @@ public class ArrayStack {
   
   public static void main(String[] args) {
       int capacity;
-      ArrayStack  stack = new ArrayStack(10);
+      ArrayQueue  stack = new ArrayQueue(10);
    
     System.out.println("STORAGE CAPACITY = " +"capacity");
     System.out.println();
@@ -148,3 +155,4 @@ public class ArrayStack {
 }
     
     
+
