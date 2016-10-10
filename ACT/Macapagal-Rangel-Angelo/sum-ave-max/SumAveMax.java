@@ -15,50 +15,50 @@
  */
 
 import java.util.*;
-import java.util.Random;
-public class RandomTotalMax {
- public static void main(String[]args){
-	 Scanner in=new Scanner(System.in);
-	 Random t= new Random();
-		int  size=0;
-		int array[];
-		int sum=0;
+public class SumAveMax {
+	private int sum,max,size,array[];
+	private float Ave;
+	
 
-		int max=Integer.MIN_VALUE;
-		int min=Integer.MAX_VALUE;
-		
-		
-		System.out.print("Enter the number that you want:");
-		size=in.nextInt();
-		array =new int[size];
-		System.out.println("Random "+size+" numbers:");
-		
-		
-		
-		for(int i=0;i<array.length;i++){
-			System.out.println(array[i]=t.nextInt(100));
-		}
-		sum=0;
-		for(int i=0;i<array.length;i++){
-			sum = sum +array[i];
-		    }
-		    double ave =(double) sum /array.length;
-		    System.out.println("Sum ="+sum);
-		    System.out.println("Average ="+ave);
-		    max =array[0];
-		    for (int i=0;i<array.length;i++){
-		        if(min>array[i]){
-					 min= array[i];
-				 }
-		    	if(array[i]>max){
-					 max= array[i];
-				 }
-		    }
-		    System.out.println("Max ="+max);
-		    System.out.println("Min ="+min);
-		    
-		
- }
+public SumAveMax() {
+	  Scanner in= new Scanner(System.in);
+	  Random t= new Random();
+	  System.out.print("Enter Array Size: ");
+	  size= in.nextInt();
+	  array =new int[size];
+	  System.out.println("Random "+size+" numbers: ");
+	  for(int i=0;i<size;i++){
+		  array[i]=t.nextInt(1000);
+		  System.out.print(array[i]+" ");
+		  sum += array[i];
+		  if(array[i]>max){
+			  max=array[i];
+		  }
+		 System.out.println(); 
+	  }
+}	  
+	  public void getSum(){
+		  System.out.println("SUM ="+sum);
+	  }
+	  
+	  public void getMax(){
+		  System.out.println("MAX ="+max);
+	  }
+	  
+	  public void getAve(){
+		  Ave=(float) sum/size;
+		  System.out.println("Avearge ="+Ave);
+	  }
+	  
+	  
+	  public static void main(String []args){
+		  SumAveMax demo= new SumAveMax();
+		  demo.getSum();
+		  demo.getAve();
+		  demo.getMax();
+		 
+	  }
+	  
+ 
 }
-
 
