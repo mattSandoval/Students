@@ -23,14 +23,6 @@ public class ArrayStack {
   
   public void show() {
     for (int i = capacity; i >= 0; i--) {
-      /* note: should print like this: 
-      stack[9]   = 10th value
-      stack[8]   = 9th value
-      stack[7]   = 8rd value
-      ....  
-      stack[1]   = 2nd value
-      stack[0]   = 1st value
-      */
     }
     System.out.println("stack[" + i + "] = " + stackArray[i]);
   }
