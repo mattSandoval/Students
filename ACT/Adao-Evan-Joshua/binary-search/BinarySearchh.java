@@ -9,7 +9,10 @@ import java.util.*;
 import java.util.Random;
 /**
  *
- * @author Me
+ * @author Me [Adao, Evan Joshua A.]
+              [@Joshua-Adao]
+              [version number]
+              [last updated 11/10/2016]
  */
 public class BinarySearchh {
 
