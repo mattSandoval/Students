@@ -85,3 +85,9 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/array-queue/dsa1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/array-queue/dsa2.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/array-queue/dsa3.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/array-queue/dsa4.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/array-queue/dsa5.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sedurante-Norlieta/array-queue/dsa6.png)
