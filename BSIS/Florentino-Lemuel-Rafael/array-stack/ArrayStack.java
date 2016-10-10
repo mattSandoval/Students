@@ -52,7 +52,7 @@ public class ArrayStack {
     } else {      
       storage[top] = 0;
       top++;
-      System.out.println(value + " was successfully _________.");
+      System.out.println(value + " was successfully added.");
       System.out.println();
     }
   }
@@ -103,7 +103,7 @@ public class ArrayStack {
 			theStack.show();
 			theStack.peek();
     storage.push("six");
-      theStack.show();
+     			theStack.show();
 			theStack.peek();
     storage.push("seven"); 
 			theStack.show();
@@ -112,7 +112,7 @@ public class ArrayStack {
     	theStack.show();
 			theStack.peek();
     storage.push("nine");
-    	theStack.show();
+    			theStack.show();
 			theStack.peek();
     storage.push("ten"); 
 			theStack.show();
