@@ -3,58 +3,49 @@
 * - Generate random numbers accordingly.
 * - Get the sum, average, and maximum value
 *
-* @author  [your full name here]
-* @link    [full github url]
+* * @author  [Reinerio H. De guzman]
+* @link    [https://github.com/reineriodeguzman]
 * @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @since   [last updated 10/10/2016]
 */
+package sumavemax;
 
 import java.util.Scanner;
 import java.util.Random;
 
 public class SumAveMax {
 
-	private int sum, max, size, array[];
-	private float average;
-
-	public SumAveMax() {
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-		System.out.println();
-		System.out.println(size + " random numbers generated.");
-		for (int i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			System.out.print(array[i] + " ");
-			sum += array[i];
-			if (array[i] > max)
-				max = array[i];			
-		}
-		System.out.println();
-	}
-
-	public void getSum() {
-		System.out.println("SUM = " + sum);
-	}
-
-	public void getMax() {
-		System.out.println("MAX = " + max);
-	}
-
-	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
-		System.out.println("AVERAGE = " + average);
-	}
-
-	public static void main(String[] args) {
-		SumAveMax demo = new SumAveMax();
-		System.out.println();
-		demo.getSum();
-		demo.getMax();
-		demo.getAverage();
-	}
-
+public static void main(String[] args) {
+Scanner reinerio = new Scanner(System.in);
+Random rei = new Random();
+System.out.print("Enter Array Size? ");
+    int deg = reinerio.nextInt();
+    int degu[]= new int[deg];
+    for (int r = 0; r < degu.length; r++) {
+        degu[r] = rei.nextInt(100)+1;
+        System.out.println(" Random number for?  ["+(r+1)+"]: "+degu[r]);
+     
+        
+    }
+       int total = 0;
+        for (int i = 0; i < degu.length; i++) {
+        total = total+degu[i];
+    }
+        System.out.println("SUM = "+ total);
+        double average = total/degu.length;
+        System.out.println("Avarage = "+ average);
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < degu.length; i++) {
+               if ( degu[i] > max)
+                max = degu[i];
+        }
+   
+        System.out.println("MAX = "+max);
+        
+                    
+        
+    
 }
+}
+
