@@ -1,8 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* SOURCE CODE: ArrayQueue.java
+* AUTHOR NAME: [Zabala Abner L]
+* GITHUB URL: [github.com/zabala.abner]
+* LAST UPDATE: [10/11/2016]
+*
+*/
+
 
 public class ArrayStack {
 
