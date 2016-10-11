@@ -78,7 +78,7 @@
 * SOURCE CODE: ArrayQueue.java
 * AUTHOR NAME: [Zabala Abner L]
 * GITHUB URL: [github.com/zabala.abner]
-* LAST UPDATE: [11/11/1998]
+* LAST UPDATE: [10/11/2016]
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 */
