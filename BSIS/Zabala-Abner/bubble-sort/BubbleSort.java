@@ -2,13 +2,15 @@
 * BUBBLE SORT is based on the idea of repeatedly comparing pairs of 
 * adjacent elements, then switching positions if they exist in the wrong order.
 *
-* @author  [your full name here]
+* @author  [Zabala Abner L]
 * @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @version [1.0]
+* @since   [10/11/2016]
 */
 
 // TODO: import Scanner and Random from Java library
+import java.util.Scanner;
+import java.util.Random;
 
 public class BubbleSort {
 
@@ -20,7 +22,7 @@ public class BubbleSort {
 		Random rand = new Random();
 
 		System.out.print("Enter array size to sort: ");
-		// TODO: use nextInt() to assign keyboard input as array size
+		int value = nextInt();
 		array = new int[size];
 
 		System.out.println();
@@ -28,7 +30,7 @@ public class BubbleSort {
 
 		for (x = 0; x < size; x++) {
 			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
-			// TODO: print unsorted numbers separated by space
+			System.out.println ("");
 		}
 
 		System.out.println();
