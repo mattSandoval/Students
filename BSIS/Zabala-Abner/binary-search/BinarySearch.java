@@ -1,3 +1,10 @@
+/**
+* SOURCE CODE: ArrayQueue.java
+* AUTHOR NAME: [Zabala Abner L]
+* GITHUB URL: [github.com/zabala.abner]
+* LAST UPDATE: [10/11/2016]
+**/
+
 import java.util.Random;
 import java.util.Scanner;
 
