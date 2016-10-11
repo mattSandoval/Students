@@ -101,7 +101,6 @@ public class ArrayQueue {
 		QueueApp.peekFront();
 		QueueApp.peekRear();
 		QueueApp.dequeue();
-		//trigger rearrange()
 		QueueApp.rearrange();
 		QueueApp.show();
 		QueueApp.peekFront();
@@ -124,9 +123,7 @@ public class ArrayQueue {
 		QueueApp.show();
 		QueueApp.peekFront();
 		QueueApp.peekRear();
-		//try to trigger isFull()
 		QueueApp.enqueue(56);
-		//try to trigger is Empty()
 		QueueApp.dequeue();
 		QueueApp.dequeue();
 		QueueApp.dequeue();
