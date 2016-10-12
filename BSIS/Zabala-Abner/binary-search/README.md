@@ -1,5 +1,6 @@
 Binary Search
 =======================
+![5](https://cloud.githubusercontent.com/assets/20467857/19293889/b36a9e20-905a-11e6-9c46-f0e96a4c1e06.jpg)
 
 ## Description
 
