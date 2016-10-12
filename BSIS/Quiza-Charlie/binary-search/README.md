@@ -32,4 +32,6 @@ Binary Search
       END WHILE
     
     END PROGRAM 
+##Screenshot
 
+   ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Quiza-Charlie/binary-search/BinarySearch.PNG)
