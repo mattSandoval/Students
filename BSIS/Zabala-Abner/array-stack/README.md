@@ -1,5 +1,15 @@
 Stack
 =======================
+![arraystack01](https://cloud.githubusercontent.com/assets/20467857/19293634/9d9f60d2-9058-11e6-9420-94a2f441fb31.png)
+===>
+![arraystack02](https://cloud.githubusercontent.com/assets/20467857/19293635/9dae3f26-9058-11e6-8e2b-c28b6e7eba4e.png)
+===>
+![arraystack03](https://cloud.githubusercontent.com/assets/20467857/19293636/9db941fa-9058-11e6-8bdd-041558effeb7.png)
+===>
+![arraystack04](https://cloud.githubusercontent.com/assets/20467857/19293637/9db9ad34-9058-11e6-9d74-05dd4b030450.png)
+===>
+![arraystack05](https://cloud.githubusercontent.com/assets/20467857/19293638/9dcb639e-9058-11e6-88cc-f4118c129638.png)
+
 
 ## Description
 
