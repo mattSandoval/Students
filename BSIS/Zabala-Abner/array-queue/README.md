@@ -1,5 +1,6 @@
 Queue
 =======================
+![arrayqueue01](https://cloud.githubusercontent.com/assets/20467857/19293546/e5563316-9057-11e6-83a9-e4887d932cee.png)
 
 ## Description
 
@@ -19,6 +20,8 @@ Queue
  - Upon DEQUEUE, shift the element's position accordingly.
  - Allow PEEK to see the topmost topmost element.
  - Show the updated ARRAY QUEUE for every successful ENQUEUE and DEQUEUE.
+
+
 
 ## Pseudocode:
 
