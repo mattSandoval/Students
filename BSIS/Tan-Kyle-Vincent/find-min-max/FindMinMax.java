@@ -1,15 +1,55 @@
-public class FindMinMax {
-	public static void main(String[] args) {
-		int[] numbers = { 88, 33, 55, 23, 64, 123 };
-		int min = Integer.MAX_VALUE;
+/*
+* @author: Kyle Vincent Q. Tan
+* @link: https://github.com/elyk18
+* @version: v1
+* @since: 10/07/2016
+*/
+
+
+import java.util.*;
+
+public class findMinMax {
+
+	int [] arr;
+	int size, capacity;
+
+	public findMinMax (int size) {
+		capacity = size;
+		arr = new int [capacity];
+	}
+
+	public static void main (String [] args) {
+
+		Scanner in = new Scanner(System.in);
+		Random rand = new Random();
+
 		int max = Integer.MIN_VALUE;
-		for (int i = 0; i < numbers.length; i++) {
-			if (numbers[i] < min)
-				min = numbers[i];
-			if (numbers[i] > max)
-				max = numbers[i];
+		int min = Integer.MAX_VALUE;
+		int userSize;
+
+		System.out.println();
+		System.out.print("Enter desired size of array: ");
+		userSize = in.nextInt();
+		System.out.println();
+
+		findMinMax objClass = new findMinMax (userSize);
+
+		for (int i = 0; i < userSize; i++) {
+			objClass.arr[i] = 1+(rand.nextInt(150));
+
+			if (min > objClass.arr[i]) {
+				min = objClass.arr[i];
+			}
+			if (max < objClass.arr[i]) {
+				max = objClass.arr[i];
+			}
+
+			System.out.print("[" + objClass.arr[i] + "] ");
 		}
-		System.out.println("Smallest number is " + min);
-		System.out.println("Lagest number is " + max);
+		System.out.println();
+		System.out.println();
+
+		System.out.println("The largest number is " + max);
+		System.out.println("The smallest number is " + min);
 	}
 }
