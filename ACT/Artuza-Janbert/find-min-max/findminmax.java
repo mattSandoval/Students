@@ -1,3 +1,10 @@
+/**
+@author  [Janbert Q Artuza]
+* @link    [https://github.com/janbertartuza23]
+* @version [1.0]
+* @since   [last updated 13/Oct/2016]
+*/
+
 import java.util.Scanner;
 public class findminmax {
  public static void main(String[]args) {
