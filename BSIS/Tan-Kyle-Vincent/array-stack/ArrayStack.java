@@ -1,12 +1,117 @@
-/**
-* Java implementation of a stack using array.
-* For demo purpose, should hold a maximum of 10 string values.
-*
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+/*
+* @author: Kyle Vincent Q. Tan
+* @link: https://github.com/elyk18
+* @version: v1
+* @since: 10/07/2016
 */
+
+class ArrayStack {
+
+	private int capacity;
+	private int top = 0;
+	private String [] arr;
+
+	public ArrayStack(int size) {
+		capacity = size;
+		arr = new String[capacity];
+	}
+
+	public void show() {
+		System.out.println("Current Stack Element: ");
+		for (int x = capacity - 1; x >= 0; x--) {
+		
+			System.out.println("Stack[" + x + "]  =  " + arr[x]);
+
+		}
+
+	System.out.println("");	
+	}
+
+	private boolean isEmpty() {
+		if (arr[0] == null) {
+			System.out.println("Stack is Empty.");
+			System.out.println("");
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	private boolean isFull() {
+		if (top == capacity) {
+			System.out.println("Stack is Full.");
+			System.out.println("");
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public void push(String val) {
+		if (isFull()) {
+			System.out.println("Add failed. Element did not push.");
+			System.out.println("");
+		} else {
+			System.out.println(". . . executing push on stack[" + top + "] . . .");
+			arr[top] = val;
+			top++;
+			System.out.println(val + " was successfully added");
+			System.out.println("");
+		}
+	}
+
+	public void pop() {
+		if (isEmpty()) {
+			System.out.println("Remove failed. No element to pop.");
+			System.out.println("");
+		} else {
+			System.out.println(". . . executing pop on stack[" + (top-1) + "] . . .");
+			top--;
+			System.out.println(arr[top] + " was successfully removed");
+			System.out.println("");
+			arr[top] = null;
+		}
+	}
+
+	public void peek() {
+		if (arr[top-1] == arr[0]) {
+			System.out.println("Peek top = " + arr[top]);
+			System.out.println("");	
+		} else {
+			System.out.println("Peek top = " + arr[top-1]);
+			System.out.println("");	
+		}
+	}
+
+	public static void main(String [] args) {
+
+		ArrayStack arrObj = new ArrayStack(10);
+		System.out.println("");
+		System.out.println("Storage capacity = " + arrObj.capacity);
+		System.out.println("");
+
+		arrObj.push("firstPut");
+		arrObj.push("secondPut");
+		arrObj.push("thirdPut");
+		arrObj.push("fourthPut");
+		arrObj.push("fifthPut");
+		arrObj.push("sixthPut");
+		arrObj.push("seventhPut");
+		arrObj.push("eightPut");
+		arrObj.push("ninethPut");
+		arrObj.push("tenthPut");
+		arrObj.push("eleventhPut");
+
+		arrObj.pop();
+
+		arrObj.peek();
+
+		arrObj.show();
+
+	}
+}
+
+
 
 public class ArrayStack {
 
