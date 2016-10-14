@@ -56,7 +56,7 @@ public class SumAveMax {
   }
 
   public void getAve(){
-    average = sum / array.length;
+    average = (float) sum / array.length;
     System.out.println ("Average = " + average);
   }
   
