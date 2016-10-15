@@ -34,7 +34,5 @@ Binary Search
     END PROGRAM 
 
 ## Screeshots
-    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Loayon-Dan-Avery/binary-search/BS1.png)
-    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Loayon-Dan-Avery/binary-search/BS2.png)
-      
-
+   ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Loayon-Dan-Avery/binary-search/BS1.png)
+   ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Loayon-Dan-Avery/binary-search/BS2.png)
