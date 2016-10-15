@@ -24,3 +24,5 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+
+![alt tag](https://github.com/lvcc-dsa/Students/blob/master/ACT/Diverson-Christian/linear-search/image.png)
