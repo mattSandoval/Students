@@ -75,3 +75,6 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+
+ ## Screenshot
+    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Loayon-Dan-Avery/array-stack/stack1.png)
