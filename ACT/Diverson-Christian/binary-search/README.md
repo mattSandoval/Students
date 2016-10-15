@@ -33,3 +33,4 @@ Binary Search
     
     END PROGRAM 
 
+![alt tag](https://github.com/lvcc-dsa/Students/blob/master/ACT/Diverson-Christian/binary-search/image.png)
