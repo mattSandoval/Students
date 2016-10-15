@@ -27,7 +27,7 @@ public class ArrayQueue {
   public void show() {
     // note: the top of the queue starts from array[0] then newer item gets added on the tail and removes in the front
     for (int i = 0; i < capacity; i++) {
-      System.out.println("queue["+ i +"] = " + storage[]); // todo: use adjust(head+i) to adjust each item's position
+      System.out.println("queue["+ i +"] = " + storage[adjust(head+i)]); // todo: use adjust(head+i) to adjust each item's position
     }
       System.out.println(); // note: prints optional new line for readability
   }
@@ -59,9 +59,9 @@ public class ArrayQueue {
       System.out.println(); // note: prints optional new line for readability
     } else {
       System.out.println("... trying to enqueue on queue[" + tail + "] ...");
-      storage[adjust(head + tail)]; // todo: assign the value to the adjusted position of head
-      tail; // todo: should increment or decrement?
-      System.out.println(value + " was successfully _________."); // todo: what does enqueue do?
+      storage[adjust(head + tail)] = value; // todo: assign the value to the adjusted position of head
+      tail++; // todo: should increment or decrement?
+      System.out.println(value + " was successfully ADDED."); // todo: what does enqueue do?
       System.out.println(); // note: prints optional new line for readability
     }
   }
@@ -74,11 +74,11 @@ public class ArrayQueue {
       System.out.println(); // prints optional new line for readability
     } else {  
       System.out.println("... trying to dequeue head ...");
-      int temp; // todo: pass the value of head to a temporary variable
-      storage[head]; // todo: now, empty the value of current head
-      adjust(head + 1); // todo: pass the next value as new head
-      tail; // todo: should increment or decrement?
-      System.out.println(head + " was successfully _________."); // todo: what does dequeue do?
+      int temp = storage[head]; // todo: pass the value of head to a temporary variable
+      storage[head] = 0; // todo: now, empty the value of current head
+      adjust(head+1); // todo: pass the next value as new head
+      head++; // todo: should increment or decrement?
+      System.out.println(head + " was successfully REMOVED."); // todo: what does dequeue do?
       System.out.println(); // note: prints optional new line for readability
       return temp; // note: returns the temp as head
     }
@@ -112,19 +112,24 @@ public class ArrayQueue {
 
   public static void main(String[] args) {
     // note: construct a new array queue and assign 10 as the integer value for the size limit of the stack
+    ArrayQueue storage = new ArrayQueue(10);
+    storage.show();
     storage.enqueue(10);   
     storage.enqueue(20);    
     storage.enqueue(30);    
+    storage.peekHead();
     storage.enqueue(40);    
     storage.enqueue(50);
     storage.enqueue(60); 
+    storage.peekTail();
     storage.enqueue(70); 
     storage.enqueue(80); 
     storage.enqueue(90);    
     storage.enqueue(100); 
     storage.dequeue(); 
-    storage.dequeue();
+    storage.dequeue();    
     storage.show();
+
   }  
 
 }
