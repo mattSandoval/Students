@@ -75,4 +75,4 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
-    ![alt tag](https://github.com/lvcc-dsa/Students/blob/master/ACT/Diverson-Christian/array-stack/image.png)
+   ![alt tag](https://github.com/lvcc-dsa/Students/blob/master/ACT/Diverson-Christian/array-stack/image.png)
