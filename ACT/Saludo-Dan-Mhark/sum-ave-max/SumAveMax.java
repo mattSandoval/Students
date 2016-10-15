@@ -1,60 +1,42 @@
-/** 
-* - Accepts keyboard input to set array size.
-* - Generate random numbers accordingly.
-* - Get the sum, average, and maximum value
-*
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
-*/
-
+package hola;
 import java.util.Scanner;
 import java.util.Random;
 
 public class SumAveMax {
-
-	private int sum, max, size, array[];
-	private float average;
-
-	public SumAveMax() {
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-		System.out.println();
-		System.out.println(size + " random numbers generated.");
-		for (int i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			System.out.print(array[i] + " ");
-			sum += array[i];
-			if (array[i] > max)
-				max = array[i];			
-		}
-		System.out.println();
-	}
-
-	public void getSum() {
-		System.out.println("SUM = " + sum);
-	}
-
-	public void getMax() {
-		System.out.println("MAX = " + max);
-	}
-
-	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
-		System.out.println("AVERAGE = " + average);
-	}
-
 	public static void main(String[] args) {
-		SumAveMax demo = new SumAveMax();
-		System.out.println();
-		demo.getSum();
-		demo.getMax();
-		demo.getAverage();
-	}
+	Scanner input = new Scanner(System.in);
 
+	int yes;
+	System.out.println("Enter Array Size:");
+	yes = input.nextInt();
+	int [] size= new int[yes];
+	for (int i = 0; i < yes; i++){
+    System.out.print("Number["+ i + "]:"); 
+	size[i] =input.nextInt();
+    input.nextLine();
+	
+
+	
+	}
+	
+	int sum = 0;
+	for (int i=0; i <= size.length-1 ; i++ ){
+	sum = sum + size[i];
+	}
+	double average = sum/ size.length;
+	System.out.println("");
+	System.out.println("");
+	
+	System.out.println("Sum= " + sum);
+	System.out.println("Average = " + average);
+	
+	int max = size[0];
+	for (int i=0; i <= size.length-1 ; i++ )
+		if (size[i] > max)
+			max = size[i];
+	
+	System.out.println("Max = " + max);
+	}
 }
+
+	
