@@ -85,3 +85,5 @@ Queue
      // try to dequeue again, return error message
     
     END PROGRAM
+
+![alt tag](https://github.com/lvcc-dsa/Students/blob/master/ACT/Diverson-Christian/array-queue/image.png)
