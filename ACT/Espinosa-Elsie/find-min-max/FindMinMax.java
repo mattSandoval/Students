@@ -1,8 +1,4 @@
 /** 
-* - Accepts keyboard input to set array size.
-* - Generate random numbers accordingly.
-* - Get the sum, average, and maximum value
-*
 * @author  [Espinosa, Elsie J.]
 * @link    [https://github.com/elsieespinosa10]
 * @version [version number]
