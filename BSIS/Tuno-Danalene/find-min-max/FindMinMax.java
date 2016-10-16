@@ -1,7 +1,7 @@
 /* @author [Danalene Laxamana Tuno]
 * @link    [https://github.com/dandanalene]
 * @version [10.7]
-* @since   [last updated 10/9/2016]
+* @since   [last updated 10/16/2016]
 */
 public class FindMinMax
 {
