@@ -2,52 +2,48 @@
 * BUBBLE SORT is based on the idea of repeatedly comparing pairs of 
 * adjacent elements, then switching positions if they exist in the wrong order.
 *
-* @author  [your full name here]
-* @link    [full github url]
+* @author  [Sarah Mae Ponce]
+* @link    [https://github.com/Saranghae08]
 * @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @since   [10/16/2016]
 */
 
-// TODO: import Scanner and Random from Java library
+import java.util.*;
 
 public class BubbleSort {
+  public static void main(String[] args) {
 
-	public static void main(String[] args) {
+  int Array[], Size, a, b, Swap;
 
-		int array[], size, x, y, swap;
+  	Scanner input = new Scanner(System.in);
+  	Random rand = new Random();
 
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
+	System.out.print("Enter array size to sort: ");
+	Size = input.nextInt();
+	Array = new int[Size];
 
-		System.out.print("Enter array size to sort: ");
-		// TODO: use nextInt() to assign keyboard input as array size
-		array = new int[size];
+  System.out.println();
+  	System.out.println(Size + " Random numbers generated.");
+  		for (a = 0; a < Size; a++) {
+   		Array[a] = rand.nextInt(1000);
+  		System.out.print(Array[a] + " ");
+ 	 }
+  System.out.println();
 
-		System.out.println();
-		System.out.println(size + " random numbers generated.");
+ 	 for (a = 0; a < Size-1; a++) {
+	     for (b = 0; b < Size-a-1; b++) {
+		if (Array[b] > Array[b+1]) {
+		Swap = Array[b];
+		Array[b] = Array[b+1];
+		Array[b+1] = Swap;
+ 	}
+     }
+  }
+  System.out.println();
 
-		for (x = 0; x < size; x++) {
-			// TODO: use nextInt() to assign random numbers (range of 1000) to array index
-			// TODO: print unsorted numbers separated by space
-		}
-
-		System.out.println();
-		// note: compare each from the first index until largest number is moved to the last index.
-		for (x = 0; x < size-1; x++) { // note: loop until before the end of array
-			for (y = 0; y < size-x-1; y++) { // note: will not loop to numbers already sorted
-				if (array[y] > array[y+1]) { // note: compare adjacent numbers which is greater
-					swap = array[y]; // note: swap positions...
-					array[y] = array[y+1]; // note: smaller will be move to the left
-					array[y+1] = swap; // note: larger will move to the right
-				}
-			}
-		}
-
-		System.out.println();
-
-		System.out.println("Bubble Sorting... Done!");
-		
-		// TODO: print sorted numbers separated by space
-	}
-
+  	System.out.println("BUBBLE SORTING is doneeeee! :)");
+  	   for (a = 0; a < Size; a++) {
+   		System.out.print(Array[a] + " ");
+  	}
+     }
 }
