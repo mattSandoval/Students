@@ -88,3 +88,4 @@ Queue
 
 ##Screenshots:
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Tuno-Danalene/array-queue/img/ArrayQueue1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Tuno-Danalene/array-queue/img/ArrayQueue2.png)
