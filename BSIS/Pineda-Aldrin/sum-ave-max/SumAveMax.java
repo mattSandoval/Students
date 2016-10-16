@@ -3,10 +3,10 @@
 * - Generate random numbers accordingly.
 * - Get the sum, average, and maximum value
 *
-* @author  [your full name here]
-* @link    [full github url]
+* @author  Aldrin Pineda
+* @link    @Aldriiiiin
 * @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @since   10/16/16
 */
 
 package SumAveMax;
