@@ -33,3 +33,6 @@ Binary Search
     
     END PROGRAM 
 
+##Screenshots:
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Tuno-Danalene/binary-search/img/1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Tuno-Danalene/binary-search/img/2.png)
