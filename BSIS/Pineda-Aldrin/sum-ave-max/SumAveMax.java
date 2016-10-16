@@ -9,52 +9,74 @@
 * @since   [last updated dd/mm/yyyy]
 */
 
+package SumAveMax;
 import java.util.Scanner;
 import java.util.Random;
 
 public class SumAveMax {
-
-	private int sum, max, size, array[];
-	private float average;
-
-	public SumAveMax() {
-		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];
-		System.out.println();
-		System.out.println(size + " random numbers generated.");
-		for (int i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
+	int array[], sum=0, max=0;
+	
+	public void show(){
+		int x=0;
+		
+		System.out.print("\nRandom numbers: ");
+		for (int i=0 ; i<array.length ; i++){
 			System.out.print(array[i] + " ");
-			sum += array[i];
-			if (array[i] > max)
-				max = array[i];			
+			x += 1;
+				if (x==0){
+					System.out.println();
+					x=0;
+				}
 		}
 		System.out.println();
 	}
-
-	public void getSum() {
-		System.out.println("SUM = " + sum);
+	
+	public void getsum(){
+		System.out.print("\nThe sum of the random numbers generated is ");
+		for (int i=0 ; i<array.length ; i++){
+			sum += array[i];
+		}
+		System.out.print(sum + ".\n");
 	}
-
-	public void getMax() {
-		System.out.println("MAX = " + max);
+	
+	public void getave(){
+		double average = sum/array.length;
+		
+		System.out.print("The average of the random numbers generated is " + average + ".\n");		
 	}
-
-	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
-		System.out.println("AVERAGE = " + average);
+	
+	public void getmax(){
+		System.out.print("MAXIMUM or HIGHEST random number generated is : ");
+		max = array[0];
+		
+		for (int i=1 ; i<array.length ; i++){
+			if (array[i] > max){
+				max = array[i];
+			}
+		}
+		System.out.print(max + ".\n");
 	}
-
-	public static void main(String[] args) {
-		SumAveMax demo = new SumAveMax();
+	
+	public static void main (String[] args){
+		int size;
+		Random rand = new Random();
+		Scanner input = new Scanner (System.in);
+		SumAveMax storage = new SumAveMax();
+	
+		System.out.print(" *************SUM - AVE - MAX ************\n\n");
+		System.out.print("How many random numbers do you want? ");
+		size = input.nextInt();
+		System.out.print(size + " random numbers will be generated ...");
+		storage.array = new int[size];
+		
+			for (int i=0 ; i<size ; i++){
+				storage.array[i] = rand.nextInt(1000);
+			}
 		System.out.println();
-		demo.getSum();
-		demo.getMax();
-		demo.getAverage();
+		
+		storage.show();
+		storage.getsum();
+		storage.getave();
+		storage.getmax();
 	}
-
 }
