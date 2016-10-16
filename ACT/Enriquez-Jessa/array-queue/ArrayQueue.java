@@ -2,129 +2,152 @@
 * Java implementation of a queue using array.
 * For demo purpose, should hold a maximum of 10 integers.
 *
-* @author  [your full name here]
-* @link    [full github url]
+* @author  [Enriquez, Jessa L.]
+* @link    [https://github.com/Isang11jessa]
 * @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @since   [last updated 16-10-16]
 */
 
 public class ArrayQueue {
+         private int queue[];
+         private int aw = 0;
+         private int capacity;
+         private int front = 0;  
+         public ArrayQueue(int size){
+                  capacity = size;
+                  queue = new int[capacity];
+                          }
+          public void show(){
+                   for(int i=0;i<capacity;i++){
+                            System.out.println("index["+(i+1)+"]: "+queue[i]);
+                    }System.out.println();
+           }
+          public boolean isFull(){
+                   if (aw == capacity){
+                            System.out.println("You have reached the maximum limit of queue!");
+                            System.out.println();
+                            return true;
+                    }return false;
+           }
+          public boolean isEmpty(){
+                   if (front == aw){
+                            System.out.println("Queue is Empty!");
+                            System.out.println();
+                            return true;
+                            }return false;
+           }
+          public void enqueue(int value){
+                   if(isFull()==true){
+                            System.out.println("Error Enqueuing!");
+                    }
+                   else if(isEmpty()==true){
+                            System.out.println("Trying to enqueue: "+value);
+                            queue[aw]= value;
+                            queue[front] = value;
+                            aw++;
+                            System.out.println("Enqueue Successful");
+                    }
+                   else{
+                            System.out.println("Trying to enqueue: "+value);
+                            queue[aw]= value;
+                            aw++;
+                            System.out.println("Enqueue Successful");
+                    }
+                           System.out.println();
+           }
+          public void dequeue(){
+                   if(isEmpty()==true){
+                            System.out.println("Error Dequeuing!");
+                            return;
+                    }
+                           else if(front == aw) {
+                            System.out.println("Error Dequeuing!");
+                                    }
+                   else{
+                            System.out.println("Trying to Dequeue "+queue[front]+"...");
+                            queue[front]=0;
+                            front++;
+                    }
+                   }
+                  public void peekFront(){
+                   System.out.println("Front Value: "+queue[front]);
+           }
+          
+          public void peekRear(){
+                   System.out.println("Rear Value: "+queue[aw-1]);
+           }
+          
+          public void rearrange(){
+            if(isEmpty()==true){
+                            System.out.println("Unable to Rearrange!");
+                                                            }
+                   else{
+                            System.out.println("Rearranging indexes...");
+                            do{for(int i=0;i<aw;i++){
+                                      queue[i] = queue[i+1];
+                                              }
+                             for(int i=aw;i<capacity;i++){
+                                      queue[i]=0;
+                              }
+                             front = 0;
+                             aw= aw-1;
+                             }while(queue[front]==0);
+                    }
+                   System.out.println("Rearrange Successful!");
+           }
+          public static void main(String[] args) {
+                   ArrayQueue QueueApp = new ArrayQueue(10);
+                   QueueApp.show();
+                   QueueApp.enqueue(12);
+                   QueueApp.enqueue(12);
+                   QueueApp.show();
+                   QueueApp.peekFront();
+                   QueueApp.peekRear();
+                   QueueApp.enqueue(33);
+                   QueueApp.enqueue(37);
+                   QueueApp.show();
+                   QueueApp.peekFront();
+                   QueueApp.peekRear();
+                   QueueApp.dequeue();
+                   //trigger rearrange()
+                   QueueApp.rearrange();
+                   QueueApp.show();
+                   QueueApp.peekFront();
+                   QueueApp.peekRear();
+                   QueueApp.dequeue();
+                   QueueApp.dequeue();
+                      QueueApp.show();
+                   QueueApp.peekFront();
+                   QueueApp.peekRear();
+                   QueueApp.enqueue(745);
+                   QueueApp.enqueue(95);
+                   QueueApp.enqueue(53);
+                   QueueApp.enqueue(79);
+                   QueueApp.rearrange();
+                   QueueApp.show();
+                   QueueApp.peekFront();
+                   QueueApp.peekRear();
+                   QueueApp.enqueue(458);
+                   QueueApp.enqueue(53);
+                   QueueApp.show();
+                   QueueApp.peekFront();
+                   QueueApp.peekRear();
+                   //try to trigger isFull()
+                   QueueApp.enqueue(56);
+                   //try to trigger is Empty()
+                   QueueApp.dequeue();
+                   QueueApp.dequeue();
+                   QueueApp.dequeue();
+                   QueueApp.dequeue();
+                   QueueApp.dequeue();
+                   QueueApp.dequeue();
+                   QueueApp.dequeue();
+                   QueueApp.dequeue();
+                   QueueApp.dequeue();
+                   QueueApp.show();
+                  
+                   
+   
+           }
   
-  // note: variable declarations
-  private int capacity; // note: optional, you may also use array.length
-  private int head; // note: value of front item
-  private int tail; // note: counter number of tail
-  private int[] storage; // note: array is of integer values
-  
-  // note: constructor = initialize an object instance of the class
-  public ArrayQueue(int size) {
-    capacity = size; // note: optional, can directly pass a new int[size]
-    storage = new int[capacity];
-    // todo: initialize values for tail, head, and tail
-  } 
-
-  // note: will display the array
-  public void show() {
-    // note: the top of the queue starts from array[0] then newer item gets added on the tail and removes in the front
-    for (int i = 0; i < capacity; i++) {
-      System.out.println("queue["+ i +"] = " + storage[]); // todo: use adjust(head+i) to adjust each item's position
-    }
-      System.out.println(); // note: prints optional new line for readability
-  }
-  
-  // note: will check if it's true that the array is empty
-  private boolean isEmpty() {
-    if (tail == 0) { // note: checks if numbers tail has reached 0 or empty
-      System.out.println(" "); // todo: print error message here
-      System.out.println(); // note: this prints optional new line for readability
-      return true;
-    } 
-    return false; // note: defaults to false
-  }
-
-  private boolean isFull() {
-    if (tail == capacity) { // note: compares if number of tail has reached capacity limit
-      System.out.println(" "); // todo: print error message here
-      System.out.println(); // note: this prints optional new line for readability
-      return true;
-    } 
-    return false; // note: defaults to false
-  }
-
-  // note: will add value to the tail of array
-  public void enqueue(int value) {
-    if (isFull()) {
-      System.out.println("... trying to enqueue on queue[" + (tail-1) + "] ...");
-      System.out.println(" "); // todo: print error message here
-      System.out.println(); // note: prints optional new line for readability
-    } else {
-      System.out.println("... trying to enqueue on queue[" + tail + "] ...");
-      storage[adjust(head + tail)]; // todo: assign the value to the adjusted position of head
-      tail; // todo: should increment or decrement?
-      System.out.println(value + " was successfully _________."); // todo: what does enqueue do?
-      System.out.println(); // note: prints optional new line for readability
-    }
-  }
-
-  // note: will remove value to the head of array
-  public int dequeue() {    
-    if (isEmpty()) { // note: checks if empty, then stop
-      System.out.println("... trying to dequeue head ...");
-      System.out.println(" "); // print error message here
-      System.out.println(); // prints optional new line for readability
-    } else {  
-      System.out.println("... trying to dequeue head ...");
-      int temp; // todo: pass the value of head to a temporary variable
-      storage[head]; // todo: now, empty the value of current head
-      adjust(head + 1); // todo: pass the next value as new head
-      tail; // todo: should increment or decrement?
-      System.out.println(head + " was successfully _________."); // todo: what does dequeue do?
-      System.out.println(); // note: prints optional new line for readability
-      return temp; // note: returns the temp as head
-    }
-    return 0; // note: returns the temp as head
-  }
-
-  // note: will wrap the array so we can adjust the position of each value towards the head of array
-  private final int adjust(int i) {
-    return (i + capacity) % capacity; 
-  }
-
-  // note: will show the front value or head of the array
-  public int peekHead() {
-    System.out.println("Head : " + storage[head]);
-    if (isEmpty()) {
-      return -1;
-    }    
-    System.out.println();
-    return 0;
-  }
-
-  // note: will show the front value or head of the array
-  public int peekTail() {
-    System.out.println("Tail : " + storage[tail-1]);
-    if (isEmpty()) {      
-      return -1;
-    }
-    System.out.println();
-    return 0;
-  }
-
-  public static void main(String[] args) {
-    // note: construct a new array queue and assign 10 as the integer value for the size limit of the stack
-    storage.enqueue(10);   
-    storage.enqueue(20);    
-    storage.enqueue(30);    
-    storage.enqueue(40);    
-    storage.enqueue(50);
-    storage.enqueue(60); 
-    storage.enqueue(70); 
-    storage.enqueue(80); 
-    storage.enqueue(90);    
-    storage.enqueue(100); 
-    storage.dequeue(); 
-    storage.dequeue();
-    storage.show();
-  }  
-
-}
+ }
