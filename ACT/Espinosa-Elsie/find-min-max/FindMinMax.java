@@ -1,3 +1,14 @@
+/** 
+* - Accepts keyboard input to set array size.
+* - Generate random numbers accordingly.
+* - Get the sum, average, and maximum value
+*
+* @author  [Espinosa, Elsie J.]
+* @link    [https://github.com/elsieespinosa10]
+* @version [version number]
+* @since   [10/16/2016]
+*/
+
 public class FindMinMax {
 	public static void main(String[] args) {
 		int[] numbers = { 88, 33, 55, 23, 64, 123 };
