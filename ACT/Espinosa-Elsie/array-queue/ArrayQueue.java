@@ -3,7 +3,7 @@
 * For demo purpose, should hold a maximum of 10 integers.
 *
 * @author  [Elsie Espinosa]
-* @link    [full github url]
+* @link    [https://github.com/elsieespinosa10]
 * @version [version number]
 * @since   [10/10/2016]
 */
