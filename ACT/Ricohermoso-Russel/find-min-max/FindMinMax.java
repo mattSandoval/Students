@@ -13,14 +13,14 @@ public class FindMinMax {
         Random sel = new Random();
         System.out.print("Enter Array Size? ");
         int sel = russel.nextInt();
-        int wews[]= new int[rein];
+        int wews[]= new int[wews];
     for (int j = 0; j < wews.length; j++) {
         wews[j] = sel.nextInt(100)+1;
-        System.out.println("Random Number: "+deg[j]);
+        System.out.println("Random Number: "+wews[j]);
         }
     int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        for (int i = 0; i < deg.length; i++) {
+        for (int i = 0; i < wews.length; i++) {
             if ( min > wews[i])
                 min = wews[i];
             if ( wews[i] > max)
