@@ -75,3 +75,153 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+    
+    --------------
+    
+    
+    
+    OUTPUT
+    
+    
+    
+    STORAGE CAPACITY = 10
+
+stack[9] = null
+stack[8] = null
+stack[7] = null
+stack[6] = null
+stack[5] = null
+stack[4] = null
+stack[3] = null
+stack[2] = null
+stack[1] = null
+stack[0] = null
+
+STORAGE IS EMPTY.
+
+Remove Failed.
+PEEK TOP = null
+
+... trying to push on stack[0] ...
+one was successfully added.
+
+stack[9] = null
+stack[8] = null
+stack[7] = null
+stack[6] = null
+stack[5] = null
+stack[4] = null
+stack[3] = null
+stack[2] = null
+stack[1] = null
+stack[0] = one
+
+PEEK TOP = one
+
+... trying to push on stack[1] ...
+two was successfully added.
+
+stack[9] = null
+stack[8] = null
+stack[7] = null
+stack[6] = null
+stack[5] = null
+stack[4] = null
+stack[3] = null
+stack[2] = null
+stack[1] = two
+stack[0] = one
+
+PEEK TOP = two
+
+... trying to push on stack[2] ...
+three was successfully added.
+
+stack[9] = null
+stack[8] = null
+stack[7] = null
+stack[6] = null
+stack[5] = null
+stack[4] = null
+stack[3] = null
+stack[2] = three
+stack[1] = two
+stack[0] = one
+
+PEEK TOP = three
+
+... trying to push on stack[3] ...
+four was successfully added.
+
+stack[9] = null
+stack[8] = null
+stack[7] = null
+stack[6] = null
+stack[5] = null
+stack[4] = null
+stack[3] = four
+stack[2] = three
+stack[1] = two
+stack[0] = one
+
+... trying to push on stack[4] ...
+five was successfully added.
+
+stack[9] = null
+stack[8] = null
+stack[7] = null
+stack[6] = null
+stack[5] = null
+stack[4] = five
+stack[3] = four
+stack[2] = three
+stack[1] = two
+stack[0] = one
+
+... trying to pop stack[4] ...
+five was successfully removed.
+
+... trying to push on stack[4] ...
+six was successfully added.
+
+... trying to push on stack[5] ...
+seven was successfully added.
+
+... trying to push on stack[6] ...
+eight was successfully added.
+
+... trying to push on stack[7] ...
+nine was successfully added.
+
+... trying to push on stack[8] ...
+ten was successfully added.
+
+stack[9] = null
+stack[8] = ten
+stack[7] = nine
+stack[6] = eight
+stack[5] = seven
+stack[4] = six
+stack[3] = four
+stack[2] = three
+stack[1] = two
+stack[0] = one
+
+PEEK TOP = ten
+
+... trying to push on stack[9] ...
+eleven was successfully added.
+
+Storage is full.
+Add Failed.
+stack[9] = eleven
+stack[8] = ten
+stack[7] = nine
+stack[6] = eight
+stack[5] = seven
+stack[4] = six
+stack[3] = four
+stack[2] = three
+stack[1] = two
+stack[0] = one
+
