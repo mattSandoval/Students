@@ -1,43 +1,55 @@
-/**
-* LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
-*
-* @author  Renaldo Valente
-* @link    https://github.com/arrowbrave
-* @version 1.1
-* @since   22/09/2016
-*/
+/*
+ * @author	[Josel Charille De Mesa]
+ * @link	[@chadenggg]
+ * @version	[Version number]
+ * @since	[last updated 12/10/16]
+ * 
+ */
 
-import java.util.Scanner;
-import java.util.Random;
+package BENGBENG;
 
+import java.util.*;
 public class LinearSearch {
 
-	public static void main(String[] args) {
-
-		int i, size, search, array[];
-
+	public static void main(String [] args){
+		
 		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
+		Random output = new Random();
+		
+		int array[] , size , search , i ; 
+		
+		System.out.print("Enter array size : " ) ;
+		size=input.nextInt();
+		array = new int[size];
+		
+		System.out.print(size +" inputted array " ) ;
+		System.out.println();
+		System.out.print("Enter array to be search : " ) ;
+		search=input.nextInt();
 
-		System.out.print("Enter array size: ");
-		size = input.nextInt();
-		array = new int[size];		
-
-		System.out.print("Enter number to find: ");
-		search = input.nextInt();
-
-		for (i = 0; i < size; i++) {
-			array[i] = rand.nextInt(1000);
-			if (array[i] == search) {
-				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
+		
+			for(i=0 ; i<size; i++){
+			
+			array[i]=output.nextInt(2);
+				
+				if(array[i]==search){
+				
+				System.out.println("FOUND:" +search +" is at " +"array"+ "[" +(i+1) +"]" );
+				
 				break;
-			} 			
-		}
-
-		if (i == size) {
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
-		}
-
+			}
+		}	
+		
+			if(i == size){
+				System.out.println("\n");
+				System.out.print("NOT FOUND : " +search +" is not in the array");
+				System.out.println("\n\n\n");
+			}
+			
+			System.out.print("THANK YOU FOR USING MY PROGRAM");
+		
+		
+		
 	}
-
+	
 }
