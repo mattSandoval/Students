@@ -77,7 +77,7 @@ Stack
     END PROGRAM 
     
  ## Screenshots:
- 
+ =======================
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Tuno-Danalene/array-stack/img/ArrayStack1.png)
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Tuno-Danalene/array-stack/img/ArrayStack2.png)
 ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Tuno-Danalene/array-stack/img/ArrayStack3.png)
