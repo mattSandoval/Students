@@ -1,3 +1,8 @@
+@author - Aldrin Pineda
+@Link - @aldriiiiin
+@Version - number
+@since - 10/16/16
+
 package min;
 
 public class FindMinMax {
