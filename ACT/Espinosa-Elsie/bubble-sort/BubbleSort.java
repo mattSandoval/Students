@@ -3,7 +3,7 @@
 * adjacent elements, then switching positions if they exist in the wrong order.
 *
 * @author  [Elsie Espinosa]
-* @link    [full github url]
+* @link    [https://github.com/elsieespinosa10]
 * @version [version number]
 * @since   [10/10/2016]
 */
