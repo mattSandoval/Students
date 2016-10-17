@@ -25,4 +25,4 @@ Linear Search
     
     END PROGRAM 
     
-    ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Pangan-Sarah/linear-search/Linear.png)
+  ##  ![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Pangan-Sarah/linear-search/Linear.png)
