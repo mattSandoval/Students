@@ -3,7 +3,7 @@
 * - Generate random numbers accordingly.
 * - Get the sum, average, and maximum value
 *
-* @author  [your full name here]
+* @author  [Leo O. Vibar]
 * @link    [full github url]
 * @version [version number]
 * @since   [last updated dd/mm/yyyy]
@@ -44,8 +44,8 @@ public class SumAveMax {
 	}
 
 	public void getAverage() {
-		// note: type casting = assigning a value of one type to a variable of another type
-		average = (float) sum / size; // note: type cast int to float
+		
+		average = (float) sum / size; 
 		System.out.println("AVERAGE = " + average);
 	}
 
