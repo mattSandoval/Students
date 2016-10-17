@@ -88,4 +88,4 @@ Queue
     
 ## Screenshot:
 
-![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Chrysanthemum.jpg)
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
