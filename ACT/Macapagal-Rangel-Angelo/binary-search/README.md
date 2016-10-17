@@ -33,3 +33,5 @@ Binary Search
     
     END PROGRAM 
 
+
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/binary-search/binary.png)
