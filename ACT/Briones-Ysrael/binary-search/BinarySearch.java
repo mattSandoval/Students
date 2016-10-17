@@ -2,10 +2,10 @@
 * BINARY SEARCH is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array. 
 * Each step, the size of array is reduced to half until one single element remain and a match is found.
 *
-* @author  [your full name here]
-* @link    [full github url]
+* @author  [Ysrael Carlos Briones]
+* @link    [www.github.com/Bibleaffliction11]
 * @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @since   [last updated 17/10/2016]
 */
 
 import java.util.*;
