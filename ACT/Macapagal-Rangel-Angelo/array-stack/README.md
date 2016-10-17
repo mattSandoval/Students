@@ -75,3 +75,15 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+    
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack2.png)   
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack3.png)   
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack4.png)   
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack5.png)   
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack6.png)   
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack7.png)   
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack8.png)   
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack9.png)   
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack10.png)   
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-stack/stack11.png)   
