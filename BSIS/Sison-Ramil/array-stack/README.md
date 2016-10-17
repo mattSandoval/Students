@@ -19,6 +19,9 @@ Stack
  - Allow PEEK to see the topmost topmost element.
  - Show the updated ARRAY STACK everytime you PUSH or POP.
 
+#Screenshot
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sison-Ramil/array-stack/arraystack1.png)
+
 ## Pseudocode:
 
     START PROGRAM
@@ -75,3 +78,4 @@ Stack
      // try to pop again, expect pop error message
     
     END PROGRAM 
+   
