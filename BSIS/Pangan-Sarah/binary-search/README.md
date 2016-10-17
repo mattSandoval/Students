@@ -32,4 +32,7 @@ Binary Search
       END WHILE
     
     END PROGRAM 
+ 
+##
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Pangan-Sarah/binary-search/Binary.png)
 
