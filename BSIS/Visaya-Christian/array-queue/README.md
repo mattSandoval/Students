@@ -88,4 +88,8 @@ Queue
     
 ## Screenshot:
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Queue(Menu).png "Queue(Menu)")
+![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Queue(Enqueue).png "Queue(Enqueue)")
+![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Queue(Dequeue).png "Queue(Dequeue)")
+![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Queue(Show).png "Queue(Show)")
+![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Queue(Terminate).png "Queue(Terminate)")
