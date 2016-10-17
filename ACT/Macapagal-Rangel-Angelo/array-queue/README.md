@@ -88,9 +88,9 @@ Queue
     
     ##Screenshot
     
-    [img1]
+    ![][img1]
     
-    ![img1]:(https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/Arrayqueue1.png)
+    [img1]:(https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/Arrayqueue1.png)
     ![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue2.png)
     ![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue3.png)
     ![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue3.png)
