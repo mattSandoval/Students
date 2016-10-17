@@ -33,3 +33,7 @@ Binary Search
     
     END PROGRAM 
 
+## Screenshot:
+
+![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/binary-search/BinarySearch1.png "BinarySearch1")
+![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/binary-search/BinarySearch2.png "BinarySearch2")
