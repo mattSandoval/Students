@@ -88,3 +88,14 @@ Queue
     
  
 ![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/Arrayqueue1.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue2.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue3.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue4.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue5.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue6.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue7.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue8.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue9.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue10.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue11.png)
+![](https://github.com/lvcc-dsa/Students/blob/master/ACT/Macapagal-Rangel-Angelo/array-queue/arrayqueue12.png)
