@@ -1,15 +1,36 @@
+import java.util.*;
+
 public class FindMinMax {
-	public static void main(String[] args) {
-		int[] numbers = { 88, 33, 55, 23, 64, 123 };
-		int min = Integer.MAX_VALUE;
-		int max = Integer.MIN_VALUE;
-		for (int i = 0; i < numbers.length; i++) {
-			if (numbers[i] < min)
-				min = numbers[i];
-			if (numbers[i] > max)
-				max = numbers[i];
+
+	static Scanner c = new Scanner (System.in);
+	public static void main (String[] args)
+	{
+		System.out.println("enter array size: ");
+		int n=c.nextInt(); 
+
+		int arr[]=new int[n]; 
+		System.out.println("enter elements: ");
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=c.nextInt();	
 		}
-		System.out.println("Smallest number is " + min);
-		System.out.println("Lagest number is " + max);
+
+		int smallest = arr[0];
+		int large = arr[0];
+		for(int i=0; i< arr.length; i++)
+		{
+			if(arr[i] > large)
+				large= arr[i];
+			else if (arr[i] < smallest)
+				smallest = arr[i];
+		}
+
+
+
+
+		System.out.println("Largest Number is : " + large);
+		System.out.println("Smallest Number is : " + smallest);	
+		
+
 	}
 }
