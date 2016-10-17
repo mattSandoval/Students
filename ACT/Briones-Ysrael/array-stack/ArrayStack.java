@@ -8,95 +8,91 @@
 * @since   [last updated 17/10/2016]
 */
 
-import java.util.*;
-public class ysra {
-    
+package arraystack;
+public class ArrayStack {
+        private int capacity;
+	private int top = 0;
+	private String [] array;
+	public ArrayStack(int size) {
+		capacity = size;
+		array = new String[capacity];
+	}
+	public void show() {
+		System.out.println("Current Stack Element: ");
+		for (int x = capacity - 1; x >= 0; x--) {	
+			System.out.println("Stack[" + x + "]  =  " + array[x]);
+		}
+	System.out.println("");	
+	}
+	private boolean isEmpty() {
+		if (array[0] == null) {
+			System.out.println("Stack is Empty.");
+			System.out.println("");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	private boolean isFull() {
+		if (top == capacity) {
+			System.out.println("Stack is Full.");
+			System.out.println("");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	public void push(String val) {
+		if (isFull()) {
+			System.out.println("Add failed. Element did not push.");
+			System.out.println("");
+		} else {
+			System.out.println(". . . executing push on stack[" + top + "] . . .");
+			array[top] = val;
+			top++;
+			System.out.println(val + " was successfully added");
+			System.out.println("");
+		}
+	}
+	public void pop() {
+		if (isEmpty()) {
+			System.out.println("Remove failed. No element to pop.");
+			System.out.println("");
+		} else {
+			System.out.println(". . . executing pop on stack[" + (top-1) + "] . . .");
+			top--;
+			System.out.println(array[top] + " was successfully removed");
+			System.out.println("");
+			array[top] = null;
+		}
+	}
+	public void peek() {
+		if (array[top-1] == array[0]) {
+			System.out.println("Peek top = " + array[top]);
+			System.out.println("");	
+		} else {
+			System.out.println("Peek top = " + array[top-1]);
+			System.out.println("");	
+		}
+	}
+	public static void main(String [] args) {
+		ArrayStack aa = new ArrayStack(10);
+		System.out.println("");
+		System.out.println("Storage capacity = " + aa.capacity);
+		System.out.println("");
+		aa.push("First");
+		aa.push("Second");
+		aa.push("Third");
+		aa.push("Fifth");
+		aa.push("Six");
+		aa.push("Seven");
+		aa.push("Eight");
+		aa.push("Nine");
+		aa.push("Ten");
+		aa.push("Eleventh");
+		aa.pop();
+		aa.peek();
+		aa.show();
 
-  private int capacity=5;
-  private int top = 1;
-  private String[] storage;
-  
-  public ysra(int size) {
-    capacity =size;
-    storage = new String[capacity];
-  } 
-
-  public void show() {
-    for (int Y = capacity-1; Y >= 0; Y--) { 
-      for (int S = capacity-1; S >= 0; S--) {
-          System.out.println("stack["+Y--+"]="+storage[S]);
-      }
-    }
-    System.out.println();
-  }
-  
-  private boolean isEmpty() {
-    if (storage[top] == null) {
-      System.out.println("EMPTY! :(");
-      return true;
-    } 
-    return false;
-  }
-
-  private boolean isFull() {
-    if (top == capacity) {
-      System.out.println("FULL! :(");
-      return true;
-    } 
-    return false;
-  }
-
-  public void push(String value) {
-    if (isFull()) {
-      
-      System.out.println("FAILED");
-    } else {
-      System.out.println("... Push[" + (top) + "] ...");
-      storage[top] = value;
-      top++;
-      System.out.println(value + " was successfully added.");
-      System.out.println();
-    }
-  }
-
-  public void pop() {
-    if (isEmpty()) {
-      System.out.println();
-    } else {
-      System.out.println("... trying to pop stack[" + (top-1) + "] ...");
-      storage[top] = storage[10];
-      System.out.println(storage[top] + " was successfully removed.");
-      System.out.println();
-    }
-  }
-
-  public void peek() {
-    if (storage[top] == storage[0]) {
-      System.out.println("PEEK TOP = " + storage[top]);
-      System.out.println();
-    } else {
-      System.out.println("PEEK TOP = " + storage[top-1]);
-      System.out.println();
-    }
-  }
-  
-  public static void main(String[] args) {
-    ysra storage = new ysra(10);
-    System.out.println("STORAGE CAPACITY = " +storage.capacity);
-    System.out.println();
-    storage.peek();
-    storage.pop();
-    storage.push("one");
-    storage.push("two");
-    storage.push("three");
-    storage.push("four");
-    storage.push("five"); 
-    storage.push("six"); 
-    storage.push("seven"); 
-    storage.push("eight"); 
-    storage.push("nine");    
-    storage.push("ten"); 
-    
-  }  
-
+	}
 }
