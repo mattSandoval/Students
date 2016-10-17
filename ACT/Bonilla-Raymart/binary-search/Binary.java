@@ -7,7 +7,7 @@
 * @version 1
 * @since   10/17/2016 4:43 pm
 */
-import java.util.Scanner;
+import java.util.*;
  
 class Binary {
   public static void main(String args[]) {
