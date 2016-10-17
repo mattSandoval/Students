@@ -24,3 +24,9 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+
+## Screenshot:
+
+
+![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/linear-search/LinearSearch1.png "LinearSearch1")
+![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/linear-search/LinearSearch2.png "LinearSearch2")
