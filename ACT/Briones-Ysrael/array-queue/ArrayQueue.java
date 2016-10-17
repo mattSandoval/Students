@@ -5,7 +5,7 @@
 * @author  [Ysrael Carlos Briones]
 * @link    [https://github.com/Bibleaffliction11]
 * @version [version number]
-* @since   [last updated 10/17/2016]
+* @since   [last updated 17/10/2016]
 */
 
 package arrayqueue;
