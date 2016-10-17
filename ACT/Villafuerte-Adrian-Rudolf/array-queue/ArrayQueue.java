@@ -2,10 +2,8 @@
 * Java implementation of a queue using array.
 * For demo purpose, should hold a maximum of 10 integers.
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @author  [Adrian Vilalfuerte]
+* @since   [last updated 18/10/2016]
 */
 
 public class ArrayQueue {
@@ -67,64 +65,111 @@ public class ArrayQueue {
   }
 
   // note: will remove value to the head of array
-  public int dequeue() {    
-    if (isEmpty()) { // note: checks if empty, then stop
-      System.out.println("... trying to dequeue head ...");
-      System.out.println(" "); // print error message here
-      System.out.println(); // prints optional new line for readability
-    } else {  
-      System.out.println("... trying to dequeue head ...");
-      int temp; // todo: pass the value of head to a temporary variable
-      storage[head]; // todo: now, empty the value of current head
-      adjust(head + 1); // todo: pass the next value as new head
-      tail; // todo: should increment or decrement?
-      System.out.println(head + " was successfully _________."); // todo: what does dequeue do?
-      System.out.println(); // note: prints optional new line for readability
-      return temp; // note: returns the temp as head
-    }
-    return 0; // note: returns the temp as head
-  }
-
-  // note: will wrap the array so we can adjust the position of each value towards the head of array
-  private final int adjust(int i) {
-    return (i + capacity) % capacity; 
-  }
-
-  // note: will show the front value or head of the array
-  public int peekHead() {
-    System.out.println("Head : " + storage[head]);
-    if (isEmpty()) {
-      return -1;
-    }    
-    System.out.println();
-    return 0;
-  }
-
-  // note: will show the front value or head of the array
-  public int peekTail() {
-    System.out.println("Tail : " + storage[tail-1]);
-    if (isEmpty()) {      
-      return -1;
-    }
-    System.out.println();
-    return 0;
-  }
-
-  public static void main(String[] args) {
-    // note: construct a new array queue and assign 10 as the integer value for the size limit of the stack
-    storage.enqueue(10);   
-    storage.enqueue(20);    
-    storage.enqueue(30);    
-    storage.enqueue(40);    
-    storage.enqueue(50);
-    storage.enqueue(60); 
-    storage.enqueue(70); 
-    storage.enqueue(80); 
-    storage.enqueue(90);    
-    storage.enqueue(100); 
-    storage.dequeue(); 
-    storage.dequeue();
-    storage.show();
-  }  
-
+package Package;
+public class QUEUE {
+private int QueSIZE;
+private int[]que;
+private int i = 0;
+public QUEUE (int isize) {
+this.QueSIZE= isize;
+this.que = new int[this.QueSIZE];
+}
+public void showQueue(){
+for (int x=0; x< this.QueSIZE;x++){
+System.out.println("QUEUE["+x+"] = " + this.que[x]);
+}
+System.out.println();
+}
+public boolean isFull() {
+if (this. i == this.QueSIZE) {
+System.out.println ("The Queue is already full");
+return true;
+} else{
+return false;
+}}
+public boolean isEmpty() {
+if (this.i == 0){
+System.out.println("The Queue is Empty");
+return true;
+} else{
+return false;
+}}
+public boolean enqueue (int num) {
+System.out.println("Trying to enqueue " + num + "...");
+if (!this.isFull()){
+this.que[i] = num;
+System.out.println("\t" + "Added " + num);
+this.i++;
+return true;
+} else{
+return false;
+}}
+public void dequeue() {
+if (isEmpty()) {
+System.out.println("REMOVE FAIL! , Storage is empty.");
+System.out.println();
+} else {
+int num=que[0];
+System.out.println("... trying to dequeue [0] ...");
+que[0] = 0;
+System.out.println(num + " was successfully removed.");
+System.out.println();
+for (int a=0; a<i-1; a++) {
+this.que[a]=que[a+1];
+}
+i--;
+}
+}
+public int peekFront() {
+System.out.println("The front number : "+que[0]);
+return this.que[0];
+}
+public int peekRear() {
+System.out.println("The rear number : "+que[this.i-1]);
+return this.que[this.i-1];
+}
+private void rearangeQueue() {
+int c, d, swap;
+for (c = 0; c < (QueSIZE-1); c++){
+for (d = 0; d < QueSIZE -c -1; d++){
+if (this.que[d] > this.que [d+1]){
+swap = this.que[d];
+this.que[d] = this.que[d+1];
+this.que[d+1] = swap;
+}
+}
+}
+System.out.println("Sorted list of Numbers");
+for (c = 0; c < QueSIZE; c++){
+System.out.println("QUEUE["+c+"] = " + this.que[c]);
+}
+}
+public static void main(String[]args){
+QUEUE queueFunction = new QUEUE(10);
+queueFunction.showQueue();
+queueFunction.enqueue(9);
+queueFunction.showQueue();
+queueFunction.dequeue();
+queueFunction.dequeue();
+queueFunction.enqueue (10);
+queueFunction.showQueue();
+queueFunction.enqueue (90);
+queueFunction.enqueue (11);
+queueFunction.enqueue (1);
+queueFunction.enqueue (4);
+queueFunction.enqueue (19);
+queueFunction.enqueue (20);
+queueFunction.showQueue();
+queueFunction.peekFront();
+queueFunction.peekRear();
+queueFunction.showQueue();
+queueFunction.enqueue (43);
+queueFunction.enqueue (24);
+queueFunction.dequeue();
+queueFunction.enqueue (14);
+queueFunction.enqueue (33);
+queueFunction.enqueue(89);
+queueFunction.showQueue();
+queueFunction.rearangeQueue();
+}
 }
