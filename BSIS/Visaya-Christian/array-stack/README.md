@@ -78,8 +78,8 @@ Stack
     
     ## Screenshot:
     
-    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Stack(Menu).png "Stack(Menu)")
-    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Stack(Push).png "Stack(Push)")
-    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Stack(Pop).png "Stack(Pop)")
-    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Stack(Display).png "Stack(Display)")
-    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-queue/Stack(Terminate).png "Stack(Terminate)")
+    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-stack/Stack(Menu).png "Stack(Menu)")
+    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-stack/Stack(Push).png "Stack(Push)")
+    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-stack/Stack(Pop).png "Stack(Pop)")
+    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-stack/Stack(Display).png "Stack(Display)")
+    ![Alt text](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Visaya-Christian/array-stack/Stack(Terminate).png "Stack(Terminate)")
