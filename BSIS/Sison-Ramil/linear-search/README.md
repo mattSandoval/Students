@@ -24,3 +24,5 @@ Linear Search
          PRINT NOT FOUND
     
     END PROGRAM 
+#screenshot
+![](https://github.com/lvcc-dsa/Students/blob/master/BSIS/Sison-Ramil/linear-search/linearsearch.png)
